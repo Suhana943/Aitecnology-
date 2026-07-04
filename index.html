@@ -3,75 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Technology | Research & Insights</title>
+    <title>AI Technology | Industrial Research Publication</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        :root {
-            --black: #000000;
-            --white: #ffffff;
-            --grey: #f4f4f4;
-            --border: #e0e0e0;
-        }
-
+        :root { --black: #000000; --white: #ffffff; --border: #e0e0e0; --grey: #f4f4f4; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        body { background: var(--white); color: var(--black); line-height: 1.5; padding-bottom: 30px; }
+        body { background: var(--white); color: var(--black); line-height: 1.6; padding-bottom: 50px; }
 
-        /* Navigation Header */
-        .header { padding: 20px; border-bottom: 2px solid var(--black); display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.3rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; }
-        .menu-icon { font-size: 1.2rem; cursor: pointer; }
+        /* Header Layout */
+        .main-header { padding: 20px; border-bottom: 2px solid var(--black); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: var(--white); z-index: 1000; }
+        .logo { font-weight: 800; font-size: 1.4rem; letter-spacing: -1px; text-transform: uppercase; }
 
-        /* Filter Pills (Layout as requested) */
-        .filter-scroll { display: flex; gap: 10px; padding: 15px; overflow-x: auto; border-bottom: 1px solid var(--border); }
+        /* Sidebar Navigation */
+        .sidebar { position: fixed; top: 0; left: -300px; width: 300px; height: 100%; background: var(--white); border-right: 1px solid var(--black); z-index: 2000; transition: 0.4s; padding: 30px; }
+        .sidebar.active { left: 0; }
+        .nav-link { display: block; padding: 20px 0; border-bottom: 1px solid var(--border); font-weight: 600; text-decoration: none; color: var(--black); font-size: 1.1rem; }
+        .nav-link:hover { color: #555; }
+
+        /* Filter Pills (13436.jpg inspired layout) */
+        .filter-scroll { display: flex; gap: 12px; padding: 20px; overflow-x: auto; border-bottom: 1px solid var(--border); }
         .filter-scroll::-webkit-scrollbar { display: none; }
-        .pill { border: 1px solid var(--black); padding: 8px 16px; font-size: 0.75rem; font-weight: 700; cursor: pointer; text-transform: uppercase; white-space: nowrap; }
+        .pill { border: 1px solid var(--black); padding: 10px 20px; font-size: 0.75rem; font-weight: 700; cursor: pointer; text-transform: uppercase; white-space: nowrap; transition: 0.2s; }
         .pill.active { background: var(--black); color: var(--white); }
 
-        /* Article Cards */
-        .grid-container { padding: 20px; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
-        .article-card { border: 1px solid var(--border); padding: 20px; }
-        .article-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
-        .article-meta { font-size: 0.8rem; color: #666; margin-bottom: 15px; text-transform: uppercase; }
-        .btn-read { display: block; border: 1px solid var(--black); padding: 10px; text-align: center; text-decoration: none; color: var(--black); font-size: 0.85rem; font-weight: 700; transition: 0.2s; }
+        /* Content Grid Structure */
+        .content-container { padding: 20px; max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px; }
+        
+        /* Card UI (Image on Top + Info Below) */
+        .ai-card { border: 1px solid var(--border); overflow: hidden; background: var(--white); transition: 0.3s; }
+        .ai-card:hover { box-shadow: 5px 5px 0px #000; }
+        .card-img { width: 100%; height: 220px; background: var(--grey); display: flex; align-items: center; justify-content: center; font-size: 4rem; color: #aaa; }
+        .card-info { padding: 25px; }
+        .card-title { font-weight: 700; font-size: 1.25rem; margin-bottom: 12px; }
+        .card-text { font-size: 0.9rem; color: #555; margin-bottom: 20px; }
+        .btn-read { display: block; border: 1px solid var(--black); padding: 15px; text-align: center; text-decoration: none; color: var(--black); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
         .btn-read:hover { background: var(--black); color: var(--white); }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) { .sidebar { width: 100%; left: -100%; } }
     </style>
 </head>
 <body>
 
-<header class="header">
+<header class="main-header">
+    <i class="fa-solid fa-bars" style="cursor:pointer; font-size: 1.3rem;" onclick="toggleNav()"></i>
     <div class="logo">AI Technology</div>
-    <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+    <i class="fa-solid fa-microchip" style="font-size: 1.3rem;"></i>
 </header>
 
-<div class="filter-scroll">
-    <div class="pill active">Latest</div>
-    <div class="pill">Agentic Systems</div>
-    <div class="pill">LLM Research</div>
-    <div class="pill">Robotics</div>
-</div>
+<nav class="sidebar" id="sideNav">
+    <div onclick="toggleNav()" style="margin-bottom:40px; cursor:pointer"><i class="fa-solid fa-times" style="font-size: 1.5rem;"></i></div>
+    <a href="#" class="nav-link">Home Portal</a>
+    <a href="#" class="nav-link">Agentic Systems Research</a>
+    <a href="#" class="nav-link">LLM Technical Bootcamp</a>
+    <a href="#" class="nav-link">Roboticus Project Log</a>
+    <a href="#" class="nav-link">System Design Case Studies</a>
+</nav>
 
-<div class="grid-container" id="articleContainer">
-    </div>
+<section class="filter-scroll">
+    <div class="pill active">All Updates</div>
+    <div class="pill">Agentic</div>
+    <div class="pill">LLMs</div>
+    <div class="pill">Robotics</div>
+    <div class="pill">Enterprise</div>
+</section>
+
+<main class="content-container" id="aiContainer"></main>
 
 <script>
-    const articles = [
-        { title: "Mastering Agentic Design", category: "Agentic Systems" },
-        { title: "LLM Bootcamp Deep Dive", category: "LLM Research" },
-        { title: "Autonomous Robotics 2026", category: "Robotics" }
+    function toggleNav() { document.getElementById('sideNav').classList.toggle('active'); }
+    
+    // Industrial Data Object
+    const articleData = [
+        { title: "Mastering Agentic System Design", icon: "fa-robot", cat: "Agentic" },
+        { title: "LLM Bootcamp 2026 Deep Dive", icon: "fa-brain", cat: "LLMs" },
+        { title: "Autonomous Robotics: Roboticus", icon: "fa-gear", cat: "Robotics" },
+        { title: "Scaling AI for Enterprise", icon: "fa-network-wired", cat: "Enterprise" }
     ];
 
-    const container = document.getElementById('articleContainer');
-    articles.forEach(art => {
-        container.innerHTML += `
-            <article class="article-card">
-                <div class="article-title">${art.title}</div>
-                <div class="article-meta">${art.category} • 5 min read</div>
-                <a href="#" class="btn-read">READ ARTICLE</a>
-            </article>
-        `;
+    const container = document.getElementById('aiContainer');
+    
+    // Rendering logic for 200+ lines effect
+    function renderArticles(filter = "All Updates") {
+        container.innerHTML = '';
+        articleData.forEach(item => {
+            if(filter === "All Updates" || item.cat === filter) {
+                container.innerHTML += `
+                    <article class="ai-card">
+                        <div class="card-img"><i class="fa-solid ${item.icon}"></i></div>
+                        <div class="card-info">
+                            <div class="card-title">${item.title}</div>
+                            <p class="card-text">Advanced technical analysis and implementation strategies for ${item.cat} technologies.</p>
+                            <a href="#" class="btn-read">Read Full Report</a>
+                        </div>
+                    </article>
+                `;
+            }
+        });
+    }
+
+    // Filter Logic
+    document.querySelectorAll('.pill').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+            this.classList.add('active');
+            renderArticles(this.innerText);
+        });
     });
+
+    renderArticles();
 </script>
 
 </body>
