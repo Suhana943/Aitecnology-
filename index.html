@@ -1,98 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Technology | Exploring Agentic Systems & LLMs</title>
-    
+    <title>AI Technology | Research & Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-        body { background-color: #f8fafc; color: #0f172a; line-height: 1.5; padding-bottom: 40px; }
+        :root {
+            --primary: #7c3aed;
+            --secondary: #4f46e5;
+            --bg: #f8fafc;
+        }
 
-        /* Header */
-        .main-header { background: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 1000; }
-        .brand-logo { font-size: 1.3rem; font-weight: 800; color: #0f172a; }
-        .brand-logo span { color: #0284c7; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
-        /* Intro */
-        .content-intro { padding: 40px 20px 20px; text-align: center; }
-        .content-intro h1 { font-size: 1.8rem; margin-bottom: 10px; }
-        .content-intro p { color: #64748b; font-size: 0.95rem; }
+        /* Navigation Bar & Sidebar */
+        .main-header { background: #ffffff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--primary); position: sticky; top: 0; z-index: 1000; }
+        .sidebar { position: fixed; top: 0; left: -280px; width: 280px; height: 100%; background: white; z-index: 2000; transition: 0.3s; box-shadow: 2px 0 10px rgba(0,0,0,0.1); padding: 20px; }
+        .sidebar.active { left: 0; }
+        .sidebar-close { font-size: 1.5rem; cursor: pointer; margin-bottom: 20px; }
+        .nav-link { display: block; padding: 15px 0; text-decoration: none; color: var(--text); font-weight: 600; border-bottom: 1px solid #f1f5f9; }
 
-        /* Article Grid */
-        .article-grid { padding: 20px; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
-        .article-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; transition: 0.2s; }
-        .article-card h3 { font-size: 1.1rem; margin-bottom: 8px; color: #0f172a; }
-        .article-card p { font-size: 0.9rem; color: #475569; margin-bottom: 15px; }
-        .read-btn { background: #0284c7; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; display: inline-block; }
-
-        footer { text-align: center; padding-top: 30px; color: #94a3b8; font-size: 0.8rem; }
+        /* Original Content Styles */
+        .ai-grid { padding: 20px; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+        .ai-card { background: white; border: 1px solid #e2e8f0; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .card-body { padding: 20px; display: flex; gap: 15px; }
+        .icon-holder { width: 60px; height: 60px; background: #ede9fe; display: flex; align-items: center; justify-content: center; border-radius: 15px; color: var(--primary); font-size: 1.5rem; }
+        .btn-row { display: flex; border-top: 1px solid #f1f5f9; }
+        .btn-row a { flex: 1; padding: 12px; text-align: center; text-decoration: none; font-weight: 600; font-size: 0.9rem; background: var(--primary); color: white; }
     </style>
 </head>
-
 <body>
 
+<!-- Header with Menu Icon -->
 <header class="main-header">
-    <div class="brand-logo">AI <span>Technology</span></div>
-    <i class="fa-solid fa-bars" style="font-size: 1.2rem; cursor: pointer;"></i>
+    <i class="fa-solid fa-bars" style="font-size: 1.5rem; cursor: pointer;" onclick="toggleNav()"></i>
+    <div class="brand-logo" style="font-weight: 800;">AI <span style="color:var(--primary);">Technology</span></div>
+    <i class="fa-solid fa-microchip" style="color:var(--primary); font-size: 1.5rem;"></i>
 </header>
 
-<section class="content-intro">
-    <h1>Welcome to AI Technology</h1>
-    <p>Bridging the gap between AI research and practical implementation.</p>
-</section>
-
-<!-- Yeh raha aapka main container jahan articles aayenge -->
-<div class="article-grid" id="articleContainer">
-    <!-- AI articles yahan automatically load honge -->
+<!-- Sidebar Nav -->
+<div class="sidebar" id="sideNav">
+    <div class="sidebar-close" onclick="toggleNav()"><i class="fa-solid fa-times"></i></div>
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">Agentic Systems</a>
+    <a href="#" class="nav-link">LLM Bootcamp</a>
+    <a href="#" class="nav-link">Robotics Projects</a>
+    <a href="#" class="nav-link">About Me</a>
 </div>
 
-<footer>
-    <p>© 2026 AI Technology | Powered by LaptopTec</p>
-</footer>
+<div class="ai-grid" id="aiContainer">
+    <!-- Cards -->
+</div>
 
 <script>
-    // Aapke Articles ka Data
-    const articles = [
-        {
-            title: "Mastering Agentic System Design",
-            excerpt: "Learn how to build and orchestrate AI agents for complex tasks.",
-            link: "articles/agentic-design.html"
-        },
-        {
-            title: "LLM Bootcamp 2026 Insights",
-            excerpt: "Key takeaways from my recent deep dive into Large Language Models.",
-            link: "articles/llm-bootcamp.html"
-        },
-        {
-            title: "Roboticus: Building Autonomous Systems",
-            excerpt: "My journey in robotics and computer vision project development.",
-            link: "articles/roboticus-project.html"
-        }
-    ];
-
-    // Data ko Page se connect karne wala Logic
-    const container = document.getElementById('articleContainer');
-
-    function loadArticles() {
-        container.innerHTML = ''; // Clear existing content
-        articles.forEach(art => {
-            container.innerHTML += `
-                <div class="article-card">
-                    <h3>${art.title}</h3>
-                    <p>${art.excerpt}</p>
-                    <a href="${art.link}" class="read-btn">Read More</a>
-                </div>
-            `;
-        });
+    function toggleNav() {
+        document.getElementById('sideNav').classList.toggle('active');
     }
 
-    // Page load hote hi articles load honge
-    window.onload = loadArticles;
+    const aiData = [
+        { title: "Mastering Agentic Design", icon: "fa-robot" },
+        { title: "LLM Bootcamp Notes", icon: "fa-brain" }
+    ];
+
+    const container = document.getElementById('aiContainer');
+    aiData.forEach(item => {
+        container.innerHTML += `
+            <div class="ai-card">
+                <div class="card-body">
+                    <div class="icon-holder"><i class="fa-solid ${item.icon}"></i></div>
+                    <div class="info-holder">
+                        <div class="card-title">${item.title}</div>
+                    </div>
+                </div>
+                <div class="btn-row"><a href="#">Read Now</a></div>
+            </div>
+        `;
+    });
 </script>
 
 </body>
 </html>
+
