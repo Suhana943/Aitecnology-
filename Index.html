@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Technology | Exploring Agentic Systems & LLMs</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        body { background-color: #f8fafc; color: #0f172a; line-height: 1.5; padding-bottom: 40px; }
+
+        /* Header */
+        .main-header { background: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 1000; }
+        .brand-logo { font-size: 1.3rem; font-weight: 800; color: #0f172a; }
+        .brand-logo span { color: #0284c7; }
+
+        /* Intro */
+        .content-intro { padding: 40px 20px 20px; text-align: center; }
+        .content-intro h1 { font-size: 1.8rem; margin-bottom: 10px; }
+        .content-intro p { color: #64748b; font-size: 0.95rem; }
+
+        /* Article Grid */
+        .article-grid { padding: 20px; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+        .article-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; transition: 0.2s; }
+        .article-card h3 { font-size: 1.1rem; margin-bottom: 8px; color: #0f172a; }
+        .article-card p { font-size: 0.9rem; color: #475569; margin-bottom: 15px; }
+        .read-btn { background: #0284c7; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; display: inline-block; }
+
+        footer { text-align: center; padding-top: 30px; color: #94a3b8; font-size: 0.8rem; }
+    </style>
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="brand-logo">AI <span>Technology</span></div>
+    <i class="fa-solid fa-bars" style="font-size: 1.2rem; cursor: pointer;"></i>
+</header>
+
+<section class="content-intro">
+    <h1>Welcome to AI Technology</h1>
+    <p>Bridging the gap between AI research and practical implementation.</p>
+</section>
+
+<!-- Yeh raha aapka main container jahan articles aayenge -->
+<div class="article-grid" id="articleContainer">
+    <!-- AI articles yahan automatically load honge -->
+</div>
+
+<footer>
+    <p>© 2026 AI Technology | Powered by LaptopTec</p>
+</footer>
+
+<script>
+    // Aapke Articles ka Data
+    const articles = [
+        {
+            title: "Mastering Agentic System Design",
+            excerpt: "Learn how to build and orchestrate AI agents for complex tasks.",
+            link: "articles/agentic-design.html"
+        },
+        {
+            title: "LLM Bootcamp 2026 Insights",
+            excerpt: "Key takeaways from my recent deep dive into Large Language Models.",
+            link: "articles/llm-bootcamp.html"
+        },
+        {
+            title: "Roboticus: Building Autonomous Systems",
+            excerpt: "My journey in robotics and computer vision project development.",
+            link: "articles/roboticus-project.html"
+        }
+    ];
+
+    // Data ko Page se connect karne wala Logic
+    const container = document.getElementById('articleContainer');
+
+    function loadArticles() {
+        container.innerHTML = ''; // Clear existing content
+        articles.forEach(art => {
+            container.innerHTML += `
+                <div class="article-card">
+                    <h3>${art.title}</h3>
+                    <p>${art.excerpt}</p>
+                    <a href="${art.link}" class="read-btn">Read More</a>
+                </div>
+            `;
+        });
+    }
+
+    // Page load hote hi articles load honge
+    window.onload = loadArticles;
+</script>
+
+</body>
+</html>
