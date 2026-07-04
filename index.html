@@ -1,86 +1,78 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Technology | Research & Insights</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
-            --primary: #7c3aed;
-            --secondary: #4f46e5;
-            --bg: #f8fafc;
+            --black: #000000;
+            --white: #ffffff;
+            --grey: #f4f4f4;
+            --border: #e0e0e0;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background: var(--white); color: var(--black); line-height: 1.5; padding-bottom: 30px; }
 
-        /* Navigation Bar & Sidebar */
-        .main-header { background: #ffffff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--primary); position: sticky; top: 0; z-index: 1000; }
-        .sidebar { position: fixed; top: 0; left: -280px; width: 280px; height: 100%; background: white; z-index: 2000; transition: 0.3s; box-shadow: 2px 0 10px rgba(0,0,0,0.1); padding: 20px; }
-        .sidebar.active { left: 0; }
-        .sidebar-close { font-size: 1.5rem; cursor: pointer; margin-bottom: 20px; }
-        .nav-link { display: block; padding: 15px 0; text-decoration: none; color: var(--text); font-weight: 600; border-bottom: 1px solid #f1f5f9; }
+        /* Navigation Header */
+        .header { padding: 20px; border-bottom: 2px solid var(--black); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.3rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; }
+        .menu-icon { font-size: 1.2rem; cursor: pointer; }
 
-        /* Original Content Styles */
-        .ai-grid { padding: 20px; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
-        .ai-card { background: white; border: 1px solid #e2e8f0; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .card-body { padding: 20px; display: flex; gap: 15px; }
-        .icon-holder { width: 60px; height: 60px; background: #ede9fe; display: flex; align-items: center; justify-content: center; border-radius: 15px; color: var(--primary); font-size: 1.5rem; }
-        .btn-row { display: flex; border-top: 1px solid #f1f5f9; }
-        .btn-row a { flex: 1; padding: 12px; text-align: center; text-decoration: none; font-weight: 600; font-size: 0.9rem; background: var(--primary); color: white; }
+        /* Filter Pills (Layout as requested) */
+        .filter-scroll { display: flex; gap: 10px; padding: 15px; overflow-x: auto; border-bottom: 1px solid var(--border); }
+        .filter-scroll::-webkit-scrollbar { display: none; }
+        .pill { border: 1px solid var(--black); padding: 8px 16px; font-size: 0.75rem; font-weight: 700; cursor: pointer; text-transform: uppercase; white-space: nowrap; }
+        .pill.active { background: var(--black); color: var(--white); }
+
+        /* Article Cards */
+        .grid-container { padding: 20px; max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+        .article-card { border: 1px solid var(--border); padding: 20px; }
+        .article-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+        .article-meta { font-size: 0.8rem; color: #666; margin-bottom: 15px; text-transform: uppercase; }
+        .btn-read { display: block; border: 1px solid var(--black); padding: 10px; text-align: center; text-decoration: none; color: var(--black); font-size: 0.85rem; font-weight: 700; transition: 0.2s; }
+        .btn-read:hover { background: var(--black); color: var(--white); }
     </style>
 </head>
 <body>
 
-<!-- Header with Menu Icon -->
-<header class="main-header">
-    <i class="fa-solid fa-bars" style="font-size: 1.5rem; cursor: pointer;" onclick="toggleNav()"></i>
-    <div class="brand-logo" style="font-weight: 800;">AI <span style="color:var(--primary);">Technology</span></div>
-    <i class="fa-solid fa-microchip" style="color:var(--primary); font-size: 1.5rem;"></i>
+<header class="header">
+    <div class="logo">AI Technology</div>
+    <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
 </header>
 
-<!-- Sidebar Nav -->
-<div class="sidebar" id="sideNav">
-    <div class="sidebar-close" onclick="toggleNav()"><i class="fa-solid fa-times"></i></div>
-    <a href="#" class="nav-link">Home</a>
-    <a href="#" class="nav-link">Agentic Systems</a>
-    <a href="#" class="nav-link">LLM Bootcamp</a>
-    <a href="#" class="nav-link">Robotics Projects</a>
-    <a href="#" class="nav-link">About Me</a>
+<div class="filter-scroll">
+    <div class="pill active">Latest</div>
+    <div class="pill">Agentic Systems</div>
+    <div class="pill">LLM Research</div>
+    <div class="pill">Robotics</div>
 </div>
 
-<div class="ai-grid" id="aiContainer">
-    <!-- Cards -->
-</div>
+<div class="grid-container" id="articleContainer">
+    </div>
 
 <script>
-    function toggleNav() {
-        document.getElementById('sideNav').classList.toggle('active');
-    }
-
-    const aiData = [
-        { title: "Mastering Agentic Design", icon: "fa-robot" },
-        { title: "LLM Bootcamp Notes", icon: "fa-brain" }
+    const articles = [
+        { title: "Mastering Agentic Design", category: "Agentic Systems" },
+        { title: "LLM Bootcamp Deep Dive", category: "LLM Research" },
+        { title: "Autonomous Robotics 2026", category: "Robotics" }
     ];
 
-    const container = document.getElementById('aiContainer');
-    aiData.forEach(item => {
+    const container = document.getElementById('articleContainer');
+    articles.forEach(art => {
         container.innerHTML += `
-            <div class="ai-card">
-                <div class="card-body">
-                    <div class="icon-holder"><i class="fa-solid ${item.icon}"></i></div>
-                    <div class="info-holder">
-                        <div class="card-title">${item.title}</div>
-                    </div>
-                </div>
-                <div class="btn-row"><a href="#">Read Now</a></div>
-            </div>
+            <article class="article-card">
+                <div class="article-title">${art.title}</div>
+                <div class="article-meta">${art.category} • 5 min read</div>
+                <a href="#" class="btn-read">READ ARTICLE</a>
+            </article>
         `;
     });
 </script>
 
 </body>
 </html>
-
