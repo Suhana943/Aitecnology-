@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Add Article</title>
+    <style>
+        :root { --brand: #2563eb; --bg: #f8fafc; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; height: 100vh; }
+        
+        .admin-card { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 400px; }
+        h2 { margin-bottom: 1.5rem; font-size: 1.25rem; color: #0f172a; }
+        
+        input { 
+            width: 100%; padding: 12px; margin-bottom: 1rem; border: 1px solid #e2e8f0; 
+            border-radius: 8px; outline: none; transition: border 0.2s;
+        }
+        input:focus { border-color: var(--brand); }
+        
+        button { 
+            width: 100%; padding: 12px; background: var(--brand); color: white; 
+            border: none; border-radius: 8px; font-weight: 600; cursor: pointer; 
+            transition: background 0.2s;
+        }
+        button:hover { background: #1d4ed8; }
+    </style>
+</head>
+<body>
+
+<div class="admin-card">
+    <h2>Add New Article</h2>
+    <input type="text" id="title" placeholder="Enter Article Title">
+    <input type="text" id="meta" placeholder="Enter Category (e.g., AI, Robotics)">
+    <button onclick="copyData()">Copy JSON Data</button>
+</div>
+
+<script>
+function copyData() {
+    let obj = {
+        title: document.getElementById('title').value,
+        meta: document.getElementById('meta').value,
+        date: new Date().toLocaleDateString(),
+        link: "#"
+    };
+    navigator.clipboard.writeText(JSON.stringify(obj));
+    alert("JSON copied! Now paste it into your data.json file inside the [ ] brackets.");
+}
+</script>
+
+</body>
+</html>
