@@ -21,8 +21,12 @@
             display: flex; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--border); 
             align-items: center; cursor: pointer; text-decoration: none; color: inherit;
         }
+        .list-item:hover { opacity: 0.8; }
         
-        .thumb-box { width: 80px; height: 80px; background: #cbd5e1; border-radius: 12px; flex-shrink: 0; }
+        .thumb-box { 
+            width: 80px; height: 80px; background: #cbd5e1; border-radius: 12px; flex-shrink: 0;
+            background-size: cover; background-position: center; 
+        }
         .list-info { display: flex; flex-direction: column; gap: 4px; }
         .list-meta { font-size: 0.75rem; color: var(--brand); font-weight: 700; text-transform: uppercase; }
         .list-title { font-size: 1rem; font-weight: 600; line-height: 1.4; }
@@ -51,6 +55,7 @@
 
 <main class="content-wrapper">
     <h2 style="margin-bottom: 16px; font-weight: 800;">Latest Publications</h2>
+    
     <div id="feed">
         <p style="color: var(--muted);">Loading latest insights...</p>
     </div>
@@ -64,12 +69,12 @@
         .then(res => res.json())
         .then(data => {
             const feed = document.getElementById('feed');
-            feed.innerHTML = ''; // Loading text hata dein
+            feed.innerHTML = ''; 
             
             data.forEach(item => {
                 feed.innerHTML += `
                     <a href="${item.link}" class="list-item">
-                        <div class="thumb-box"></div>
+                        <div class="thumb-box" style="background-image: url('${item.image}');"></div>
                         <div class="list-info">
                             <span class="list-meta">${item.meta}</span>
                             <h3 class="list-title">${item.title}</h3>
@@ -79,7 +84,7 @@
             });
         })
         .catch(err => {
-            document.getElementById('feed').innerHTML = '<p>Error loading publications.</p>';
+            document.getElementById('feed').innerHTML = '<p>No publications found.</p>';
         });
 </script>
 
