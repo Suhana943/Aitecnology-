@@ -3,12 +3,14 @@
     "title": "The Future of Autonomous Reasoning Systems",
     "meta": "Deep Learning",
     "date": "July 05, 2026",
-    "link": "reports/report1.html"
+    "link": "reports/report1.html",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=200"
   },
   {
-    "title": "Optimizing GPU Clusters for Global Scale",
+    "title": "Optimizing GPU Clusters",
     "meta": "Infrastructure",
     "date": "July 04, 2026",
-    "link": "reports/report2.html"
+    "link": "reports/report2.html",
+    "image": "https://images.unsplash.com/photo-1591405357940-202351296568?w=200"
   }
 ]
