@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Research Core</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>AI Research Core | Professional Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        :root { --brand: #2563eb; --bg: #f8fafc; --text: #0f172a; --muted: #475569; }
+        :root { --brand: #2563eb; --bg: #f8fafc; --text: #0f172a; --muted: #64748b; --border: #e2e8f0; }
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
         body { background: var(--bg); color: var(--text); padding-bottom: 40px; }
 
         /* Header */
-        header { padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; }
+        header { padding: 24px; background: #fff; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); }
         
-        /* Normal Page Layout (List view instead of cards) */
-        .content-wrapper { padding: 20px; max-width: 600px; margin: 0 auto; }
-        
+        /* List Item with Photo */
+        .content-wrapper { padding: 24px; max-width: 600px; margin: 0 auto; }
         .list-item { 
-            padding: 20px 0; 
-            border-bottom: 1px solid #e2e8f0; 
-            display: flex; 
-            flex-direction: column; 
-            gap: 8px;
+            display: flex; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--border); 
+            align-items: center; cursor: pointer; transition: opacity 0.2s;
         }
-        .list-item h3 { font-size: 1.1rem; line-height: 1.4; }
-        .list-meta { font-size: 0.8rem; color: var(--muted); display: flex; gap: 15px; }
+        .list-item:hover { opacity: 0.8; }
+        
+        .thumb-box { width: 80px; height: 80px; background: #cbd5e1; border-radius: 12px; flex-shrink: 0; }
+        .list-info { display: flex; flex-direction: column; gap: 4px; }
+        .list-meta { font-size: 0.75rem; color: var(--brand); font-weight: 700; text-transform: uppercase; }
+        .list-title { font-size: 1rem; font-weight: 600; line-height: 1.4; }
+        .list-date { font-size: 0.75rem; color: var(--muted); }
 
         /* Drawer */
-        .drawer { position: fixed; top: 0; left: -100%; width: 280px; height: 100%; background: #fff; z-index: 100; padding: 20px; transition: 0.3s; box-shadow: 2px 0 10px rgba(0,0,0,0.1); }
+        .drawer { position: fixed; top: 0; left: -100%; width: 280px; height: 100%; background: #fff; z-index: 100; padding: 24px; transition: 0.3s; box-shadow: 5px 0 20px rgba(0,0,0,0.05); }
         .drawer.active { left: 0; }
     </style>
 </head>
@@ -42,29 +43,42 @@
 </header>
 
 <nav class="drawer" id="sideNav">
-    <div style="margin-bottom: 30px;" onclick="toggleDrawer()"><i class="fa-solid fa-xmark"></i></div>
-    <ul style="list-style:none;">
+    <div style="margin-bottom: 30px; cursor:pointer;" onclick="toggleDrawer()"><i class="fa-solid fa-xmark"></i></div>
+    <ul style="list-style:none; font-weight: 600;">
         <li style="margin-bottom: 20px;">Dashboard</li>
-        <li>AI Insights</li>
+        <li>AI Models</li>
+        <li style="margin-top: 20px;">Settings</li>
     </ul>
 </nav>
 
 <main class="content-wrapper">
-    <h2 style="margin-bottom: 20px;">Latest Insights</h2>
+    <h2 style="margin-bottom: 16px; font-weight: 800;">Latest Publications</h2>
     
     <div class="list-item">
-        <div class="list-meta"><span>Deep Learning</span> <span>July 05, 2026</span></div>
-        <h3>The Future of Autonomous Reasoning Systems</h3>
+        <div class="thumb-box"></div>
+        <div class="list-info">
+            <span class="list-meta">Deep Learning</span>
+            <h3 class="list-title">The Future of Autonomous Reasoning Systems</h3>
+            <span class="list-date">July 05, 2026</span>
+        </div>
     </div>
 
     <div class="list-item">
-        <div class="list-meta"><span>Infrastructure</span> <span>July 04, 2026</span></div>
-        <h3>Optimizing GPU Clusters for Global Scale</h3>
+        <div class="thumb-box"></div>
+        <div class="list-info">
+            <span class="list-meta">Infrastructure</span>
+            <h3 class="list-title">Optimizing GPU Clusters for Global Scale</h3>
+            <span class="list-date">July 04, 2026</span>
+        </div>
     </div>
 
     <div class="list-item">
-        <div class="list-meta"><span>Robotics</span> <span>July 03, 2026</span></div>
-        <h3>Neural Networks in Modern Motion Control</h3>
+        <div class="thumb-box"></div>
+        <div class="list-info">
+            <span class="list-meta">Robotics</span>
+            <h3 class="list-title">Neural Networks in Motion Control</h3>
+            <span class="list-date">July 03, 2026</span>
+        </div>
     </div>
 </main>
 
