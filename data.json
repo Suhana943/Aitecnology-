@@ -1,4 +1,11 @@
-[
+[{
+    "title": "A Beginner's Guide to Building AI",
+    "meta": "Learn the fundamentals of Artificial Intelligence development",
+    "image": "Python-Libraries-011-1024x536.jpg",
+    "date": "July 5, 2026",
+    "link": "A1.html"
+}
+
   {
     "title": "The Future of Autonomous Reasoning Systems",
     "meta": "Deep Learning",
