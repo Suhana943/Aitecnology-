@@ -82,8 +82,22 @@
     </div>
 </main>
 
+<h2>Admin: Add New Article</h2>
+<input type="text" id="title" placeholder="Title">
+<input type="text" id="meta" placeholder="Category">
+<button onclick="copyData()">Copy JSON Data</button>
+
 <script>
-    function toggleDrawer() { document.getElementById('sideNav').classList.toggle('active'); }
+function copyData() {
+    let obj = {
+        title: document.getElementById('title').value,
+        meta: document.getElementById('meta').value,
+        date: new Date().toLocaleDateString(),
+        link: "#"
+    };
+    navigator.clipboard.writeText(JSON.stringify(obj));
+    alert("JSON copied! Paste it into data.json");
+}
 </script>
 
 </body>
