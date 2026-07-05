@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel | Add Article</title>
+    <title>Admin Dashboard | Research Core</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root { --brand: #2563eb; --bg: #f8fafc; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; height: 100vh; }
-        
-        .admin-card { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 400px; }
-        h2 { margin-bottom: 1.5rem; font-size: 1.25rem; color: #0f172a; }
-        
-        input { 
-            width: 100%; padding: 12px; margin-bottom: 1rem; border: 1px solid #e2e8f0; 
-            border-radius: 8px; outline: none; transition: border 0.2s;
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .admin-card { background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); width: 100%; max-width: 450px; }
+        h2 { margin-bottom: 1.5rem; font-size: 1.5rem; color: #0f172a; }
+        .input-group { margin-bottom: 1rem; }
+        label { display: block; font-size: 0.8rem; font-weight: 600; color: #64748b; margin-bottom: 0.4rem; }
+        input { width: 100%; padding: 12px; border: 1.5px solid #e2e8f0; border-radius: 10px; box-sizing: border-box; outline: none; transition: 0.2s; }
         input:focus { border-color: var(--brand); }
-        
-        button { 
-            width: 100%; padding: 12px; background: var(--brand); color: white; 
-            border: none; border-radius: 8px; font-weight: 600; cursor: pointer; 
-            transition: background 0.2s;
-        }
-        button:hover { background: #1d4ed8; }
+        button { width: 100%; padding: 14px; background: var(--brand); color: white; border: none; border-radius: 10px; font-weight: 800; cursor: pointer; margin-top: 1rem; transition: 0.2s; }
+        button:hover { background: #1d4ed8; transform: translateY(-2px); }
     </style>
 </head>
 <body>
 
 <div class="admin-card">
     <h2>Add New Article</h2>
-    <input type="text" id="title" placeholder="Enter Article Title">
-    <input type="text" id="meta" placeholder="Enter Category (e.g., AI, Robotics)">
-    <button onclick="copyData()">Copy JSON Data</button>
+    <div class="input-group"><label>TITLE</label><input type="text" id="title" placeholder="e.g. Future of AI"></div>
+    <div class="input-group"><label>CATEGORY</label><input type="text" id="meta" placeholder="e.g. Deep Learning"></div>
+    <div class="input-group"><label>IMAGE URL</label><input type="text" id="image" placeholder="https://example.com/image.jpg"></div>
+    <div class="input-group"><label>FILENAME</label><input type="text" id="link" placeholder="report-name.html"></div>
+    
+    <button onclick="generateJSON()">GENERATE & COPY JSON</button>
 </div>
 
 <script>
-function copyData() {
+function generateJSON() {
     let obj = {
         title: document.getElementById('title').value,
         meta: document.getElementById('meta').value,
-        date: new Date().toLocaleDateString(),
-        link: "#"
+        image: document.getElementById('image').value,
+        date: new Date().toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'}),
+        link: document.getElementById('link').value
     };
-    navigator.clipboard.writeText(JSON.stringify(obj));
-    alert("JSON copied! Now paste it into your data.json file inside the [ ] brackets.");
+    
+    let jsonOutput = JSON.stringify(obj, null, 4); // Formatting ke liye
+    navigator.clipboard.writeText(jsonOutput);
+    
+    alert("JSON Copied! Ab ise data.json file mein paste karein.");
 }
 </script>
 
