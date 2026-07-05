@@ -4,41 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Technology | Research & Insights</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Muted typography and universal icon sets -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
     <style>
-        :root { --black: #000000; --white: #ffffff; --border: #e0e0e0; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        body { background: var(--white); color: var(--black); padding-bottom: 50px; }
-        .main-header { padding: 20px; border-bottom: 2px solid var(--black); display: flex; justify-content: space-between; align-items: center; }
-        .sidebar { position: fixed; top: 0; left: -300px; width: 300px; height: 100%; background: var(--white); border-right: 1px solid var(--black); z-index: 2000; transition: 0.4s; padding: 30px; }
-        .sidebar.active { left: 0; }
-        .filter-scroll { display: flex; gap: 12px; padding: 20px; overflow-x: auto; border-bottom: 1px solid var(--border); }
-        .pill { border: 1px solid var(--black); padding: 10px 20px; font-size: 0.75rem; font-weight: 700; cursor: pointer; text-transform: uppercase; white-space: nowrap; }
-        .pill.active { background: var(--black); color: var(--white); }
-        .content-container { padding: 20px; max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px; }
-        .ai-card { border: 1px solid var(--border); overflow: hidden; }
-        .card-img { width: 100%; height: 200px; object-fit: cover; }
-        .card-info { padding: 20px; }
-        .card-title { font-weight: 700; font-size: 1.1rem; margin-bottom: 10px; }
-        .btn-read { display: block; border: 1px solid var(--black); padding: 12px; text-align: center; text-decoration: none; color: var(--black); font-weight: 700; font-size: 0.85rem; margin-top: 15px; }
+        :root { 
+            /* Soft, warm dark theme tokens to eliminate eye strain */
+            --bg-primary: #12161a; 
+            --bg-secondary: #1a2126;
+            --bg-surface: #222b32;
+            --text-primary: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent: #f59e0b; /* Soft Amber for interactive highlights */
+            --border: #2d3748;
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Inter', sans-serif; 
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body { 
+            background: var(--bg-primary); 
+            color: var(--text-primary); 
+            padding-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        /* Mobile Optimized Sticky Header */
+        .main-header { 
+            position: sticky;
+            top: 0;
+            background: var(--bg-secondary);
+            padding: 16px 20px; 
+            border-bottom: 1px solid var(--border); 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            z-index: 1000;
+        }
+
+        .menu-trigger {
+            font-size: 1.25rem;
+            padding: 8px; /* Enhanced tap targets */
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .header-title {
+            font-weight: 700; 
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Accessible Drawer Mobile Navigation */
+        .sidebar { 
+            position: fixed; 
+            top: 0; 
+            left: -100%; 
+            width: 85%; 
+            max-width: 320px;
+            height: 100%; 
+            background: var(--bg-secondary); 
+            border-right: 1px solid var(--border); 
+            z-index: 2000; 
+            transition: left 0.3s ease; 
+            padding: 24px; 
+        }
+        
+        .sidebar.active { 
+            left: 0; 
+        }
+
+        .close-trigger {
+            font-size: 1.4rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .nav-link {
+            display: block;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 500;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Horizon-Scroll Category Track (No scrollbars, swipe friendly) */
+        .filter-scroll { 
+            display: flex; 
+            gap: 10px; 
+            padding: 16px 20px; 
+            overflow-x: auto; 
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border); 
+            scrollbar-width: none;
+        }
+        
+        .filter-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .pill { 
+            background: var(--bg-surface);
+            border: 1px solid var(--border); 
+            color: var(--text-muted);
+            padding: 10px 18px; 
+            font-size: 0.8rem; 
+            font-weight: 600; 
+            border-radius: 20px;
+            cursor: pointer; 
+            white-space: nowrap; 
+            transition: all 0.2s ease;
+        }
+
+        .pill.active { 
+            background: var(--accent); 
+            border-color: var(--accent);
+            color: #000000; 
+        }
+
+        /* Content Feed Architecture */
+        .content-container { 
+            padding: 20px; 
+            max-width: 540px; 
+            margin: 0 auto; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 24px; 
+        }
+
+        .ai-card { 
+            background: var(--bg-secondary);
+            border: 1px solid var(--border); 
+            border-radius: 12px;
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-img { 
+            width: 100%; 
+            height: 210px; 
+            object-fit: cover; 
+            filter: brightness(0.85); /* Dimmed images to prevent visual shock */
+        }
+
+        .card-info { 
+            padding: 20px; 
+        }
+
+        .card-title { 
+            font-weight: 600; 
+            font-size: 1.15rem; 
+            line-height: 1.4;
+            margin-bottom: 16px; 
+            color: var(--text-primary);
+        }
+
+        /* Ergonomic Action Target Buttons */
+        .btn-read { 
+            display: block; 
+            background: var(--bg-surface);
+            border: 1px solid var(--border); 
+            padding: 14px; 
+            border-radius: 8px;
+            text-align: center; 
+            text-decoration: none; 
+            color: var(--text-primary); 
+            font-weight: 600; 
+            font-size: 0.9rem; 
+            transition: background 0.2s ease;
+        }
+
+        .btn-read:active {
+            background: var(--border);
+        }
     </style>
 </head>
 <body>
 
 <header class="main-header">
-    <i class="fa-solid fa-bars" onclick="toggleNav()" style="cursor:pointer"></i>
-    <div style="font-weight: 800; font-size: 1.2rem;">AI TECHNOLOGY</div>
-    <i class="fa-solid fa-microchip"></i>
+    <i class="fa-solid fa-bars menu-trigger" onclick="toggleNav()" aria-label="Open Menu"></i>
+    <div class="header-title">AI Technology</div>
+    <i class="fa-solid fa-microchip" style="color: var(--accent);"></i>
 </header>
 
-<div class="sidebar" id="sideNav">
-    <div onclick="toggleNav()" style="cursor:pointer"><i class="fa-solid fa-times"></i></div>
-    <a href="#" class="nav-link" style="margin-top:30px">Home</a>
+<nav class="sidebar" id="sideNav">
+    <i class="fa-solid fa-xmark close-trigger" onclick="toggleNav()" aria-label="Close Menu"></i>
+    <a href="#" class="nav-link">Home</a>
     <a href="#" class="nav-link">Agentic Systems</a>
-</div>
+</nav>
 
-<section class="filter-scroll">
+<section class="filter-scroll" id="pillContainer">
     <div class="pill active">All Updates</div>
     <div class="pill">Agentic</div>
     <div class="pill">LLMs</div>
@@ -47,35 +214,71 @@
 <main class="content-container" id="aiContainer"></main>
 
 <script>
-    function toggleNav() { document.getElementById('sideNav').classList.toggle('active'); }
-
     let allData = [];
 
-    // JSON Fetch Logic
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            allData = data;
-            renderArticles(allData);
-        });
+    function toggleNav() { 
+        document.getElementById('sideNav').classList.toggle('active'); 
+    }
 
+    // Dynamic Content Feed Engine
     function renderArticles(data, filter = "All Updates") {
         const container = document.getElementById('aiContainer');
         container.innerHTML = '';
-        data.forEach(item => {
-            if(filter === "All Updates" || item.cat === filter) {
-                container.innerHTML += `
-                    <article class="ai-card">
-                        <img src="${item.img}" class="card-img" alt="Article">
-                        <div class="card-info">
-                            <div class="card-title">${item.title}</div>
-                            <a href="#" class="btn-read">READ ARTICLE</a>
-                        </div>
-                    </article>
-                `;
-            }
+        
+        const filteredData = data.filter(item => filter === "All Updates" || item.cat === filter);
+        
+        if(filteredData.length === 0) {
+            container.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted);">No insights available in this track.</div>`;
+            return;
+        }
+
+        filteredData.forEach(item => {
+            container.innerHTML += `
+                <article class="ai-card">
+                    <img src="${item.img}" class="card-img" alt="${item.title}">
+                    <div class="card-info">
+                        <h2 class="card-title">${item.title}</h2>
+                        <a href="#" class="btn-read">Read Article</a>
+                    </div>
+                </article>
+            `;
         });
     }
+
+    // Interactive Lifecycle Management
+    function setupFilterListeners() {
+        const pills = document.querySelectorAll('.pill');
+        
+        pills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                pills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                
+                const selectedFilter = pill.textContent.trim();
+                renderArticles(allData, selectedFilter);
+            });
+        });
+    }
+
+    // Initialize Network Requests securely
+    fetch('data.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Data stream unavailable');
+            return response.json();
+        })
+        .then(data => {
+            allData = data;
+            renderArticles(allData);
+            setupFilterListeners();
+        })
+        .catch(error => {
+            console.error('Initialization Error:', error);
+            document.getElementById('aiContainer').innerHTML = `
+                <div style="text-align:center; padding:40px; color:var(--text-muted);">
+                    <i class="fa-solid fa-triangle-exclamation" style="color:var(--accent); font-size:2rem; margin-bottom:12px;"></i>
+                    <p>Failed to load insight stream. Please verify your connection.</p>
+                </div>`;
+        });
 </script>
 </body>
 </html>
