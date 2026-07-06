@@ -108,28 +108,18 @@
         }
         
         /* Typography Styling */
-        h1 { 
-            font-size: 32px; 
-            font-weight: 800; 
+        h2 { 
+            font-size: 24px; 
+            margin-top: 10px; 
             margin-bottom: 5px; 
-            color: #000000; 
+            font-weight: 700; 
+            color: #111111;
         }
-        /* वर्तमान में h2 पर margin-bottom: 15px; है, इसे कम करें */
-h2 { 
-    font-size: 24px; 
-    margin-top: 30px; 
-    margin-bottom: 5px; /* इसे 15px से घटाकर 5px कर दें */
-    font-weight: 700; 
-    color: #111111;
-}
-
-/* byline पर margin-bottom को भी थोड़ा एडजस्ट करें */
-.byline { 
-    font-size: 14px; 
-    color: #666666; 
-    margin-bottom: 15px; /* इसे 25px से घटाकर 15px कर दें */
-}
-
+        .byline { 
+            font-size: 14px; 
+            color: #666666; 
+            margin-bottom: 20px; 
+        }
         h3 { 
             font-size: 19px; 
             margin-top: 25px; 
@@ -168,7 +158,6 @@ h2 {
 </head>
 <body>
 
-    <!-- Header Navigation -->
     <nav class="navbar">
         <button class="menu-btn" onclick="toggleDrawer()" aria-label="Toggle Menu">☰</button>
         <a href="#" class="logo">Aitecnology</a>
@@ -179,7 +168,6 @@ h2 {
         </div>
     </nav>
 
-    <!-- Interactive Drawer Components -->
     <div id="sidebarOverlay" class="overlay" onclick="toggleDrawer()"></div>
     <div id="myDrawer" class="drawer">
         <div class="drawer-header"><strong>Aitecnology Menu</strong></div>
@@ -188,10 +176,7 @@ h2 {
         <a href="#">About Us &gt;</a>
     </div>
 
-    <!-- Main Article Body -->
     <main class="container">
-        <header>
-            
         <article>
             <h2>AI ke peeche ka sach: Kya LLM sirf ek 'Language Expert' hai?</h2>
             <div class="byline">By: Aitecnology Team</div>
@@ -216,7 +201,6 @@ h2 {
         </footer>
     </main>
 
-    <!-- Navigation Logic Script -->
     <script>
         function toggleDrawer() {
             const drawer = document.getElementById("myDrawer");
