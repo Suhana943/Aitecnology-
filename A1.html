@@ -15,22 +15,9 @@
             background-color: #ffffff;
         }
         /* Navigation Bar - Plain Text Style */
-        nav {
-            padding: 20px;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 600;
-            font-size: 16px;
-        }
-        nav a:hover {
-            color: #000;
-            text-decoration: underline;
-        }
+        
+       
+        
         .content {
             padding: 0 20px 20px 20px;
             max-width: 700px;
@@ -41,17 +28,53 @@
         h3 { font-size: 18px; margin-top: 20px; margin-bottom: 10px; font-weight: 700; }
         p { margin: 0 0 15px 0; font-size: 17px; }
         footer { margin-top: 40px; padding: 20px; font-size: 13px; color: #888; border-top: 1px solid #eee; }
+    .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-icon { font-size: 24px; cursor: pointer; }
+        .logo { font-weight: bold; font-size: 20px; color: #1a5276; }
+        .nav-icons { display: flex; gap: 15px; font-size: 20px; }
+        
+        /* Drawer Styling (LaptopTec Navigation) */
+        .drawer {
+            height: 100%; width: 250px; position: fixed; z-index: 1; top: 0; left: -250px;
+            background-color: #fff; transition: 0.3s; padding-top: 60px; border-right: 1px solid #ddd;
+        }
+        .drawer a { padding: 15px 20px; text-decoration: none; display: block; color: #333; }
     </style>
+    
 </head>
 <body>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">AI Basics</a>
-        <a href="#">Tech News</a>
-        <a href="#">About</a>
-    </nav>
+     <div class="navbar">
+        <div class="menu-icon" onclick="toggleDrawer()">&#9776;</div>
+        <div class="logo">LaptopTec</div>
+        <div class="nav-icons">
+            <span>&#128269;</span> <!-- Search Icon -->
+            <span>&#128100;</span> <!-- User Icon -->
+            <span>&#128722;</span> <!-- Cart Icon -->
+        </div>
+    </div>
 
+    <!-- Slide-out Drawer -->
+    <div id="myDrawer" class="drawer">
+        <a href="#"><strong>LaptopTec Navigation</strong></a>
+        <a href="#">Top Recommendations</a>
+        <a href="#">Buying Advice ></a>
+        <a href="#">About Us ></a>
+    </div>
+
+    <script>
+        function toggleDrawer() {
+            var drawer = document.getElementById("myDrawer");
+            drawer.style.left = drawer.style.left === "0px" ? "-250px" : "0px";
+        }
+    </script>
     <div class="content">
         <header>
             <h1>Aitecnology</h1>
