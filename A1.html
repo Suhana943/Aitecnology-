@@ -11,74 +11,73 @@
             color: #111;
             max-width: 100%;
             margin: 0;
-            padding: 15px;
+            padding: 0;
             background-color: #ffffff;
         }
-        header {
+        /* Navigation Bar - Plain Text Style */
+        nav {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
             margin-bottom: 20px;
         }
-        h1 {
-            font-size: 28px;
-            font-weight: 800;
-            margin: 0 0 10px 0;
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        nav a:hover {
             color: #000;
+            text-decoration: underline;
         }
-        .byline {
-            font-size: 15px;
-            color: #555;
-            margin-bottom: 20px;
+        .content {
+            padding: 0 20px 20px 20px;
+            max-width: 700px;
         }
-        h2 {
-            font-size: 22px;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-        h3 {
-            font-size: 18px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        p {
-            margin: 0 0 15px 0;
-            font-size: 17px;
-        }
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            font-size: 13px;
-            color: #888;
-            border-top: 1px solid #eee;
-        }
+        h1 { font-size: 28px; font-weight: 800; margin: 0 0 10px 0; color: #000; }
+        .byline { font-size: 15px; color: #555; margin-bottom: 20px; }
+        h2 { font-size: 22px; margin-top: 25px; margin-bottom: 15px; font-weight: 700; }
+        h3 { font-size: 18px; margin-top: 20px; margin-bottom: 10px; font-weight: 700; }
+        p { margin: 0 0 15px 0; font-size: 17px; }
+        footer { margin-top: 40px; padding: 20px; font-size: 13px; color: #888; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Aitecnology</h1>
-    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">AI Basics</a>
+        <a href="#">Tech News</a>
+        <a href="#">About</a>
+    </nav>
 
-    <article>
-        <h2>AI ke peeche ka sach: Kya LLM sirf ek 'Language Expert' hai?</h2>
-        <div class="byline">By: Aitecnology Team</div>
-        
-        <p>Hum aksar sochte hain ki AI hamare sawalon ke jawaab kaise de deta hai? Kya uske paas koi dimag hai? Aaiye, ise ek dilchasp kahani se samajhte hain.</p>
-        
-        <h3>Kahani: Voh Bharatiya Yatri aur Japanese Kitaab</h3>
-        <p>Maan lijiye aap Japan gaye hain. Aapko Japanese bhasha ka ek akshar bhi nahi aata. Tabhi aapko ek aisi kitaab milti hai jismein har sawal ka jawaab maujood hai. Aapne kitaab kholi, dekha ki "Hello" ke liye Japanese mein kya likha hai, aur wahi shabd bol diye. Aapne khud Japanese nahi sikhi; aapne sirf pattern match kiya.</p>
-        
-        <p><strong>LLM (Large Language Model) bilkul yahi karta hai.</strong></p>
-        
-        <h3>LLM Asal mein kya hai?</h3>
-        <p>LLM koi 'thinking machine' nahi hai, balki yeh ek Probabilistic Engine hai. Isne har shabd ke baad doosre shabd ke aane ki 'probability' yaad kar li hai. Jab aap AI se sawal puchte hain, toh woh apne data mein us pattern ko dhundta hai jo aapke sawal se sabse zyada match karta hai.</p>
-        
-        <p><strong>Aitecnology Tip:</strong> AI result tabhi best deta hai jab aap use sahi context dete hain. AI ko samjhna hi digital future ki sabse badi skill hai.</p>
-    </article>
+    <div class="content">
+        <header>
+            <h1>Aitecnology</h1>
+        </header>
 
-    <footer>
-        &copy; 2026 Aitecnology. All rights reserved.
-    </footer>
+        <article>
+            <h2>AI ke peeche ka sach: Kya LLM sirf ek 'Language Expert' hai?</h2>
+            <div class="byline">By: Aitecnology Team</div>
+            
+            <p>Hum aksar sochte hain ki AI hamare sawalon ke jawaab kaise de deta hai? Kya uske paas koi dimag hai? Aaiye, ise ek dilchasp kahani se samajhte hain.</p>
+            
+            <h3>Kahani: Voh Bharatiya Yatri aur Japanese Kitaab</h3>
+            <p>Maan lijiye aap Japan gaye hain. Aapko Japanese bhasha ka ek akshar bhi nahi aata. Tabhi aapko ek aisi kitaab milti hai jismein har sawal ka jawaab maujood hai. Aapne kitaab kholi, dekha ki "Hello" ke liye Japanese mein kya likha hai, aur wahi shabd bol diye. Aapne khud Japanese nahi sikhi; aapne sirf pattern match kiya.</p>
+            
+            <p><strong>LLM (Large Language Model) bilkul yahi karta hai.</strong></p>
+            
+            <h3>LLM Asal mein kya hai?</h3>
+            <p>LLM koi 'thinking machine' nahi hai, balki yeh ek Probabilistic Engine hai. Isne har shabd ke baad doosre shabd ke aane ki 'probability' yaad kar li hai. Jab aap AI se sawal puchte hain, toh woh apne data mein us pattern ko dhundta hai jo aapke sawal se sabse zyada match karta hai.</p>
+            
+            <p><strong>Aitecnology Tip:</strong> AI result tabhi best deta hai jab aap use sahi context dete hain. AI ko samjhna hi digital future ki sabse badi skill hai.</p>
+        </article>
+
+        <footer>
+            &copy; 2026 Aitecnology. All rights reserved.
+        </footer>
+    </div>
 
 </body>
 </html>
