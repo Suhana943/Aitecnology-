@@ -1,5 +1,13 @@
-[{
-    "title": "A Beginner's Guide to Building AI",
+[
+{
+"title": "Understanding Computer Vision: Theory and Deep Learning Foundations",
+"meta": "Deep learning",
+"image": "1-2-768x512.png",
+"date": "July 7, 2026",
+"link": "A3.html"
+}
+,
+{    "title": "A Beginner's Guide to Building AI",
     "meta": "Learn the fundamentals of Artificial Intelligence development",
     "image": "Python-Libraries-011-1024x536.jpg",
     "date": "July 5, 2026",
