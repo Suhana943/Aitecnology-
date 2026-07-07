@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Click to Download 143 Files</h1>
+    <button onclick="generateFiles()">Generate and Download</button>
+
+    <script>
+        function download(filename, text) {
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+
+        function generateFiles() {
+            for (let i = 1; i <= 143; i++) {
+                let content = `<!DOCTYPE html><html><body><h1>Page ${i}</h1><a href="index.html">Home</a></body></html>`;
+                download("A" + i + ".html", content);
+            }
+        }
+    </script>
+</body>
+</html>
