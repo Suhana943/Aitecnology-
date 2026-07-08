@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Robust Python Exception Handling | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
@@ -21,6 +21,10 @@
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        code { background: #f4f6f7; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 16px; color: #c0392b; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
+        pre code { color: #2c3e50; background: none; padding: 0; font-size: 15px; }
+        h3 { margin: 30px 0 15px 0; font-size: 24px; color: #1a5276; }
     </style>
 </head>
 <body>
@@ -33,17 +37,69 @@
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Robust Python Exception Handling</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+            <img src="A10.png" alt="Topic Image" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                
+<p>पायथन प्रोग्रामिंग में जब आपका कोड किसी ऐसी परिस्थिति का सामना करता है जिसे वह संभाल नहीं पाता, तो वह एक एरर (Error) देता है। इस एरर को पायथन की भाषा में <strong>Exception (अपवाद)</strong> कहा जाता है। यदि हम इसे सही तरीके से संभालते नहीं हैं, तो हमारा प्रोग्राम तुरंत बंद (क्रैश) हो जाता है। इसी समस्या से बचने के लिए <strong>Robust Exception Handling (मजबूत अपवाद प्रबंधन)</strong> का उपयोग किया जाता है।</p>
+
+<h3>1. Try और Except का बुनियादी उपयोग</h3>
+<p>पायथन मेंExceptions को संभालने के लिए मुख्य रूप से <code>try</code> और <code>except</code> ब्लॉक का उपयोग किया जाता है। जो कोड एरर दे सकता है उसे हम <code>try</code> ब्लॉक में रखते हैं और एरर आने पर क्या करना है, वह <code>except</code> ब्लॉक में लिखा जाता है।</p>
+
+<pre><code>try:
+    number = int(input("एक संख्या दर्ज करें: "))
+    result = 10 / number
+    print(f"परिणाम: {result}")
+except ZeroDivisionError:
+    print("त्रुटि: आप किसी भी संख्या को शून्य (0) से विभाजित नहीं कर सकते!")
+except ValueError:
+    print("त्रुटि: कृपया केवल एक वैध पूर्णांक संख्या ही दर्ज करें।")
+</code></pre>
+
+<h3>2. Finally और Else ब्लॉक</h3>
+<p>मजबूत कोडिंग के लिए <code>try-except</code> के साथ दो और ब्लॉक महत्वपूर्ण होते हैं:</p>
+<ul>
+    <li><strong>Else:</strong> यह ब्लॉक तब चलता है जब <code>try</code> ब्लॉक में कोई भी एरर नहीं आता है।</li>
+    <li><strong>Finally:</strong> यह ब्लॉक हर परिस्थिति में चलता है, चाहे एरर आए या न आए। इसका उपयोग आमतौर पर रिसोर्स क्लीनअप जैसे फाइल बंद करने या डेटाबेस कनेक्शन को क्लोज करने के लिए किया जाता है।</li>
+</ul>
+
+<pre><code>try:
+    file = open("data.txt", "r")
+    content = file.read()
+except FileNotFoundError:
+    print("त्रुटि: निर्दिष्ट फ़ाइल नहीं मिली।")
+else:
+    print("फ़ाइल को सफलतापूर्वक पढ़ लिया गया है।")
+finally:
+    if 'file' in locals() and not file.closed:
+        file.close()
+        print("फ़ाइल को सुरक्षित रूप से बंद कर दिया गया है।")
+</code></pre>
+
+<h3>3. कस्टम एक्सेप्शन बनाना (Custom Exceptions)</h3>
+<p>पायथन के इन-बिल्ट एरर्स के अलावा, आप अपनी व्यावसायिक आवश्यकताओं (Business Logic) के अनुसार खुद के कस्टम एरर भी बना सकते हैं। इसके लिए आपको <code>Exception</code> क्लास को इनहेरिट (Inherit) करना होता है।</p>
+
+<pre><code>class AgeRestrictionError(Exception):
+    def __init__(self, age, message="इस सेवा के लिए आपकी आयु कम है!"):
+        self.age = age
+        self.message = message
+        super().__init__(self.message)
+
+try:
+    user_age = int(input("अपनी आयु दर्ज करें: "))
+    if user_age < 18:
+        raise AgeRestrictionError(user_age)
+except AgeRestrictionError as e:
+    print(f"कस्टम त्रुटि: {e.message} (दर्ज की गई आयु: {e.age})")
+</code></pre>
+
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> हमेशा विशिष्ट एक्सेप्शन्स (Specific Exceptions) को ही हैंडल करें। जेनेरिक <code>except Exception:</code> का उपयोग करने से बचें, क्योंकि यह वास्तविक लॉजिकल बग्स (Bugs) को छुपा सकता है जिन्हें खोजना बाद में कठिन हो जाता है।
             </div>
         </article>
 
