@@ -1,0 +1,33 @@
+name: Generate HTML Files
+
+on:
+  workflow_dispatch:  # Ab "Actions" tab mein "Run workflow" button aayega
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Yeh line sabse zaroori hai
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create Files
+        run: |
+          python3 -c "
+          template = 'A1.html'
+          with open(template, 'r', encoding='utf-8') as f:
+              content = f.read()
+          for i in range(2, 147):
+              with open(f'A{i}.html', 'w', encoding='utf-8') as f:
+                  f.write(content)
+          "
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add A*.html
+          git commit -m "Auto-generated 146 HTML files" || echo "No changes to commit"
+          git push
+          
