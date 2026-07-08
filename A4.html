@@ -2,70 +2,56 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>AI Voice Assistant: A New Era of Interaction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} | AITecnology</title>
     <style>
-        /* Blog Style Base */
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: #111; 
-            background-color: #ffffff; /* Pure White Background */
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 40px 20px; 
-        }
-
-        /* Title Area */
-        h1 { font-size: 32px; font-weight: 800; color: #000; margin-bottom: 10px; line-height: 1.2; }
-        .byline { font-size: 14px; color: #666; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
-
-        /* Sections */
-        h2 { font-size: 24px; color: #1a5276; margin-top: 40px; font-weight: 700; }
-        p { font-size: 17px; margin-bottom: 20px; color: #333; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
         
-        /* Box Style */
-        .tech-box { background: #f9f9f9; padding: 25px; border-left: 4px solid #1a5276; margin: 25px 0; }
+        .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
+        .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
         
-        /* Table Style */
-        table { width: 100%; border-collapse: collapse; margin: 25px 0; }
-        th { background: #f8f8f8; text-align: left; padding: 12px; border-bottom: 2px solid #ddd; }
-        td { padding: 12px; border-bottom: 1px solid #eee; }
+        .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
+        h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
+        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        
+        p { margin-bottom: 20px; font-size: 18px; }
+        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
+        
+        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
 
-    <h1>Project Report: Designing a Personal AI Voice Assistant</h1>
-    <div class="byline">Published on: July 7, 2026 | Tech Documentation</div>
+    <nav class="navbar">
+        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
+        <a href="index.html" class="logo">AITecnology</a>
+        <div>🔍 👤</div>
+    </nav>
 
-    <h2>1. Executive Summary & Objective</h2>
-    <p>Is project ka primary objective ek intelligent, context-aware AI Voice Assistant develop karna hai. Yeh system traditional rule-based programming se aage badhkar, Large Language Models (LLMs) ke zariye natural human-machine interaction provide karta hai.</p>
+    <main class="container">
+        <article>
+            <h2>{{TITLE}}</h2>
+            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            
+            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
 
-    <h2>2. Technical Deep Dive (The Mechanics)</h2>
-    <p>Assistant ka core 3 modular architecture par tika hai:</p>
-    <ul>
-        <li><strong>Acoustic Modeling (STT):</strong> Microphone se captured audio waveforms ko deep neural networks ke zariye text mein process karna.</li>
-        <li><strong>Transformer-based NLP:</strong> OpenAI GPT architecture ka use karke context ko samajhna aur logical responses generate karna.</li>
-        <li><strong>Neural TTS:</strong> Text ko mel-spectrograms aur phir speech waveform mein convert karke output dena.</li>
-    </ul>
+            <div class="content">
+                {{CONTENT}}
+            </div>
 
-    <h2>3. Backend Data Flow Pipeline</h2>
-    <div class="tech-box">
-        <p><strong>Stage 1:</strong> VAD (Voice Activity Detection) ke zariye noise filtering.</p>
-        <p><strong>Stage 2:</strong> Acoustic modeling se text tokenization.</p>
-        <p><strong>Stage 3:</strong> Vector Database & Session Memory se LLM Reasoning.</p>
-        <p><strong>Stage 4:</strong> Streaming TTS dwara low-latency audio delivery.</p>
-    </div>
+            <div class="tip-box">
+                <strong>Aitecnology Tip:</strong> {{TIP}}
+            </div>
+        </article>
 
-    <h2>4. Performance Metrics</h2>
-    <table>
-        <tr><th>Metric</th><th>Importance</th></tr>
-        <tr><td>Latency</td><td>Response time optimize karna (< 2 sec).</td></tr>
-        <tr><td>Concurrency</td><td>Multiple requests ko handle karna.</td></tr>
-        <tr><td>Data Security</td><td>API keys aur PII encryption.</td></tr>
-    </table>
+        <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
+    </main>
 
-    <h2>5. Future Scope & Conclusion</h2>
-    <p>Ise <strong>Edge AI</strong> (Raspberry Pi integration) aur <strong>Multi-modal AI</strong> (Computer Vision ke saath) par expand kiya ja sakta hai. Ek robust backend hi AI ko 'Smart' banata hai. Aaj ke competitive job market mein AI literacy ek compulsory skill ban chuki hai.</p>
-
+    <script>
+        function toggleDrawer() { /* Sidebar logic here */ }
+    </script>
 </body>
 </html>
