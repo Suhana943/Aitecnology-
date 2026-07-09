@@ -1,57 +1,54 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Privacy-Preserving Machine Learning | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
         .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
         p { margin-bottom: 20px; font-size: 18px; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
     </style>
 </head>
 <body>
-
     <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
         <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
     </nav>
-
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Privacy-Preserving Machine Learning</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
+
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                <p><strong>Privacy-Preserving ML</strong> का उद्देश्य ऐसे AI मॉडल्स बनाना है जो डेटा को रिवील किए बिना उसे सीख सकें। आज के कानूनी (GDPR) और नैतिक वातावरण में यह कंपनियों के लिए बहुत जरूरी है।</p>
+                
+                <h3>1. मुख्य तकनीकें</h3>
+                <ul>
+                    <li><strong>Federated Learning:</strong> डेटा को एक सेंट्रल सर्वर पर लाने के बजाय, मॉडल को ही अलग-अलग डिवाइसेस पर भेजकर ट्रेन करना। सर्वर केवल 'अपडेट्स' (gradients) प्राप्त करता है, कच्चा डेटा नहीं।</li>
+                    <li><strong>Differential Privacy:</strong> ट्रेनिंग डेटा में जानबूझकर सांख्यिकीय शोर (noise) मिलाना, जिससे किसी विशिष्ट व्यक्ति के डेटा की पहचान करना असंभव हो जाए।</li>
+                    <li><strong>Homomorphic Encryption:</strong> एन्क्रिप्टेड डेटा पर ही गणितीय गणनाएं करना, ताकि मॉडल का इन्फेरेंस डेटा को डिक्रिप्ट किए बिना हो सके।</li>
+                </ul>
+
+                <h3>2. महत्व</h3>
+                <p>यह तकनीक स्वास्थ्य सेवा (Healthcare) और वित्त (Finance) जैसे संवेदनशील क्षेत्रों में क्रांतिकारी है, जहाँ डेटा की निजता सर्वोपरि है।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> अपनी पाइपलाइन में 'Differential Privacy' को लागू करते समय 'Privacy Budget' (Epsilon $\epsilon$) का ध्यान रखें। $\epsilon$ का मान जितना कम होगा, गोपनीयता उतनी ही अधिक होगी, लेकिन मॉडल की सटीकता (accuracy) पर प्रभाव पड़ सकता है।
             </div>
         </article>
-
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
