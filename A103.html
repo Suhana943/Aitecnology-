@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps: Advanced Model Containerization | AITecnology</title>
+    <title>Model Explainability: SHAP and LIME | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
@@ -21,10 +21,7 @@
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
-        code { background: #f4f6f7; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 16px; color: #c0392b; }
-        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
-        pre code { color: #2c3e50; background: none; padding: 0; font-size: 15px; }
-        h3 { margin: 30px 0 15px 0; font-size: 24px; color: #1a5276; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
     </style>
 </head>
 <body>
@@ -37,54 +34,28 @@
 
     <main class="container">
         <article>
-            <h2>DevOps: Advanced Model Containerization</h2>
+            <h2>Model Explainability: SHAP and LIME</h2>
             <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="A6.png" alt="Topic Image" class="main-image">
+            <img src="A17.png" alt="Topic Image" class="main-image">
 
             <div class="content">
+                <p>मशीन लर्निंग मॉडल्स, विशेष रूप से डीप लर्निंग, अक्सर "ब्लैक-बॉक्स" की तरह काम करते हैं। हमें यह तो पता होता है कि इनपुट क्या है और आउटपुट क्या, लेकिन यह समझना मुश्किल होता है कि मॉडल ने वह निर्णय क्यों लिया। <strong>Explainable AI (XAI)</strong> इसी पारदर्शिता की कमी को पूरा करता है।</p>
+
+                <h3>1. LIME (Local Interpretable Model-agnostic Explanations)</h3>
+                <p>LIME किसी विशेष डेटा पॉइंट के आसपास एक सरल, व्याख्या योग्य मॉडल बनाता है। यह हमें यह समझने में मदद करता है कि किसी एक विशिष्ट निर्णय के पीछे कौन से फीचर्स सबसे महत्वपूर्ण थे।</p>
+
+                <h3>2. SHAP (SHapley Additive exPlanations)</h3>
+                <p>SHAP गेम थ्योरी पर आधारित है। यह प्रत्येक फीचर को एक 'योगदान' (contribution) देता है। यह ग्लोबल और लोकल दोनों स्तरों पर यह बताने में सक्षम है कि किस फीचर ने आउटपुट को कितना प्रभावित किया।</p>
+
                 
-<p>Training a machine learning model locally is one thing, but ensuring it is scalable and consistent in a production environment is a much greater challenge. <strong>Advanced Model Containerization</strong> provides the solution. By using Docker, we can package our model, its dependencies, and the entire runtime environment into a lightweight, portable container.</p>
 
-<h3>1. The Challenge of Bloated Images</h3>
-<p>Due to heavy machine learning frameworks (like PyTorch or TensorFlow) and vast data science libraries, Docker images often balloon to over 4–5 GB. For fast deployment in production, reducing image size is essential. To achieve this, we utilize the <strong>Multi-stage Build</strong> technique.</p>
-
-<h3>2. Example of an Advanced Dockerfile</h3>
-<p>In the example below, we employ a two-stage build: the first stage handles the installation of heavy compilers and build tools, while the final stage copies only the essential binaries and the model, significantly reducing the image footprint.</p>
-
-<pre><code># Stage 1: Build stage
-FROM python:3.10-slim AS builder
-WORKDIR /app
-RUN apt-get update && apt-get install -y --no-install-recommends gcc build-essential
-
-COPY requirements.txt .
-RUN pip install --user --no-cache-dir -r requirements.txt
-
-# Stage 2: Runner stage (Final lightweight image)
-FROM python:3.10-slim AS runner
-WORKDIR /app
-
-# Copy only the installed packages from the builder stage
-COPY --from=builder /root/.local /root/.local
-COPY . /app
-
-ENV PATH=/root/.local/bin:$PATH
-EXPOSE 8000
-
-CMD ["python", "app.py"]
-</code></pre>
-
-<h3>3. Best Practices for Production</h3>
-<ul>
-    <li><strong>Use `.dockerignore`:**</strong> Always prevent unnecessary files (like `.git`, `__pycache__`, or local datasets) from being included in your image.</li>
-    <li><strong>Non-root User:**</strong> For security reasons, run your code under a user with limited privileges rather than the root user.</li>
-    <li><strong>Leverage Caching:**</strong> Place the <code>COPY requirements.txt</code> command before copying your full application code in the Dockerfile. This prevents redundant dependency re-installation whenever you modify your source code.</li>
-</ul>
-
+                <h3>3. यह क्यों महत्वपूर्ण है?</h3>
+                <p>विनियमित उद्योगों (जैसे बैंकिंग और हेल्थकेयर) में, मॉडल के निर्णयों का स्पष्टीकरण (justification) देना कानूनी आवश्यकता है। XAI का उपयोग करके हम न केवल मॉडल की सटीकता बढ़ाते हैं, बल्कि उसमें मौजूद 'बायस' (bias) को भी पहचान सकते हैं।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> To minimize container image size, always prefer <code>-slim</code> or <code>alpine</code> base images and consistently implement multi-stage Dockerfiles.
+                <strong>Aitecnology Tip:</strong> ब्लैक-बॉक्स मॉडल्स में 'Local Interpretability' के लिए LIME का उपयोग करें, जबकि 'Global Importance' को समझने के लिए SHAP वैल्यूज़ ज्यादा विश्वसनीय होती हैं।
             </div>
         </article>
 
