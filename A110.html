@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Robotics: Designing Humanoid Systems | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
@@ -21,6 +21,7 @@
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
     </style>
 </head>
 <body>
@@ -33,17 +34,28 @@
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Robotics: Designing Humanoid Systems</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+            <img src="A14.png" alt="Topic Image" class="main-image">
+            
 
             <div class="content">
-                {{CONTENT}}
+                <p>ह्युमनॉइड रोबोटिक्स (Humanoid Robotics) रोबोटिक्स का सबसे चुनौतीपूर्ण क्षेत्र है। इसका लक्ष्य ऐसे रोबोट बनाना है जो न केवल इंसान जैसे दिखें, बल्कि मानव वातावरण में कुशलता से काम कर सकें और जटिल कार्यों को अंजाम दे सकें।</p>
+
+                <h3>1. डिज़ाइन की मुख्य चुनौतियाँ</h3>
+                <ul>
+                    <li><strong>Degrees of Freedom (DoF):</strong> एक ह्युमनॉइड को चलने, संतुलन बनाने और वस्तुओं को उठाने के लिए दर्जनों मोटरों और जोड़ों (actuators) की आवश्यकता होती है।</li>
+                    <li><strong>Energy Constraints:</strong> ह्युमनॉइड रोबोट्स के लिए एक छोटा और शक्तिशाली बैटरी पैक बनाना एक बड़ी इंजीनियरिंग समस्या है।</li>
+                    <li><strong>Perception and Interaction:</strong> रोबोट को अपने वातावरण को रियल-टाइम में समझने के लिए लिडार (LiDAR) और कैमरों का उपयोग करना पड़ता है।</li>
+                </ul>
+
+                <h3>2. गतिशीलता और नियंत्रण (Mobility and Control)</h3>
+                <p>रोबोट को सीधा खड़ा रखने और बिना गिरे चलने के लिए 'सेंटर ऑफ मास' (Center of Mass) का सटीक अनुमान लगाना और उसे नियंत्रित करना आवश्यक है। इसके लिए एडवांस्ड सेंसर्स (जैसे IMU) का उपयोग किया जाता है जो मिलिसेकंड में रोबोट की स्थिति बदल सकते हैं।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> ह्युमनॉइड रोबोट्स के बैलेंस को सुधारने के लिए 'Whole-Body Control (WBC)' एल्गोरिदम का उपयोग करें, जो रोबोट को डायनामिक वातावरण में स्थिर रहने में मदद करता है।
             </div>
         </article>
 
