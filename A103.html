@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,15 +44,15 @@
 
             <div class="content">
                 
-<p>मशीन लर्निंग मॉडल को लोकल सिस्टम पर ट्रेन करना एक बात है, लेकिन उसे प्रोडक्शन एनवायरनमेंट में स्केलेबल और सुसंगत (Consistent) बनाना दूसरी बड़ी चुनौती है। <strong>Advanced Model Containerization</strong> इसी समस्या का समाधान है। डॉकर (Docker) की मदद से हम मॉडल, उसकी डिपेंडेंसीज़ और रनटाइम एनवायरनमेंट को एक हल्के, पोर्टेबल कंटेनर में पैक करते हैं।</p>
+<p>Training a machine learning model locally is one thing, but ensuring it is scalable and consistent in a production environment is a much greater challenge. <strong>Advanced Model Containerization</strong> provides the solution. By using Docker, we can package our model, its dependencies, and the entire runtime environment into a lightweight, portable container.</p>
 
-<h3>1. भारी इमेजेस की समस्या और समाधान</h3>
-<p>मशीन लर्निंग फ्रेमवर्क्स (जैसे PyTorch, TensorFlow) और डेटा साइंस लाइब्रेरीज़ के कारण डॉकर इमेज का साइज अक्सर 4-5 GB से ऊपर चला जाता है। प्रोडक्शन में फास्ट डिप्लॉयमेंट के लिए इमेज साइज को छोटा करना आवश्यक है। इसके लिए हम <strong>Multi-stage Build</strong> तकनीक का उपयोग करते हैं।</p>
+<h3>1. The Challenge of Bloated Images</h3>
+<p>Due to heavy machine learning frameworks (like PyTorch or TensorFlow) and vast data science libraries, Docker images often balloon to over 4–5 GB. For fast deployment in production, reducing image size is essential. To achieve this, we utilize the <strong>Multi-stage Build</strong> technique.</p>
 
-<h3>2. एडवांस्ड Dockerfile का उदाहरण</h3>
-<p>नीचे दिए गए उदाहरण में हमने दो स्टेज का उपयोग किया है: पहली स्टेज में सभी भारी कंपाइलर और टूल्स लोड होते हैं, जबकि अंतिम स्टेज में केवल आवश्यक बाइनरी और मॉडल को कॉपी किया जाता है जिससे इमेज का आकार बेहद कम हो जाता है।</p>
+<h3>2. Example of an Advanced Dockerfile</h3>
+<p>In the example below, we employ a two-stage build: the first stage handles the installation of heavy compilers and build tools, while the final stage copies only the essential binaries and the model, significantly reducing the image footprint.</p>
 
-<pre><code># स्टेज 1: बिल्ड स्टेज
+<pre><code># Stage 1: Build stage
 FROM python:3.10-slim AS builder
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends gcc build-essential
@@ -60,11 +60,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends gcc build-essen
 COPY requirements.txt .
 RUN pip install --user --no-cache-dir -r requirements.txt
 
-# स्टेज 2: रनर स्टेज (अंतिम हल्की इमेज)
+# Stage 2: Runner stage (Final lightweight image)
 FROM python:3.10-slim AS runner
 WORKDIR /app
 
-# बिल्डर स्टेज से केवल इंस्टॉल किए गए पैकेज कॉपी करें
+# Copy only the installed packages from the builder stage
 COPY --from=builder /root/.local /root/.local
 COPY . /app
 
@@ -74,17 +74,17 @@ EXPOSE 8000
 CMD ["python", "app.py"]
 </code></pre>
 
-<h3>3. प्रोडक्शन के लिए बेस्ट प्रैक्टिसेस</h3>
+<h3>3. Best Practices for Production</h3>
 <ul>
-    <li><strong>`.dockerignore` का उपयोग करें:**</strong> हमेशा बिना ज़रूरी फाइलों (जैसे `.git`, `__pycache__`, स्थानीय डेटासेट्स) को इमेज में जाने से रोकें।</li>
-    <li><strong>नॉन-रूट यूजर (Non-root User):**</strong> सुरक्षा के लिहाज़ से कंटेनर के अंदर रूट यूजर के बजाय एक सीमित अधिकारों वाला यूजर बनाकर कोड रन करें।</li>
-    <li><strong>कैशिंग (Caching) का लाभ उठाएं:**</strong> Dockerfile में `COPY requirements.txt` को कोड कॉपी करने से पहले रखें ताकि बार-बार डिपेंडेंसी री-इंस्टॉल न करनी पड़े।</li>
+    <li><strong>Use `.dockerignore`:**</strong> Always prevent unnecessary files (like `.git`, `__pycache__`, or local datasets) from being included in your image.</li>
+    <li><strong>Non-root User:**</strong> For security reasons, run your code under a user with limited privileges rather than the root user.</li>
+    <li><strong>Leverage Caching:**</strong> Place the <code>COPY requirements.txt</code> command before copying your full application code in the Dockerfile. This prevents redundant dependency re-installation whenever you modify your source code.</li>
 </ul>
 
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> कंटेनर इमेज साइज को कम करने के लिए हमेशा मल्टी-स्टेज डॉकर फाइलों (Multi-stage Dockerfiles) का उपयोग करें। साथ ही बेस इमेज के लिए हमेशा <code>-slim</code> या <code>alpine</code> वर्शन्स को प्राथमिकता दें।
+                <strong>Aitecnology Tip:</strong> To minimize container image size, always prefer <code>-slim</code> or <code>alpine</code> base images and consistently implement multi-stage Dockerfiles.
             </div>
         </article>
 
