@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Dot Products and Inner Products Explained | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
@@ -21,6 +21,7 @@
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
     </style>
 </head>
 <body>
@@ -33,17 +34,33 @@
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Dot Products and Inner Products Explained</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+            <img src="A13.png" alt="Dot Product Visualization" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                <p>लीनियर अलजेब्रा में, <strong>Dot Product</strong> और <strong>Inner Product</strong> दो वेक्टर्स के बीच के संबंध को मापने के मूलभूत तरीके हैं। यह AI में सिमिलरिटी स्कोर निकालने के लिए सबसे महत्वपूर्ण गणितीय ऑपरेशन है।</p>
+
+                
+
+                <h3>1. डॉट प्रोडक्ट क्या है?</h3>
+                <p>यदि हमारे पास दो वेक्टर्स $\mathbf{a}$ और $\mathbf{b}$ हैं, तो उनका डॉट प्रोडक्ट यह बताता है कि वे एक-दूसरे की दिशा में कितने 'अलाइन' (align) हैं।</p>
+                
+                $$ \mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = \|\mathbf{a}\| \|\mathbf{b}\| \cos(\theta) $$
+
+                <h3>2. इनर प्रोडक्ट का विस्तार</h3>
+                <p>इनर प्रोडक्ट, डॉट प्रोडक्ट का एक अधिक सामान्य (generalised) रूप है। जहाँ डॉट प्रोडक्ट यूक्लिडियन स्पेस के लिए होता है, इनर प्रोडक्ट किसी भी वेक्टर स्पेस में परिभाषित किया जा सकता है, बशर्ते वह linearity, symmetry, और positive-definiteness के नियमों का पालन करे।</p>
+
+                <h3>3. AI में उपयोग</h3>
+                <ul>
+                    <li><strong>Cosine Similarity:</strong> दो वेक्टर्स के बीच के कोण को मापकर उनकी समानता (similarity) तय करना।</li>
+                    <li><strong>Neural Networks:</strong> लेयर्स के बीच वेट्स (weights) और इनपुट के गुणन (multiplication) में।</li>
+                </ul>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> याद रखें कि यदि दो वेक्टर्स का डॉट प्रोडक्ट 0 है, तो वे एक-दूसरे के 'Orthogonal' (लंबवत) हैं। NLP में, यह संकेत देता है कि दो शब्द या डॉक्यूमेंट्स एक-दूसरे से पूरी तरह अलग हैं।
             </div>
         </article>
 
