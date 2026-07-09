@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Infrastructure: Federated Learning for Mobile | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
@@ -15,12 +15,12 @@
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
+        .content { margin-top: 20px; }
         p { margin-bottom: 20px; font-size: 18px; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 20px 0 10px; color: #1a5276; }
     </style>
 </head>
 <body>
@@ -33,17 +33,23 @@
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Infrastructure: Federated Learning for Mobile</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
-
             <div class="content">
-                {{CONTENT}}
+                <p><strong>Federated Learning (FL)</strong> एक अत्याधुनिक इंफ्रास्ट्रक्चर रणनीति है, जो डेटा को बिना सेंट्रल सर्वर पर भेजे, सीधे मोबाइल उपकरणों पर AI मॉडल्स को ट्रेन करने की अनुमति देती है। यह निजता (privacy) बनाए रखने का सबसे सुरक्षित तरीका है।</p>
+                
+                <h3>मोबाइल पर FL की प्रक्रिया</h3>
+                <ul>
+                    <li><strong>स्थानीय प्रशिक्षण (Local Training):</strong> मॉडल का एक संस्करण आपके फोन पर ही मौजूद डेटा का उपयोग करके प्रशिक्षित होता है।</li>
+                    <li><strong>वेट एग्रीगेशन (Weight Aggregation):</strong> केवल मॉडल के 'अपडेट्स' (gradients) को सर्वर पर भेजा जाता है, जिससे मूल डेटा आपके डिवाइस से बाहर नहीं जाता।</li>
+                    <li><strong>मॉडल अपडेट:</strong> सर्वर सभी डिवाइसेस से मिले अपडेट्स को मिलाता है और एक बेहतर ग्लोबल मॉडल तैयार करता है।</li>
+                </ul>
+                <p>यह प्रक्रिया मोबाइल डेटा की गोपनीयता सुनिश्चित करती है और उपयोगकर्ताओं के व्यक्तिगत डेटा को पूरी तरह सुरक्षित रखती है।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> मोबाइल के लिए FL पाइपलाइन तैयार करते समय 'TensorFlow Lite' या 'PyTorch Mobile' का उपयोग करें, क्योंकि ये संसाधन-सीमित उपकरणों (resource-constrained devices) के लिए अत्यधिक अनुकूलित हैं।
             </div>
         </article>
 
