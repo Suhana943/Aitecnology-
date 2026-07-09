@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Robotic Path Planning Techniques | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
@@ -21,6 +21,7 @@
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
     </style>
 </head>
 <body>
@@ -33,17 +34,30 @@
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Robotic Path Planning Techniques</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+            <img src="A13.png" alt="Robotic Path Planning" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                <p>रोबोटिक्स में <strong>Path Planning</strong> वह प्रक्रिया है जिसके द्वारा एक रोबोट अपने शुरुआती स्थान (start) से लक्ष्य (goal) तक जाने के लिए बाधाओं (obstacles) से बचते हुए सबसे सुरक्षित और कुशल रास्ता ढूंढता है।</p>
+
+                
+                
+
+                <h3>1. मुख्य तकनीकें</h3>
+                <ul>
+                    <li><strong>Graph-based Search (A* Algorithm):</strong> यह ग्रिड-आधारित वातावरण में सबसे छोटा रास्ता खोजने के लिए एक क्लासिक और बेहद प्रभावी सर्च एल्गोरिदम है।</li>
+                    <li><strong>Sampling-based Methods (RRT/PRM):</strong> ये तकनीकें बड़े और जटिल एनवायरनमेंट के लिए बहुत उपयोगी हैं, जहाँ रैंडम तरीके से पाथ को एक्सप्लोर किया जाता है।</li>
+                    <li><strong>Potential Fields:</strong> इसमें लक्ष्य को एक 'आकर्षक बल' (attractive force) और बाधाओं को 'प्रतिकारक बल' (repulsive force) माना जाता है, जिससे रोबोट अपने आप सुरक्षित रास्ते पर चलता है।</li>
+                </ul>
+
+                <h3>2. चुनौतियाँ</h3>
+                <p>डायनामिक वातावरण में, जहाँ बाधाएँ भी चल रही होती हैं (जैसे भीड़भाड़ वाला कमरा), पथ नियोजन अधिक कठिन हो जाता है। इसके लिए 'Reactive Planning' की आवश्यकता होती है जो सेंसर डेटा के आधार पर वास्तविक समय में रास्ता बदल सके।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> जटिल और अनिश्चित वातावरण में पाथ प्लानिंग के लिए 'Hybrid A*' का उपयोग करें, जो रोबोट की 'Kinematic constraints' (मोड़ने की क्षमता) को भी ध्यान में रखता है।
             </div>
         </article>
 
