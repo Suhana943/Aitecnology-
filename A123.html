@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Data Science: Advanced Anomaly Detection | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
@@ -21,6 +21,7 @@
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
     </style>
 </head>
 <body>
@@ -33,17 +34,29 @@
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Data Science: Advanced Anomaly Detection</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+            <img src="A11.png" alt="Anomaly Detection Visualization" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                <p><strong>Anomaly Detection</strong> (असंगति पहचान) डेटा साइंस का एक महत्वपूर्ण हिस्सा है, जो बड़े डेटासेट्स में उन पैटर्न्स की पहचान करता है जो सामान्य व्यवहार से काफी अलग (outliers) होते हैं। इसका उपयोग फ्रॉड डिटेक्शन, नेटवर्क सुरक्षा और औद्योगिक मेंटेनेंस में व्यापक रूप से किया जाता है।</p>
+
+                
+
+                <h3>1. प्रमुख एल्गोरिदम</h3>
+                <ul>
+                    <li><strong>Isolation Forest:</strong> यह डेटा को छोटे हिस्सों में बांटकर विसंगतियों को अलग करने का काम करता है क्योंकि 'आउटलायर्स' को आइसोलेट करना आसान होता है।</li>
+                    <li><strong>One-Class SVM:</strong> यह सामान्य डेटा के लिए एक बाउंड्री बनाता है, और जो डेटा उस बाउंड्री के बाहर गिरता है, उसे एनोमली माना जाता है।</li>
+                    <li><strong>Autoencoders (Deep Learning):</strong> ये मॉडल सामान्य डेटा को रीकंस्ट्रक्ट करना सीखते हैं; यदि कोई डेटा पॉइंट रीकंस्ट्रक्ट नहीं हो पाता, तो उसका 'Reconstruction Error' अधिक होता है, जो एनोमली का संकेत है।</li>
+                </ul>
+
+                <h3>2. चुनौतियाँ</h3>
+                <p>असली दुनिया के डेटा में 'Noise' और 'Anomaly' के बीच फर्क करना मुश्किल होता है। इसके अलावा, एनोमली बहुत दुर्लभ (rare) होती हैं, जिससे मॉडल को ट्रेन करने के लिए 'Imbalanced Data' की समस्या उत्पन्न होती है।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> एनोमली डिटेक्शन में 'Unsupervised' दृष्टिकोण अपनाते समय हमेशा 'Precision-Recall Curve' का उपयोग करें, क्योंकि केवल Accuracy का उपयोग करने से भ्रामक परिणाम मिल सकते हैं।
             </div>
         </article>
 
