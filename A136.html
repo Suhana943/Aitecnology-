@@ -1,57 +1,54 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Advanced Vector Databases | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
         .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
         p { margin-bottom: 20px; font-size: 18px; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
     </style>
 </head>
 <body>
-
     <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
         <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
     </nav>
-
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Advanced Vector Databases</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
+
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                <p><strong>Vector Databases</strong> (जैसे Pinecone, Milvus, Weaviate) पारंपरिक रिलेशनल डेटाबेस से अलग हैं। ये डेटा को 'वेक्टर एम्बेडिंग्स' (नंबर्स की लंबी लिस्ट) के रूप में स्टोर करते हैं, जिससे हम शब्दों के अर्थ (semantics) के आधार पर खोज (search) कर सकते हैं।</p>
+                
+                <h3>1. मुख्य कार्यक्षमता</h3>
+                <ul>
+                    <li><strong>Approximate Nearest Neighbor (ANN) Search:</strong> लाखों वेक्टर्स में से सबसे मिलते-जुलते वेक्टर्स को मिलीसेकंड्स में ढूँढना।</li>
+                    <li><strong>Semantic Similarity:</strong> यह जानना कि "कैसा हो" और "क्या हाल है" का अर्थ समान है, भले ही शब्द अलग हों।</li>
+                    <li><strong>Integration with LLMs:</strong> RAG (Retrieval-Augmented Generation) पाइपलाइन में इसका उपयोग LLM को बाहरी डेटा देने के लिए किया जाता है।</li>
+                </ul>
+
+                <h3>2. इंडेक्सिंग एल्गोरिदम</h3>
+                <p>वेक्टर सर्च को तेज बनाने के लिए ये डेटाबेस <strong>HNSW (Hierarchical Navigable Small World)</strong> और <strong>IVF (Inverted File Index)</strong> जैसे एडवांस एल्गोरिदम का उपयोग करते हैं।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> अपने डेटा की प्रकृति के अनुसार सही 'Distance Metric' (जैसे Cosine Similarity, Euclidean Distance, या Dot Product) का चुनाव करें। गलत मीट्रिक पूरे सर्च रिजल्ट को खराब कर सकता है।
             </div>
         </article>
-
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
