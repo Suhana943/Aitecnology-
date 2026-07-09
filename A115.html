@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Introduction to Reinforcement Learning | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
@@ -21,6 +21,7 @@
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
     </style>
 </head>
 <body>
@@ -33,17 +34,30 @@
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Introduction to Reinforcement Learning</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+            <img src="A19.png" alt="Topic Image" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                <p><strong>Reinforcement Learning (RL)</strong> मशीन लर्निंग का वह क्षेत्र है जहाँ एक एजेंट किसी वातावरण (environment) में कार्य करना सीखता है। यह 'ट्रायल और एरर' (trial-and-error) के सिद्धांत पर आधारित है, जहाँ एजेंट को सही कार्यों के लिए इनाम (reward) और गलत कार्यों के लिए सजा (penalty) मिलती है।</p>
+
+                
+
+                <h3>1. RL के मुख्य घटक (Key Components)</h3>
+                <ul>
+                    <li><strong>Agent:</strong> वह AI जो निर्णय ले रहा है।</li>
+                    <li><strong>Environment:</strong> वह दुनिया जिसमें एजेंट कार्य करता है।</li>
+                    <li><strong>Action:</strong> जो कदम एजेंट उठाता है।</li>
+                    <li><strong>Reward:</strong> फीडबैक जो एजेंट को मिलता है।</li>
+                </ul>
+
+                <h3>2. यह कैसे काम करता है?</h3>
+                <p>एजेंट का मुख्य उद्देश्य लंबे समय में मिलने वाले कुल पुरस्कारों (cumulative reward) को अधिकतम करना है। इसके लिए वह समय के साथ ऐसी 'पॉलिसी' (Policy) विकसित करता है, जो उसे बताती है कि किसी खास स्थिति में कौन सा कदम उठाना सबसे फायदेमंद होगा।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> RL agents ko complex environments mein train karte waqt 'Reward Shaping' ka dhyaan rakhein taaki agent jaldbaazi mein galat decisions na le.
             </div>
         </article>
 
