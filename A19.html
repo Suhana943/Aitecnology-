@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Gradient Descent Fundamentals | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
@@ -15,12 +15,12 @@
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
+        .content { margin-top: 20px; }
         p { margin-bottom: 20px; font-size: 18px; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 20px 0 10px; color: #1a5276; }
     </style>
 </head>
 <body>
@@ -33,17 +33,26 @@
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Gradient Descent Fundamentals</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+            
 
             <div class="content">
-                {{CONTENT}}
+                <p><strong>Gradient Descent</strong> मशीन लर्निंग का सबसे मूलभूत ऑप्टिमाइजेशन एल्गोरिदम है। इसका मुख्य उद्देश्य एक फंक्शन (आमतौर पर 'Loss Function') को मिनिमाइज करना है ताकि मॉडल की त्रुटि कम से कम हो सके।</p>
+                
+                <h3>यह कैसे काम करता है?</h3>
+                <ul>
+                    <li><strong>दिशा चुनना:</strong> एल्गोरिदम ग्रेडिएंट (डेरिवेटिव) की गणना करता है जो उस दिशा को बताता है जहाँ ढलान सबसे तीव्र है।</li>
+                    <li><strong>कदम उठाना:</strong> यह ढलान के विपरीत दिशा में एक छोटा कदम उठाता है (इसे 'Learning Rate' कहते हैं)।</li>
+                    <li><strong>पुनरावृत्ति (Iteration):</strong> यह प्रक्रिया तब तक दोहराई जाती है जब तक हम 'लोकल' या 'ग्लोबल मिनिमा' तक नहीं पहुँच जाते।</li>
+                </ul>
+                
+                <p>गणितीय रूप से, पैरामीटर अपडेट का नियम है: $w_{new} = w_{old} - \eta \cdot \nabla f(w)$ जहाँ $\eta$ लर्निंग रेट है।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> लर्निंग रेट ($\eta$) का चयन अत्यंत सावधानी से करें। यदि यह बहुत छोटा है, तो ट्रेनिंग बहुत धीमी होगी। यदि यह बहुत बड़ा है, तो एल्गोरिदम कभी भी मिनिमा तक नहीं पहुँच पाएगा और डाइवर्ज (diverge) हो जाएगा।
             </div>
         </article>
 
