@@ -1,57 +1,55 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Advanced Vision Transformers (ViT) from Scratch | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
         .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
         p { margin-bottom: 20px; font-size: 18px; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
     </style>
 </head>
 <body>
-
     <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
         <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
     </nav>
-
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Advanced Vision Transformers (ViT) from Scratch</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
+
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                <p><strong>Vision Transformer (ViT)</strong> ने कंप्यूटर विज़न की दुनिया में CNNs के दबदबे को चुनौती दी है। यह ट्रांसफॉर्मर के 'सेल्फ-अटेंशन' मैकेनिज्म को सीधे इमेज पर लागू करता है।</p>
+                
+                <h3>1. ViT की मुख्य प्रक्रिया</h3>
+                <ul>
+                    <li><strong>Patch Partitioning:</strong> पूरी इमेज को छोटे-छोटे चौकोर पैच (जैसे 16x16) में विभाजित किया जाता है।</li>
+                    <li><strong>Linear Projection:</strong> इन पैचेस को 'टोकन्स' के रूप में फ्लैट किया जाता है और एक लीनियर लेयर द्वारा एम्बेड किया जाता है।</li>
+                    <li><strong>Positional Embeddings:</strong> चूंकि ट्रांसफॉर्मर को डेटा के क्रम का पता नहीं होता, इसलिए प्रत्येक पैच के साथ एक 'पोजीशनल एम्बेडिंग' जोड़ी जाती है।</li>
+                    <li><strong>Transformer Encoder:</strong> अंत में, ये टोकन्स स्टैंडर्ड ट्रांसफॉर्मर ब्लॉक्स (Self-Attention + MLP) से होकर गुजरते हैं।</li>
+                </ul>
+
+                <h3>2. ViT vs CNN</h3>
+                <p>जहाँ CNNs 'लोकैलिटी' (पास के पिक्सेल) पर ध्यान केंद्रित करते हैं, वहीं ViT पूरी इमेज के पिक्सेल्स के बीच 'ग्लोबल रिलेशनशिप' को समझ सकते हैं, जो उन्हें बड़े डेटासेट्स पर अधिक प्रभावी बनाता है।</p>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> स्क्रैच से ViT को ट्रेन करने के लिए बहुत बड़े डेटासेट (जैसे JFT-300M) की आवश्यकता होती है। छोटे डेटासेट्स के लिए, 'Transfer Learning' का उपयोग करें या 'Data Augmentation' की तकनीकों पर अधिक ध्यान दें।
             </div>
         </article>
-
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
