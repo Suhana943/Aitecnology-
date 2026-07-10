@@ -1,0 +1,8174 @@
+[
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Introduction to Python Programming Basics\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python kis prakar ki language hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Compiled\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein variable define karne ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"var\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 3"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein comment add karne ke liye kaunsa symbol use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"//\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python ka extension kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\".pyt\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein print function kaise likhte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"print()\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein 'Hello' string ko store karne ke liye sahi tarika kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"name = 'Hello'\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein Data types check karne ke liye kaunsa function use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"type()\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein kaunsa data type immutable hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"List\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein input lene ke liye kaunsa function use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"get()\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python code execute karne ke liye kis software ki zaroorat hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Python Interpreter\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Understanding Python Functions and Scope\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein function define karne ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"func\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Function ke andar define kiye gaye variable ka scope kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Global\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Function se value return karne ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"output\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya ek Python function multiple values return kar sakta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Global variable ko function ke andar modify karne ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"modify\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Function arguments mein default value kaise set karte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"arg: default\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein 'lambda' function ka kya use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Complex logic\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya function ko doosre function ke argument ke roop mein pass kar sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Function call kaise karte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"functionName{}\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Docstring ka kya kaam hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Code run karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Mastering Control Flow and Loops\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein loop se bahar nikalne ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"stop\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Agli iteration par jaane ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"continue\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein 'for' loop ka istemal kis liye hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Infinite loop\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Range(5) function kitne values generate karega?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"1 se 5\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"While loop kab tak chalta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Jab tak condition True ho\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya Python mein 'do-while' loop hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"List ko loop mein iterate karne ka sahi syntax kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"for x in list:\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Loop ke khatam hone par 'else' block kab chalta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Kabhi nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Nested loop ka matlab kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Loop ke andar loop\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Range(start"
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Shuruat define karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Python Conditional Logic Explained\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein conditional statements ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"if\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Agar 'if' condition galat (False) ho"
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"continue\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Ek se zyada conditions check karne ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"if-else\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein 'not equal to' ke liye kaunsa operator use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"!=\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya Python mein 'if' condition ke andar doosra 'if' daal sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Logic ke liye 'AND' operator ko kaise likhte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"&\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Short-hand if-else (Ternary operator) ka sahi syntax kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"a if cond else b\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Identity operator 'is' ka kya matlab hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Value check\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein 'logical OR' operator kaunsa hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"||\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Comparison operator '>=' ka kya matlab hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Greater than\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Essential Python Standard Libraries\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein 'math' library import karne ka sahi tarika kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"include math\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kaunsi library system-specific parameters aur functions ke liye use hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"os\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Datetime library ka main kaam kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Date aur time handle karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Random number generate karne ke liye kaunsi library best hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"random\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"File paths aur operating system operations ke liye kaunsi library use hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"os\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"JSON data ko parse karne ke liye kaunsi standard library hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"xml\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"CSV files read/write karne ke liye kaunsi library hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"csv\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"RegEx (Regular Expressions) ke liye kaunsa module use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"re\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kissi code execution mein delay (wait) laane ke liye kaunsi library use hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"sleep\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein command line arguments access karne ke liye 'sys' ka kaunsa attribute use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"sys.args\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Advanced Python List Comprehensions\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"List comprehension ka primary fayda kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Code fast chalta hai\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"List comprehension ka basic syntax kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"[expression for item in iterable]\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"List comprehension mein 'if' condition ka use kaise karte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"expression if condition for item\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya list comprehension mein nested loops use ho sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"List comprehension mein 'else' ka use kab karte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Ternary operator ke saath expression mein\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Comprehension ka output kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Tuple\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Dictionary comprehension ka syntax kaunsa hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"{k:v for k"
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"List comprehension vs Normal loop: Kaunsa zyada fast hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Normal loop\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya comprehension mein functions call kar sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Set comprehension ka syntax kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"{item for item in iterable}\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Working with Python Generators and Iterators\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Generator create karne ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"return\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Generator function call karne par kya return hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Result\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Iterator mein agle element par jaane ke liye kaunsa function use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"next()\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Generator ka main fayda kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Fast execution\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya generator mein 'return' keyword use kar sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Iterator protocol mein kaunse do methods hote hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"start() aur end()\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Generator expression ka syntax kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"(x for x in iterable)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Agar iterator khatam ho jaye toh next() function kya raise karta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Error\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya generator object ko list mein convert kar sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Generator lazy evaluation kaise karta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Ek baar mein saara data load karke\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Python Decorators for Code Enhancement\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Decorator ka mukhya kaam kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Code ko delete karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Decorator ko define karne ke liye kis symbol ka use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"$\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Decorator ek prakar ka kaunsa function hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Higher-order function\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya decorator ko argument pass kar sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Decorator kaise work karta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Function ke execution ke pehle ya baad code add karke\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Decorator ko apply karne ka correct syntax kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"@decorator_name\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya ek function par multiple decorators laga sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"'wraps' decorator ka kya kaam hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Original function ka metadata preserve karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Decorator function ka return type kya hona chahiye?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Function (wrapper)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Agar decorator use na karein"
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Wrapper function manually call karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Object Oriented Programming in Python\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"OOP mein 'Class' ka kya matlab hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Ek object ka blueprint\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Object banane ke liye kis cheez ki zaroorat hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Function\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Constructor define karne ke liye kaunsa method use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"__init__()\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Class ke andar define kiye gaye functions ko kya kehte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Methods\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Inheritance ka kya fayda hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Code reuse karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Polymorphism ka matlab kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Ek hi naam ke multiple forms\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Encapsulation ka kya primary maqsad hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Data ko hide/protect karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Python mein 'self' parameter ka kya kaam hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Class ke current instance ko refer karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya Python mein multiple inheritance support hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Parent class se features lene ko kya kehte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Inheritance\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Robust Python Exception Handling\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Exception handling mein error check karne ke liye kaunsa block use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"try\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Error handle karne ke liye kaunsa block use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"error\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kaunsa block error aaye ya na aaye"
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"else\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Exception ko manually raise karne ke liye kaunsa keyword use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"throw\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Multiple exceptions handle karne ke liye kaunsa tarika sahi hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Ek saath tuple mein dena\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"ZeroDivisionError kab aata hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Jab number 0 se divide ho\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"'else' block exception handling mein kab chalta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Jab exception aaye\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Assertion error kab raise hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Jab condition False ho\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Exception hierarchy ka base class kaunsa hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Error\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Custom exception banane ke liye kise inherit karna chahiye?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Exception class ko\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Linear Algebra: Vector Spaces and Operations\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Vector space ka fundamental element kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Scalar\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya do vectors ka addition commutative hota hai? (u + v = v + u)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Zero vector ka kya property hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Magnitude 1 hoti hai\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Vector space mein 'Scalar Multiplication' ka kya matlab hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Vector ki direction badalna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Linear Independence ka matlab kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Vectors ek dusre par depend nahi karte\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Vector space ka 'Basis' kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Linearly independent set jo space ko span karta hai\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Vector space ki 'Dimension' kaise define hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Vector ki length se\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Span of a set of vectors ka kya matlab hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Sabhi possible linear combinations ka set\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya ek vector space mein infinite vectors ho sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Additive Inverse ka kya matlab hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"u + (-u) = 0\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Linear Algebra: Matrix Transformations\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Matrix transformation ko mathematical notation mein kaise likhte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"T(v) = Av\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Identity matrix (I) se multiply karne par vector par kya asar padta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Vector rotate ho jata hai\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Transformation matrix mein 'Scaling' kaise hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Diagonal elements ko change karke\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Rotation matrix mein kiska use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Sin aur Cos functions\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya matrix transformation linear hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Shearing transformation ka kya effect hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Object ko stretch/slant karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Transformation matrix ka dimension vector ke dimension se match hona chahiye?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Composite transformation (ek ke baad ek) ke liye kya karte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Matrices ka multiplication\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Zero matrix se transform karne par vector kya ban jayega?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Zero vector\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Projection matrix ka main kaam kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Vector ko lower dimension mein map karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Dot Products and Inner Products Explained\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Do vectors ka dot product result mein kya deta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Vector\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Agar do vectors perpendicular (90 degree) hain"
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"1\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 2"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Dot product ka formula kya hai? (where theta is the angle)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"|a||b|sin(theta)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Inner product space mein inner product ko aamtaur par kis notation se darshate hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"<u"
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya dot product commutative hota hai? (a · b = b · a)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Nahi\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Vector ka khud ke saath dot product kya darshata hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Magnitude ka square\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Cauchy-Schwarz inequality kya batati hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"|a·b| <= ||a|| ||b||\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Dot product ka istemal angle nikalne ke liye kaise hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"cos(theta) = (a·b) / (|a||b|)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya inner product hamesha positive hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Projection of vector 'a' on 'b' ka formula kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"(a·b / |b|^2) * b\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Understanding Eigenvalues and Eigenvectors\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Eigenvector ki basic definition kya hai? (A = matrix"
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Av = lambda + v\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Eigenvalue kya represent karti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Vector ka rotation\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya ek matrix ke multiple eigenvectors ho sakte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Characteristic equation nikalne ka sahi formula kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"det(A - lambda*I) = 0\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Eigenvalue 0 hone ka kya matlab hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Matrix invertible hai\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 1"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Kya eigenvalue negative ho sakti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Haan\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Eigenvalues ka sum (trace) kiske barabar hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Matrix ke diagonal elements ka sum\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Eigenvalues ka product kiske barabar hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Matrix ka determinant\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Diagonal matrix ki eigenvalues kya hoti hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Main diagonal ke elements\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"question\"\": \"\"Eigen decomposition ka main purpose kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"options\"\": [\"\"Matrix ko simplify karna\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"answer\"\": 0"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Calculus: Understanding Derivatives\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Derivative kya measure karta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Function f(x) ka derivative kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Constant ka derivative kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"x^n ka derivative kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"D/dx (sin x) kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"D/dx (e^x) kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Power rule kis par apply hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Slope of tangent line kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Derivative of ln(x) kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Product rule (uv)' kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Applying the Chain Rule in Calculus\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Chain rule kab use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"f(g(x)) ka derivative kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kya chain rule se sin(x^2) solve ho sakta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Chain rule 'outer' aur 'inner' function ka kya karti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Derivative of (3x+1)^2 kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Chain rule ka base kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kya triple composition pe chain rule lag sakta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Chain rule derivative ka kaunsa part hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"e^(2x) ka derivative kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Chain rule ka use neural networks mein hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Partial Derivatives in Multivariate Calculus\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Partial derivative mein kisko constant maante hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Partial derivative ka symbol kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"f(x"
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Multivariate calculus mein kitne variables hote hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kya partial derivatives commutative hote hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Gradient vector mein kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"f(x"
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Partial derivative se kya milta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Hessian matrix kya contain karti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Directional derivative kis direction mein hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Gradient Descent Fundamentals\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Gradient descent ka goal?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Learning rate kya control karti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Gradient kis direction mein point karta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Local minima kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Gradient descent kis cheez ka iterative method hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Learning rate zyada hone par?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Stochastic gradient descent (SGD) mein kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Gradient update formula?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Global minimum kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Konse calculus concept par based hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Optimization Techniques in Calculus\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Optimization ka matlab?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Critical point par derivative kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Second derivative test kiske liye hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"f''(x) > 0 hone par?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Constraint optimization mein kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Lagrange multipliers kya karte hain?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Convex optimization kaisa hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Optimization kahan use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Saddle point kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"First derivative test se kya milta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Probability Theory and Basic Rules\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Probability ki range?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sure event ki prob?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Complement prob (P(A'))?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"P(A or B) ka formula?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Mutually exclusive events mein intersection?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Independent events ka P(A and B)?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sample space kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Random variable kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Conditional prob P(A|B)?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Total prob sum?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Bayes Theorem in Artificial Intelligence\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bayes theorem relate karti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"P(A|B) formula?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Prior prob kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Posterior prob kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bayes classifier kaisa hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Naive Bayes mein kya assumption hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Evidence kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bayes theorem AI mein kahan use hoti hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Likelihood?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bayes theorem kiska extension hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Probability Distributions Explained\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Distribution kya batata hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Normal distribution ka shape?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Binomial mein kitne outcomes?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Poisson kiske liye?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Mean"
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Standard deviation kya batata hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"PDF ka matlab?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CDF ka matlab?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bernoulli distribution ka n?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Uniform distribution mein prob?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Central Limit Theorem for Data Science\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CLT sample size badhne par?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Population ka distribution zaroori hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sample mean distribution?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CLT ka math use?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sample size n?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Mean of sample means?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Variance of sample means?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CLT kiske liye foundation hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CLT real world mein?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Does CLT work for all dists?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Introduction to Statistical Hypothesis Testing\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Null hypothesis (H0)?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Alternative (H1)?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"p-value kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Significance level alpha?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Reject H0 if p < alpha?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Type 1 error?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Type 2 error?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Confidence level?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Z-test vs T-test?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Power of test?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"NumPy: Efficient Array Processing\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"NumPy array ka main type?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"List vs Array speed?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"NumPy import?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Array shape check?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Vectorization ka matlab?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"np.zeros()?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Reshape?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Indexing NumPy?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"NumPy element-wise add?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dot product NumPy?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"NumPy Broadcasting for Optimized Math\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Broadcasting ka matlab?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Broadcasting compatible rules?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kya array + scalar possible hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Memory usage broadcasting?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dimensions mismatch error?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Element-wise logic?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Broadcasting kahan use?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Scalar broadcasting?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Vector broadcasting?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Broadcasting vs copy?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Pandas Dataframes for Data Analysis\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pandas main structure?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Import pandas?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Read csv?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Head function?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Describe?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Column select?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Filter data?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pandas based on?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Add column?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Drop column?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Data Cleaning with Pandas\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Missing value check?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Drop missing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fill missing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Rename column?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Duplicates drop?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Data type change?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Clean string data?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Outliers handle?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Replace values?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Cleaning purpose?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Merging and Joining Datasets in Pandas\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Merge function?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Types of joins?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Concat function?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Join on index?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Merge key?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Left join result?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Outer join?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Inner join?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Suffixes merge?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Combine vs merge?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Matplotlib: Basic Plotting\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Matplotlib mein plot banane ke liye kaunsa function use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Plot show karne ke liye kaunsa command chahiye?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Labels add karne ke liye kaunsa function hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Line color badalne ke liye parameter?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Matplotlib ka standard import alias?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Seaborn: Statistical Data Visualization\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Seaborn kis library par based hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Distribution plot ke liye function?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Boxplot ka use?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Seaborn style set karne ke liye?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Heatmap ka use?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Exploratory Data Analysis (EDA) Workflow\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"EDA ka main purpose?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"EDA mein sabse pehla step?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Outliers check karne ke liye best plot?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Missing values check?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Data distribution check ke liye?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Supervised Learning Overview\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Supervised learning mein kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Classification ka target?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Regression ka target?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Training data ka role?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Label ka dusra naam?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Linear Regression Basics\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Linear regression line ka formula?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Cost function for linear regression?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Linear regression kis type ki problem hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"m kya represent karta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"c kya represent karta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Logistic Regression for Classification\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Logistic regression output range?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kaunsa function use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Logistic regression type?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Decision boundary?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sigmoid output ka meaning?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Decision Trees Fundamentals\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Decision tree mein root node?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Splitting criterion?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Tree depth ka matlab?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Overfitting problem?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Leaf node?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Evaluation Metrics: Accuracy"
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Accuracy formula?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Precision ka focus?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Recall ka focus?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"F1-score?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Confusion matrix rows/cols?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Overfitting vs Underfitting\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Overfitting?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Underfitting?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Generalization?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Regularization helps?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"High variance?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"K-Nearest Neighbors (KNN)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"KNN kaisa algorithm hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"K ka kya matlab?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Distance metric?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"KNN for regression?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Lazy learner?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Support Vector Machines (SVM)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"SVM goal?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Support vectors?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kernel trick?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Hyperplane?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"SVM robustness?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Random Forest Ensemble\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Ensemble learning?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Random Forest basis?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bagging?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"RF robustness?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Voting mechanism?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Unsupervised Learning: K-Means\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Unsupervised target?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"K-means grouping?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Centroid?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Elbow method?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Iteration?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Dimensionality Reduction: PCA\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"PCA purpose?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Principal components?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Variance preservation?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"PCA is?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Feature space?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Model Selection and Cross-Validation\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"K-fold cross-validation?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Test set?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Validation set?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bias-variance tradeoff?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Shuffle data?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Introduction to Neural Networks\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Neural network kis se inspired hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Basic unit of neural network?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Weights ka role?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Activation function ka purpose?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bias kya hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Activation Functions Explained\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"ReLU range?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sigmoid output?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Tanh range?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Vanishing gradient problem?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Softmax use?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Forward Propagation in Deep Learning\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Forward prop direction?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Step in forward prop?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Layer-wise process?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Input layer?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Output layer?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Backpropagation and Chain Rule\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Backprop purpose?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Backprop uses?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Loss gradient?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Optimizer role?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Direction?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Optimizers: SGD"
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Adam optimizer?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Learning rate scheduling?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Momentum?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Batch size?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Epoch?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Regularization: Dropout and L1/L2\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dropout?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"L1 penalty?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"L2 penalty?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Purpose?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"When to apply?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Convolutional Neural Networks (CNN) Basics\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CNN primary use?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Convolution layer?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pooling layer?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kernel/Filter?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Stride?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Pooling Layers: Max and Average\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Max pooling?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Average pooling?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pooling purpose?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Spatial invariance?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Overlap?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"CNN Architectures: LeNet to ResNet\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"ResNet specialty?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Vanishing gradient in deep nets?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Architecture trend?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"VGG structure?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Inception module?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Recurrent Neural Networks (RNN)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"RNN use?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Hidden state?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"RNN problem?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Backprop through time?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Example?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"LSTM and GRU Units\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"LSTM gates?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Forget gate?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"GRU vs LSTM?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Long term dependency?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Cell state?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Introduction to Embeddings\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Embedding?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Word2Vec?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Semantic relationship?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dimension reduction?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Distance in space?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Attention Mechanisms\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Attention?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Key"
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Mechanism?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Used in?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Benefit?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Transformer Architecture\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Transformer base?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Encoder-Decoder?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Self-Attention?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Positional Encoding?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Scale?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Transfer Learning\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Transfer Learning?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pre-trained model?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fine-tuning?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Data need?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Benefit?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Generative AI Foundations\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Generative AI ka main kaam kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"GenAI kiske liye best hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Discriminator ka kya role hai (GAN mein)?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Latent space kya hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"GenAI ka example?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Large Language Models (LLM) Basics\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"LLM kya predict karta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Training data?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Zero-shot learning?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Prompt engineering?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Hallucination?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Fine-tuning LLMs\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fine-tuning ka purpose?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"PEFT ka full form?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"LoRA technique?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Instruction tuning?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Data quality?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"RAG (Retrieval-Augmented Generation)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"RAG kiske liye use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Vector Database?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Benefit?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Retrieval step?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Integration?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Model Deployment Basics\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Deployment ka matlab?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"API?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Flask/FastAPI?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Cloud provider?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Containerization?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Model Monitoring and Logging\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Drift monitoring?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Logging?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Why monitor?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Latency?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Feedback loop?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Scaling AI Systems\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Scaling?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Load Balancer?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Microservices?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"GPU acceleration?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Caching?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Ethical AI and Bias\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bias?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fairness?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Explainability?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Privacy?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Responsibility?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Prompt Engineering Techniques\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Chain of Thought?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Few-shot?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Persona?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Context window?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Optimization?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Introduction to Vector Databases\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Vector search?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Embedding storage?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Similarity measure?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Scalability?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Use case?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"MLOps Lifecycle\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"MLOps?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Automation?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CI/CD for ML?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Experiment tracking?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Governance?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Cloud Infrastructure for AI\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Managed services?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Scalable compute?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"S3/Blob Storage?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kubernetes?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Networking?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Data Privacy and Security\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"GDPR?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Anonymization?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Encryption?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Adversarial attacks?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Access control?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Testing ML Models\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Unit testing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Integration testing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"A/B Testing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Load testing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Validation?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"AI Governance and Compliance\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Governance?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Transparency?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Accountability?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Compliance?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Auditing?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Data Pipeline Fundamentals\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Data pipeline ka main kaam?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"ETL ka matlab?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Batch processing vs Streaming?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Data orchestrator?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Data lake?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Apache Airflow for Orchestration\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"DAG ka full form?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Airflow Scheduler?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Airflow Task?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Operators?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Backfilling?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Introduction to Data Warehousing\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Data Warehouse target?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"OLAP vs OLTP?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Star Schema?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Snowflake Schema?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"BigQuery/Redshift?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Distributed Computing Basics\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Distributed system?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Scalability horizontal?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fault tolerance?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CAP Theorem?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Latency?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Apache Spark Overview\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Spark ka main feature?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"RDD?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dataframe in Spark?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Lazy evaluation?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Transformation vs Action?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"SQL Optimization for Big Data\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Index ka use?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Partitioning?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Explain Plan?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CTEs?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Join types?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Cloud Storage Solutions\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Object storage?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Block storage?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Lifecycle policies?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Permissions/IAM?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Durability?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Message Queues (Kafka)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kafka use?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Producer/Consumer?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Topic?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Partitioning in Kafka?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Offset?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Data Serialization (JSON"
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Parquet format?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Avro?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Serialization?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Compression?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Schema evolution?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Docker Basics for Data Apps\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Docker Container?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dockerfile?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Image?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Docker Compose?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Port mapping?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"API Development with FastAPI\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"FastAPI feature?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pydantic?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Endpoint?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"HTTP methods?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Swagger UI?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Version Control (Git)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Git commit?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Branching?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Merge conflict?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pull Request?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Remote repository?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"CI/CD Concepts\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CI?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CD?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Automation?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Testing stage?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Deployment pipeline?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Monitoring Infrastructure\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Prometheus?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Grafana?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Alerting?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Metrics?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Logs?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Scalable Web Architectures\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Load Balancing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Microservices?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Caching (Redis)?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CDN?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Database Sharding?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Network Fundamentals for Developers\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"IP address ka main role?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"HTTP vs HTTPS?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"DNS kya karta hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"TCP vs UDP?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Firewall?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Cybersecurity Basics\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Authentication vs Authorization?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Encryption?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"SQL Injection?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Phishing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"OAuth?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Cloud Networking (VPC)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"VPC?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Subnet?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Security Group?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"NAT Gateway?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"VPN connection?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Load Balancers Explained\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Load Balancer?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Round Robin?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Health Checks?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"SSL Termination?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Layer 7 LB?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Caching Strategies\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Redis/Memcached?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Cache Hit/Miss?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"TTL (Time to Live)?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Write-through cache?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Eviction policy?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Database Replication\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Master-Slave?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Multi-master?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Replication Lag?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Read Replica?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Failover?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"System Design: API Gateway\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"API Gateway functions?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Rate Limiting?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Auth at gateway?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Service discovery?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Throttling?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Microservices vs Monolith\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Monolith drawback?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Microservices benefit?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Service mesh?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Communication?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Complexity?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Event-Driven Architecture\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Event?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Asynchronous?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pub/Sub model?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Eventual consistency?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Broker?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Horizontal vs Vertical Scaling\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Horizontal?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Vertical?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Elasticity?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Cost comparison?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Limitation?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Sharding Strategies\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Database Sharding?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Hash-based?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Range-based?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Hotspot issue?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Resharding?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Service Discovery\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Service Discovery?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Consul/Eureka?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Client-side vs Server-side?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Health heartbeats?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dynamic environment?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Distributed Tracing\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Tracing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Jaeger/Zipkin?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Correlation ID?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Span?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Performance insights?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Introduction to Kubernetes\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kubernetes?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pod?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Deployment object?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Service object?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Node?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Serverless Architectures\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Serverless?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Function-as-a-Service?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Event-driven?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Scaling?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Cost model?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Advanced Data Structures: Tries and Graphs\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Trie (Prefix Tree) ka main use?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Graph traversal (BFS) ka use?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"DFS kiske liye use hota hai?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Adjacency matrix vs list?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dijkstra algorithm?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Dynamic Programming Foundations\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"DP ka main concept?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Memoization?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Tabulation?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Optimal substructure?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fibonacci in DP?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Sorting and Searching Algorithms\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"QuickSort worst case?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"MergeSort complexity?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Binary Search condition?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"HeapSort?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Time complexity of Linear search?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Greedy Algorithms\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Greedy logic?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fractional Knapsack?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"0/1 Knapsack?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Huffman Coding?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Interval scheduling?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Hashing and Collision Handling\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Hash table average lookup?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Chaining?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Open Addressing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Load factor?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Hash function quality?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Recursion vs Iteration\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Recursion drawback?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Tail recursion?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Base case?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Iteration benefit?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Call stack?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Binary Trees and Heaps\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Binary Search Tree property?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Min-Heap?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Max-Heap?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"AVL Tree?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Tree Traversal (Inorder)?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Backtracking Basics\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Backtracking?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"N-Queens problem?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pruning?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"State space tree?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Constraint satisfaction?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Disjoint Set Union (DSU)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"DSU operation?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Path compression?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Union by rank?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Kruskal's algorithm?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Connected components?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Sliding Window Technique\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sliding Window?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Complexity?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fixed window size?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dynamic window?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Example?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Two Pointers Strategy\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Two Pointers?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sorted array reverse?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Palindrome check?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Complexity?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sum pair problem?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Divide and Conquer\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Logic?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Examples?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Complexity base?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Base case?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Parallelism?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Bit Manipulation\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"XOR property?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Bitwise AND?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Left shift?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Right shift?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Power of 2 check?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Topological Sorting\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Topological sort?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Dependency resolution?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Algorithm?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pre-requisite?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Job scheduling?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"String Matching Algorithms\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"KMP algorithm?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"LPS array?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Rabin-Karp?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Naive match?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Use case?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"System Design: Database Sharding Patterns\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Consistent Hashing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Directory-based sharding?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Vertical vs Horizontal sharding?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Re-balancing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sharding key selection?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Rate Limiting Patterns\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Token Bucket?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Leaky Bucket?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fixed Window?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sliding Window Log?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"HTTP 429?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Circuit Breaker Pattern\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Circuit Breaker state?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Purpose?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Open state?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Half-open?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Fallback?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"CQRS (Command Query Responsibility Segregation)\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Command vs Query?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"CQRS benefit?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Event Sourcing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Complexity?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Use case?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Saga Pattern for Distributed Transactions\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Saga?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Choreography?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Orchestration?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Compensating transaction?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"ACID vs BASE?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Load Balancing Strategies\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Weighted Round Robin?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Least Connections?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"IP Hash?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"GSLB?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sticky sessions?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"High Availability Concepts\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"SLA?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Multi-region?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Auto-scaling?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"MTTR?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Availability (nines)?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Effective Technical Communication\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Clarity?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Documentation?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Code Reviews?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Design Docs?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Listening?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Interview Strategy: Behavioral\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"STAR method?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Soft skills?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Conflict resolution?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Leadership?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Growth mindset?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Career Growth in Tech\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"T-shaped skills?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Mentorship?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Networking?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Continuous learning?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Personal branding?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Negotiation and Offers\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Research?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Total Comp?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Leverage?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Professionalism?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Long-term value?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Time Management for Engineers\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Prioritization?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Deep work?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Pomodoro?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Communication overhead?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Agile?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Handling Burnout\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Burnout signs?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Work-Life Balance?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Boundaries?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Mental health?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Recharge?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Ethics in Software Engineering\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"User data?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Algorithmic bias?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Security?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Transparency?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Professional conduct?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "{"
+  },
+  {
+    "record": "",
+    "{": "\"\"articleTitle\"\": \"\"Future Trends in Technology\"\""
+  },
+  {
+    "record": "",
+    "{": "\"\"questions\"\": ["
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Quantum Computing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Edge Computing?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Web3/Decentralization?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"Sustainable Tech?\"\""
+  },
+  {
+    "record": "",
+    "{": "{\"\"question\"\": \"\"AR/VR/Metaverse?\"\""
+  },
+  {
+    "record": "",
+    "{": "]"
+  },
+  {
+    "record": "",
+    "{": "}"
+  },
+  {
+    "record": "",
+    "{": "]"
+  }
+]
