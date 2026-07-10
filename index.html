@@ -3,58 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AiTechnology | Modern Insights</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+    <title>AiTechnology | Product Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        :root { --brand: #2563eb; --bg: #f8fafc; --text: #0f172a; --muted: #64748b; --border: #e2e8f0; }
-        body { background: var(--bg); color: var(--text); padding-bottom: 40px; font-family: 'Plus Jakarta Sans', sans-serif; }
-        .content-wrapper { padding: 24px; max-width: 600px; margin: 0 auto; }
-        
-        .list-item { 
-            background: #ffffff; border: 1px solid var(--border); border-radius: 16px; 
-            padding: 20px; margin-bottom: 20px; display: flex; gap: 16px; 
-            transition: 0.3s;
+        :root { --primary: #0284c7; --bg: #f8fafc; --border: #e2e8f0; }
+        body { background: var(--bg); color: #0f172a; font-family: 'Plus Jakarta Sans', sans-serif; padding: 20px; max-width: 500px; margin: auto; }
+
+        .product-card {
+            background: #fff; border: 1px solid var(--border); border-radius: 12px;
+            padding: 16px; margin-bottom: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);
         }
-        .list-item:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        .card-top { display: flex; gap: 16px; margin-bottom: 16px; }
+        .product-img { width: 90px; height: 90px; object-fit: contain; flex-shrink: 0; }
+        .product-info h3 { font-size: 0.95rem; line-height: 1.4; margin: 0 0 8px 0; }
         
-        .thumb-box { width: 80px; height: 80px; background: #cbd5e1; border-radius: 12px; flex-shrink: 0; background-size: cover; background-position: center; }
-        .list-meta { font-size: 0.7rem; color: var(--brand); font-weight: 800; text-transform: uppercase; }
-        .list-title { font-size: 1rem; font-weight: 700; margin: 4px 0; }
-        .btn-link { font-size: 0.7rem; font-weight: 800; text-decoration: none; padding: 6px 12px; border-radius: 6px; }
-        .read-btn { background: #eff6ff; color: var(--brand); }
-        .google-btn { background: #f1f5f9; color: var(--muted); }
+        .card-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .btn { 
+            padding: 10px; border-radius: 6px; text-align: center; 
+            font-weight: 700; font-size: 0.8rem; text-decoration: none;
+            transition: 0.2s;
+        }
+        .btn-ai { background: #f1f5f9; color: #334155; border: 1px solid var(--border); }
+        .btn-ai:hover { background: #e2e8f0; }
+        .btn-buy { background: var(--primary); color: #fff; }
+        .btn-buy:hover { background: #0369a1; }
     </style>
 </head>
 <body>
 
-<main class="content-wrapper">
-    <h2 style="margin-bottom: 24px; font-weight: 800;">Latest Publications</h2>
+    <h2 style="margin-bottom: 20px;">Latest Insights</h2>
     <div id="feed"></div>
-</main>
 
-<script>
-    fetch('data.json')
-        .then(res => res.json())
-        .then(data => {
-            const feed = document.getElementById('feed');
-            data.forEach(item => {
-                const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(item.title)}`;
-                feed.innerHTML += `
-                    <div class="list-item">
-                        <div class="thumb-box" style="background-image: url('${item.image}');"></div>
-                        <div class="list-info">
-                            <span class="list-meta">${item.meta}</span>
-                            <h3 class="list-title">${item.title}</h3>
-                            <div class="action-links" style="display:flex; gap:10px; margin-top:8px;">
-                                <a href="${item.link}" class="btn-link read-btn">Read Detail</a>
-                                <a href="${googleSearchUrl}" target="_blank" class="btn-link google-btn">Google Search</a>
+    <script>
+        // Data fetch ya array se load karein
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => {
+                const feed = document.getElementById('feed');
+                data.forEach(item => {
+                    const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(item.title)}`;
+                    feed.innerHTML += `
+                        <div class="product-card">
+                            <div class="card-top">
+                                <img src="${item.image}" class="product-img">
+                                <div class="product-info">
+                                    <h3>${item.title}</h3>
+                                    <span style="font-size: 0.8rem; color: #64748b;">${item.meta}</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>`;
+                            <div class="card-actions">
+                                <a href="${googleSearchUrl}" target="_blank" class="btn btn-ai">✨ AI Review</a>
+                                <a href="${item.link}" class="btn btn-buy">Read Detail</a>
+                            </div>
+                        </div>`;
+                });
             });
-        });
-</script>
+    </script>
 </body>
 </html>
