@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NumPy Broadcasting | AITecnology</title>
+    <title>NumPy Broadcasting | AITechnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; padding: 40px 20px; max-width: 740px; margin: 0 auto; }
@@ -12,32 +12,43 @@
         .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; }
         pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin: 20px 0; border-left: 3px solid #7f8c8d; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
-    <h2>NumPy Broadcasting for Optimized Math</h2>
+    <h2>NumPy Broadcasting: Efficient Array Operations</h2>
+    
+    <p>Broadcasting is one of NumPy’s most powerful features. It allows you to perform arithmetic operations between arrays of different shapes without needing to manually replicate or reshape data. This mechanism is critical for performance in machine learning, where we often need to add a "bias" vector to a large matrix of weights.</p>
+    
     <img src="A11.png" alt="Broadcasting diagram" class="main-image">
 
-    <div class="content">
-        <p>Broadcasting eliminates the need for expensive loops by mathematically "stretching" smaller arrays to match larger ones during operations.</p>
-        
-        <h3>1. The Broadcasting Rules</h3>
-        <ul>
-            <li>Dimensions are compared from right to left.</li>
-            <li>Dimensions must be equal, or one of them must be 1.</li>
-        </ul>
+    <p>Broadcasting describes how NumPy treats arrays with different shapes during arithmetic operations. It "stretches" the smaller array across the larger array so that they have compatible shapes for element-wise operations.</p>
 
-        <h3>2. Practical Usage</h3>
-        <pre><code>import numpy as np
+    <h3>1. The Broadcasting Rules</h3>
+    <p>For two arrays to be "broadcastable," their shapes must be compatible. NumPy compares the dimensions starting from the trailing (rightmost) dimension:</p>
+    <ul>
+        <li><strong>Alignment:</strong> If the arrays have a different number of dimensions, the shape of the one with fewer dimensions is padded with ones on its left side.</li>
+        <li><strong>Compatibility:</strong> Two dimensions are compatible if they are equal, or if one of them is 1.</li>
+        <li><strong>Expansion:</strong> If the dimensions are compatible, the smaller dimension is effectively "stretched" to match the larger one during the computation.</li>
+    </ul>
+
+    <h3>2. Practical Usage</h3>
+    <pre><code>import numpy as np
+
+# Define a 2x2 matrix and a 1D vector
 A = np.array([[1, 2], [3, 4]])
 b = np.array([10, 20])
-# Adds b to each row of A automatically
-print(A + b)</code></pre>
-    </div>
+
+# Adds b to each row of A automatically via broadcasting
+result = A + b
+
+print("Result of A + b:")
+print(result)</code></pre>
 
     <div class="tip-box">
-        <strong>Aitecnology Tip:</strong> If you get a <code>ValueError: operands could not be broadcast together</code>, check the shapes of your arrays using <code>array.shape</code>. Usually, you need to use <code>np.newaxis</code> or <code>reshape()</code> to add the missing dimension of size 1!
+        <strong>Why Use Broadcasting in AI?</strong>
+        <p>In neural networks, you often have a matrix of inputs (N &times; M) and a bias vector of size (M). Instead of manually creating a matrix of the same size as your inputs to add the bias, NumPy broadcasts the vector across every row of the matrix automatically. This saves massive amounts of memory and CPU cycles.</p>
     </div>
 
 </body>
