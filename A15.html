@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +7,75 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
         .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        .content { margin-top: 20px; }
         p { margin-bottom: 20px; font-size: 18px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
-        h3 { margin: 20px 0 10px; color: #1a5276; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
 
     <main class="container">
         <article>
             <h2>Singular Value Decomposition (SVD) Basics</h2>
             <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="A15.png" alt="SVD Matrix Factorization" class="main-image">
+            <img src="A15.png" alt="SVD Decomposition" class="main-image">
 
             <div class="content">
-                <p><strong>Singular Value Decomposition (SVD)</strong> रैखिक बीजगणित (Linear Algebra) की एक अत्यंत शक्तिशाली तकनीक है। यह किसी भी मैट्रिक्स $A$ को तीन विशिष्ट मैट्रिसेस के गुणनफल के रूप में तोड़ती है: $A = U \Sigma V^T$।</p>
+                <p>Singular Value Decomposition (SVD) is one of the most powerful techniques in linear algebra. It acts as a "data compressor" that breaks down a complex matrix into three simpler, fundamental components, revealing the underlying patterns in your data.</p>
                 
-                <h3>SVD के मुख्य घटक</h3>
+                
+
+                <h3>1. What is SVD?</h3>
+                <p>SVD factorizes any matrix <em>A</em> (of any size) into three distinct matrices: <em>A = UΣVᵀ</em>.</p>
                 <ul>
-                    <li><strong>U (Left Singular Vectors):</strong> इनपुट स्पेस के आधार (basis) को दर्शाता है।</li>
-                    <li><strong>Σ (Singular Values):</strong> एक डायगोनल मैट्रिक्स जो डेटा के मुख्य घटकों (principal components) की शक्ति या महत्व को मापता है।</li>
-                    <li><strong>V^T (Right Singular Vectors):</strong> आउटपुट स्पेस के आधार को दर्शाता है।</li>
+                    <li><strong>U (Left Singular Vectors):</strong> Captures the relationships between rows.</li>
+                    <li><strong>Σ (Singular Values):</strong> A diagonal matrix representing the "strength" or importance of each feature.</li>
+                    <li><strong>Vᵀ (Right Singular Vectors):</strong> Captures the relationships between columns.</li>
                 </ul>
-                
-                <h3>SVD का उपयोग कहाँ होता है?</h3>
-                <p>SVD का उपयोग डेटा कंप्रेशन, शोर कम करने (noise reduction) और रिकमेंडेशन सिस्टम्स (जैसे Netflix या Amazon पर मूवी अनुशंसा) में बड़े पैमाने पर किया जाता है। यह डेटा के 'सार' को बनाए रखते हुए अनावश्यक जानकारी को हटाने में मदद करता है।</p>
+
+                <h3>2. Why use it?</h3>
+                <ul>
+                    <li><strong>Dimensionality Reduction:</strong> Removes noise by keeping only the largest singular values in Σ.</li>
+                    <li><strong>Data Compression:</strong> Represents huge datasets with far less memory.</li>
+                    <li><strong>Recommendation Engines:</strong> Predicts user ratings by finding latent patterns in user-item matrices.</li>
+                </ul>
+
+                <h3>3. How does it work?</h3>
+                <p>SVD finds the directions (vectors) in your data where the variance is maximized. By sorting these directions by their singular values, you can discard noise and focus on the core signal.</p>
+
+                <h3>4. Code Example</h3>
+                <pre><code>import numpy as np
+
+# Create a sample matrix
+A = np.array([[1, 2], [3, 4], [5, 6]])
+
+# Perform SVD
+U, S, Vt = np.linalg.svd(A)
+
+print("U matrix:\n", U)
+print("Singular values (S):\n", S)
+print("Vt matrix:\n", Vt)</code></pre>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> जब आप 'Dimensionality Reduction' कर रहे हों, तो केवल शीर्ष 'k' सिंगुलर वैल्यूज का उपयोग करें। यह न केवल मेमोरी बचाता है, बल्कि डेटा में छिपे हुए शोर को भी दूर कर देता है।
+                <strong>Aitecnology Tip:</strong> When working with sparse data (like user-movie ratings), always use <strong>Truncated SVD</strong>. It is faster and prevents the "Curse of Dimensionality" by focusing strictly on the most informative features!
             </div>
         </article>
 
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
