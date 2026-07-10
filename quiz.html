@@ -2,64 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tech Quiz</title>
     <style>
-        body { font-family: sans-serif; background: #f8fafc; padding: 20px; }
-        #quiz-container { max-width: 600px; margin: auto; background: #fff; padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0; }
-        .question { margin-bottom: 15px; font-weight: 700; color: #1e293b; font-size: 1.1rem; }
-        .option-btn { display: block; width: 100%; padding: 12px; margin: 8px 0; background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 8px; text-align: left; cursor: pointer; transition: 0.3s; }
-        .option-btn:hover { background: #e2e8f0; }
-        .correct { background: #dcfce7 !important; border-color: #22c55e !important; }
-        .wrong { background: #fee2e2 !important; border-color: #ef4444 !important; }
+        .option-btn { display: block; width: 100%; padding: 12px; margin: 8px 0; background: #f1f5f9; border: 1px solid #cbd5e1; cursor: pointer; border-radius: 6px; }
+        .correct { background: #22c55e !important; color: white; border-color: #166534 !important; }
+        .wrong { background: #ef4444 !important; color: white; border-color: #991b1b !important; }
+        /* Disabled button style */
+        .option-btn:disabled { cursor: not-allowed; opacity: 0.8; }
     </style>
 </head>
 <body>
 
-<div id="quiz-container">
-    <h2 id="topic-title">Loading...</h2>
-    <div id="question-box"></div>
-    <div id="score-board"></div>
-</div>
+<h2 id="title">Loading...</h2>
+<div id="box"></div>
 
 <script>
     const params = new URLSearchParams(window.location.search);
     const topic = params.get('topic');
-    document.getElementById('topic-title').innerText = topic || "Quiz";
+    document.getElementById('title').innerText = topic || "Quiz";
 
     fetch('questions.json')
         .then(res => res.json())
         .then(data => {
             const quizData = data.find(item => item.articleTitle.trim() === topic.trim());
-            if (quizData) renderQuiz(quizData.questions);
-            else document.getElementById('question-box').innerHTML = "Questions not found.";
+            if (quizData) render(quizData.questions);
+            else document.getElementById('box').innerHTML = "Topic not found.";
         });
 
-    function renderQuiz(questions) {
-        const container = document.getElementById('question-box');
-        container.innerHTML = "";
+    function render(questions) {
+        const box = document.getElementById('box');
+        box.innerHTML = "";
         questions.forEach((q, qIndex) => {
-            // Har question ke liye alag div banaya
-            let options = q.options.map((opt, i) => `
-                <button class="option-btn" onclick="check(this, ${i}, ${q.answer})">${opt}</button>
-            `).join('');
-            container.innerHTML += `<div class="q-block" style="margin-bottom:30px">
-                <div class="question">${qIndex + 1}. ${q.question}</div>${options}
-            </div>`;
+            let optionsHTML = q.options.map((opt, i) => 
+                `<button class="option-btn" onclick="check(this, ${i}, ${q.answer})">${opt}</button>`
+            ).join('');
+            box.innerHTML += `<div class="q-group"><p><b>${qIndex + 1}. ${q.question}</b></p>${optionsHTML}</div>`;
         });
     }
 
     function check(btn, selected, correct) {
-        // Sirf isi question ke buttons ko disable karega
-        const parent = btn.parentElement;
-        const btns = parent.querySelectorAll('.option-btn');
-        btns.forEach(b => b.style.pointerEvents = 'none');
+        // 1. Current question ka group dhundho
+        const group = btn.closest('.q-group');
+        const btns = group.querySelectorAll('.option-btn');
+        
+        // 2. Iss group ke saare buttons ko 'disabled' attribute do
+        btns.forEach(b => b.disabled = true);
 
+        // 3. Sahi/Galat color lagao
         if(selected === correct) {
             btn.classList.add('correct');
         } else {
             btn.classList.add('wrong');
-            btns[correct].classList.add('correct');
+            btns[correct].classList.add('correct'); // Sahi answer highlight karo
         }
     }
 </script>
