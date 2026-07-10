@@ -1,57 +1,89 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Python Decorators for Code Enhancement | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
+        h3 { margin: 25px 0 15px; color: #1a5276; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
         .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
         p { margin-bottom: 20px; font-size: 18px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; margin-bottom: 20px; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
+        <a href="#" class="logo">AITecnology</a>
     </nav>
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Python Decorators for Code Enhancement</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+            <img src="A8.png" alt="Python Decorators" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                <p>Decorators are one of Python's most elegant features. They allow you to modify or extend the behavior of functions or classes without changing their actual source code.</p>
+
+                <h3>1. What are Decorators?</h3>
+                <p>A decorator is a function that takes another function as an argument, adds some "extra" functionality to it, and returns a new version of that function. Think of it like a <strong>wrapper</strong>—it wraps your main code inside an extra layer.</p>
+
+                <h3>2. Why are they important?</h3>
+                <ul>
+                    <li><strong>DRY Principle:</strong> You can write a feature (like logging) once and apply it to dozens of functions.</li>
+                    <li><strong>Clean Code:</strong> They keep your main business logic separate from "housekeeping" tasks.</li>
+                    <li><strong>Reusability:</strong> Easily attach or detach features using the <code>@</code> symbol.</li>
+                </ul>
+
+                <h3>3. How to use them?</h3>
+                <pre><code>def my_decorator(func):
+    def wrapper():
+        print("Before the function runs")
+        func()
+        print("After the function runs")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello! This is the main function.")
+
+say_hello()</code></pre>
+
+                <h3>4. Use in AI & ML</h3>
+                <p>In AI/ML, decorators are used for:</p>
+                <ul>
+                    <li><strong>Timing Training:</strong> Measuring how long a model takes to train.</li>
+                    <li><strong>Validation:</strong> Checking input data shapes before passing them to a neural network.</li>
+                    <li><strong>Caching:</strong> Using <code>@lru_cache</code> to speed up math-heavy preprocessing.</li>
+                </ul>
+
+                <h3>5. Benefits</h3>
+                <ul>
+                    <li><strong>Efficiency:</strong> Automates repetitive tasks.</li>
+                    <li><strong>Readability:</strong> Code stays focused on the logic.</li>
+                    <li><strong>Maintainability:</strong> Change logic in one place (the decorator) instead of everywhere.</li>
+                </ul>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> When working with PyTorch or TensorFlow, use custom decorators to automatically handle device placement (CPU vs. GPU), making your training code much cleaner!
             </div>
         </article>
 
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
