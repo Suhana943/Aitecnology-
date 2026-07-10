@@ -2,262 +2,1121 @@
   {
     "articleTitle": "Introduction to Python Programming Basics",
     "questions": [
-      { "question": "Python kis prakar ki language hai?", "options": ["Compiled", "Interpreted", "Both"], "answer": 1 },
-      { "question": "Python mein variable define karne ke liye kaunsa keyword use hota hai?", "options": ["var", "let", "None (Direct assignment)"], "answer": 2 }
+      {"question": "Python kis prakar ki language hai?", "options": ["Compiled", "Interpreted", "Both", "None"], "answer": 1},
+      {"question": "Variable define karne ke liye kya use hota hai?", "options": ["var", "let", "None", "const"], "answer": 2},
+      {"question": "File extension kya hai?", "options": [".py", ".txt", ".python", ".cpp"], "answer": 0},
+      {"question": "Comment ke liye?", "options": ["//", "/* */", "#", ""], "answer": 2},
+      {"question": "Creator kaun hai?", "options": ["Dennis Ritchie", "Guido van Rossum", "James Gosling", "Bill Gates"], "answer": 1}
     ]
   },
   {
     "articleTitle": "Understanding Python Functions and Scope",
     "questions": [
-      { "question": "Python mein function define karne ke liye kaunsa keyword use hota hai?", "options": ["func", "def", "function"], "answer": 1 },
-      { "question": "Function se value return karne ke liye kaunsa keyword use hota hai?", "options": ["output", "send", "return"], "answer": 2 }
+      {"question": "Function define ke liye keyword?", "options": ["def", "func", "function", "define"], "answer": 0},
+      {"question": "Return statement ka kaam?", "options": ["Value dena", "Loop chalana", "Error dena", "Print karna"], "answer": 0},
+      {"question": "Local scope kahan hota hai?", "options": ["Bahar", "Andar", "Global", "None"], "answer": 1},
+      {"question": "Global keyword?", "options": ["Access", "Delete", "Loop", "None"], "answer": 0},
+      {"question": "Parameter kya hai?", "options": ["Variable", "Input", "Output", "Class"], "answer": 1}
     ]
   },
   {
     "articleTitle": "Mastering Control Flow and Loops",
     "questions": [
-      { "question": "Python mein loop se bahar nikalne ke liye kaunsa keyword use hota hai?", "options": ["stop", "exit", "break"], "answer": 2 },
-      { "question": "Range(5) function kitni values generate karega?", "options": ["1 se 5", "0 se 4", "0 se 5"], "answer": 1 }
+      {"question": "Loop kaunsa nahi hai?", "options": ["for", "while", "do-while", "if"], "answer": 3},
+      {"question": "Loop rokne ke liye?", "options": ["stop", "break", "halt", "end"], "answer": 1},
+      {"question": "Agli iteration ke liye?", "options": ["skip", "next", "continue", "go"], "answer": 2},
+      {"question": "Range function output?", "options": ["List", "Sequence", "Tuple", "None"], "answer": 1},
+      {"question": "Infinite loop kaise banta hai?", "options": ["Condition true", "Condition false", "Break", "None"], "answer": 0}
     ]
   },
   {
-    "articleTitle": "Linear Algebra: Vector Spaces and Operations",
+    "articleTitle": "Python Conditional Logic Explained",
     "questions": [
-      { "question": "Vector space mein zero vector ka kya mahatva hai?", "options": ["Additive identity", "Multiplicative identity", "Null space"], "answer": 0 }
+      {"question": "If-else ka use kisliye hota hai?", "options": ["Looping", "Decision making", "Math", "Printing"], "answer": 1},
+      {"question": "Python mein 'not equal to' operator?", "options": ["!=", "<>", "==", "=="], "answer": 0},
+      {"question": "Else-if ko Python mein kya likhte hain?", "options": ["elif", "else if", "elsif", "elseif"], "answer": 0},
+      {"question": "Logic mein 'and' tabhi true hota hai jab?", "options": ["Ek condition true ho", "Dono true hon", "Koi nahi", "False ho"], "answer": 1},
+      {"question": "Python mein indentation ka kya mahatva hai?", "options": ["Block define karna", "Design", "Color", "Kuch nahi"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Essential Python Standard Libraries",
+    "questions": [
+      {"question": "Math functions ke liye library?", "options": ["math", "calc", "num", "numpy"], "answer": 0},
+      {"question": "Time related kaam ke liye?", "options": ["clock", "time", "watch", "date"], "answer": 1},
+      {"question": "Random numbers ke liye?", "options": ["rand", "random", "guess", "shuffle"], "answer": 1},
+      {"question": "OS functions ke liye?", "options": ["os", "system", "file", "drive"], "answer": 0},
+      {"question": "Library import karne ka command?", "options": ["include", "require", "import", "using"], "answer": 2}
+    ]
+  },
+  {
+    "articleTitle": "Advanced Python List Comprehensions",
+    "questions": [
+      {"question": "List comprehension ka output kya hota hai?", "options": ["List", "Tuple", "Dict", "Set"], "answer": 0},
+      {"question": "Sahi syntax kya hai?", "options": ["[x for x in list]", "(x for x in list)", "{x for x in list}", "None"], "answer": 0},
+      {"question": "Kya isme 'if' use ho sakta hai?", "options": ["Haan", "Nahi", "Sirf else ke saath", "Error"], "answer": 0},
+      {"question": "List comprehension ka fayda?", "options": ["Slow speed", "Concise code", "Zada memory", "None"], "answer": 1},
+      {"question": "Nested loop possible hai?", "options": ["Haan", "Nahi", "Error", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Working with Python Generators and Iterators",
+    "questions": [
+      {"question": "Generator mein kaunsa keyword use hota hai?", "options": ["yield", "return", "print", "get"], "answer": 0},
+      {"question": "Iterator ka fayda kya hai?", "options": ["Memory efficient", "Fast", "Easy", "None"], "answer": 0},
+      {"question": "Iterator ko next value lene ke liye?", "options": ["next()", "get()", "fetch()", "run()"], "answer": 0},
+      {"question": "Generator object kya return karta hai?", "options": ["Value at once", "Iterator", "List", "None"], "answer": 1},
+      {"question": "Kya ye infinite ho sakte hain?", "options": ["Haan", "Nahi", "Error", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Python Decorators for Code Enhancement",
+    "questions": [
+      {"question": "Decorator ka symbol kya hai?", "options": ["@", "#", "$", "&"], "answer": 0},
+      {"question": "Decorator kya leta hai as input?", "options": ["Function", "Class", "Variable", "None"], "answer": 0},
+      {"question": "Iska kaam kya hai?", "options": ["Code modify karna", "Error dena", "Print karna", "None"], "answer": 0},
+      {"question": "Kya multiple decorators use ho sakte hain?", "options": ["Haan", "Nahi", "Error", "None"], "answer": 0},
+      {"question": "Decorators kis concept par base hain?", "options": ["Higher-order functions", "Loops", "Classes", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Object Oriented Programming in Python",
+    "questions": [
+      {"question": "Class banane ke liye keyword?", "options": ["class", "object", "type", "def"], "answer": 0},
+      {"question": "Object ki instance banane ke liye?", "options": ["__init__", "class()", "obj()", "None"], "answer": 0},
+      {"question": "Self parameter ka kya matlab hai?", "options": ["Current instance", "Global", "None", "Error"], "answer": 0},
+      {"question": "Inheritance ka kya fayda?", "options": ["Code reuse", "Slow speed", "Error", "None"], "answer": 0},
+      {"question": "Private variable ke liye kya lagate hain?", "options": ["__", "##", "$$", "%%"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Robust Python Exception Handling",
+    "questions": [
+      {"question": "Exception handle karne ke liye block?", "options": ["try-except", "if-else", "for-loop", "None"], "answer": 0},
+      {"question": "Error aaye tab kya chalta hai?", "options": ["except", "try", "finally", "None"], "answer": 0},
+      {"question": "Jo hamesha chalega?", "options": ["finally", "try", "except", "None"], "answer": 0},
+      {"question": "Custom error ke liye keyword?", "options": ["raise", "throw", "push", "None"], "answer": 0},
+      {"question": "ZeroDivisionError kab aata hai?", "options": ["Divide by 0", "Add", "Sub", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Linear Algebra: Matrix Transformations",
     "questions": [
-      { "question": "Identity matrix se kisi matrix ko multiply karne par kya milta hai?", "options": ["Zero matrix", "Original matrix", "Inverse matrix"], "answer": 1 }
+      {"question": "Matrix transformation kya badalta hai?", "options": ["Vector space", "Scalar", "None", "None"], "answer": 0},
+      {"question": "Identity matrix ka result?", "options": ["Same vector", "Zero", "Infinity", "None"], "answer": 0},
+      {"question": "Scaling matrix kya karti hai?", "options": ["Stretch", "Rotate", "Shift", "None"], "answer": 0},
+      {"question": "Rotation matrix ka angle?", "options": ["Theta", "Pi", "Zero", "None"], "answer": 0},
+      {"question": "Kya matrix multiplication commutative hai?", "options": ["Nahi", "Haan", "Depends", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Dot Products and Inner Products Explained",
+    "questions": [
+      {"question": "Dot product ka output kya hota hai?", "options": ["Scalar", "Vector", "Matrix", "None"], "answer": 0},
+      {"question": "Do perpendicular vectors ka dot product kya hota hai?", "options": ["1", "0", "-1", "None"], "answer": 1},
+      {"question": "Inner product ka general form kya hai?", "options": ["Dot Product", "Addition", "Division", "None"], "answer": 0},
+      {"question": "Kya dot product commutative hai?", "options": ["Haan", "Nahi", "Depends", "None"], "answer": 0},
+      {"question": "Vector ka magnitude kaise nikalte hain?", "options": ["sqrt(a.a)", "a+a", "a/a", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Understanding Eigenvalues and Eigenvectors",
+    "questions": [
+      {"question": "Eigenvector kya preserve karta hai?", "options": ["Direction", "Magnitude", "None", "None"], "answer": 0},
+      {"question": "Eigenvalue kya represent karti hai?", "options": ["Scaling factor", "Rotation", "None", "None"], "answer": 0},
+      {"question": "Equation kya hai?", "options": ["Av = λv", "Av = v", "v = λA", "None"], "answer": 0},
+      {"question": "Kya har matrix ki eigen values hoti hain?", "options": ["Haan", "Nahi", "Error", "None"], "answer": 0},
+      {"question": "Eigenvalues kahan se milti hain?", "options": ["Characteristic equation", "Sum", "Dot product", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Singular Value Decomposition (SVD) Basics",
+    "questions": [
+      {"question": "SVD matrix ko kitne parts mein todta hai?", "options": ["3", "2", "4", "1"], "answer": 0},
+      {"question": "SVD ka main use kya hai?", "options": ["Dimension reduction", "Addition", "None", "None"], "answer": 0},
+      {"question": "SVD mein 'U' matrix kya hai?", "options": ["Orthogonal", "Diagonal", "None", "None"], "answer": 0},
+      {"question": "Singular values hamesha?", "options": ["Non-negative", "Negative", "Zero", "None"], "answer": 0},
+      {"question": "Data compression mein SVD ka role?", "options": ["Feature extraction", "Noise", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Calculus: Understanding Derivatives",
     "questions": [
-      { "question": "Derivative kya represent karta hai?", "options": ["Area under curve", "Rate of change", "Constant value"], "answer": 1 }
+      {"question": "Derivative kya show karta hai?", "options": ["Rate of change", "Sum", "None", "None"], "answer": 0},
+      {"question": "Constant ka derivative kya hota hai?", "options": ["0", "1", "x", "None"], "answer": 0},
+      {"question": "Power rule (x^n) ka derivative?", "options": ["nx^(n-1)", "x^n", "n", "None"], "answer": 0},
+      {"question": "Derivative ka geometric meaning?", "options": ["Slope", "Area", "None", "None"], "answer": 0},
+      {"question": "Kya derivative area nikalta hai?", "options": ["Nahi", "Haan", "Maybe", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Applying the Chain Rule in Calculus",
+    "questions": [
+      {"question": "Chain rule ka formula kya hai?", "options": ["dy/dx = dy/du * du/dx", "dy/dx = dy/du + du/dx", "dy/dx = dy/du / du/dx", "None"], "answer": 0},
+      {"question": "Chain rule kab use hota hai?", "options": ["Composite functions", "Addition", "Subtraction", "None"], "answer": 0},
+      {"question": "f(g(x)) ka derivative kya hoga?", "options": ["f'(g(x)) * g'(x)", "f'(g(x))", "g'(x)", "None"], "answer": 0},
+      {"question": "Kya ye multi-variable mein kaam karta hai?", "options": ["Haan", "Nahi", "Only in 2D", "None"], "answer": 0},
+      {"question": "Chain rule ka physics mein use?", "options": ["Rate of change", "Area", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Partial Derivatives in Multivariate Calculus",
+    "questions": [
+      {"question": "Partial derivative mein dusre variables ko kya maante hain?", "options": ["Constant", "Zero", "Variable", "None"], "answer": 0},
+      {"question": "Symbol ∂ kya represent karta hai?", "options": ["Partial derivative", "Total derivative", "Sum", "None"], "answer": 0},
+      {"question": "Kya f(x,y) ka derivative dono ke respect mein ho sakta hai?", "options": ["Haan", "Nahi", "Error", "None"], "answer": 0},
+      {"question": "Partial derivative geometry mein kya hai?", "options": ["Slope along axis", "Area", "None", "None"], "answer": 0},
+      {"question": "Gradient vector mein kya hota hai?", "options": ["All partials", "Sum", "Dot product", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Gradient Descent Fundamentals",
+    "questions": [
+      {"question": "Gradient descent ka goal kya hai?", "options": ["Minimize cost", "Maximize cost", "Keep constant", "None"], "answer": 0},
+      {"question": "Gradient kis direction mein point karta hai?", "options": ["Steepest ascent", "Descent", "Zero", "None"], "answer": 0},
+      {"question": "Learning rate ka kya kaam hai?", "options": ["Step size control", "Direction", "None", "None"], "answer": 0},
+      {"question": "Kya bada learning rate nuksan de sakta hai?", "options": ["Haan", "Nahi", "Maybe", "None"], "answer": 0},
+      {"question": "Global minima kya hai?", "options": ["Lowest point", "Highest point", "Average", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Optimization Techniques in Calculus",
+    "questions": [
+      {"question": "Optimization ka matlab kya hai?", "options": ["Best solution", "Worst solution", "Average", "None"], "answer": 0},
+      {"question": "Minima par derivative kya hota hai?", "options": ["0", "1", "Infinity", "None"], "answer": 0},
+      {"question": "Second derivative test kya batata hai?", "options": ["Concavity", "Slope", "None", "None"], "answer": 0},
+      {"question": "Constraint optimization mein kya use hota hai?", "options": ["Lagrange multipliers", "Addition", "None", "None"], "answer": 0},
+      {"question": "Local maxima par slope kya hai?", "options": ["0", "1", "Negative", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Probability Theory and Basic Rules",
     "questions": [
-      { "question": "Kisi event ke hone ki probability hamesha kiske beech hoti hai?", "options": ["-1 aur 1", "0 aur 1", "1 aur 100"], "answer": 1 }
+      {"question": "Probability ki value range kya hoti hai?", "options": ["0 se 1", "0 se 100", "-1 se 1", "None"], "answer": 0},
+      {"question": "Independent events ka P(A and B)?", "options": ["P(A)*P(B)", "P(A)+P(B)", "P(A)-P(B)", "None"], "answer": 0},
+      {"question": "Sample space ka kya matlab hai?", "options": ["All outcomes", "Subset", "Empty", "None"], "answer": 0},
+      {"question": "Mutually exclusive events ka P(A or B)?", "options": ["P(A)+P(B)", "P(A)*P(B)", "0", "None"], "answer": 0},
+      {"question": "Kya probability negative ho sakti hai?", "options": ["Nahi", "Haan", "Only in Math", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Bayes Theorem in Artificial Intelligence",
     "questions": [
-      { "question": "Bayes Theorem kis cheez ke liye use hota hai?", "options": ["Conditional probability", "Matrix multiplication", "Integration"], "answer": 0 }
+      {"question": "Bayes theorem kis par depend karti hai?", "options": ["Conditional Prob", "Sum", "None", "None"], "answer": 0},
+      {"question": "Posterior probability ka formula?", "options": ["P(A|B)", "P(A)+P(B)", "P(B|A)", "None"], "answer": 0},
+      {"question": "AI mein Bayes ka use?", "options": ["Classification", "Addition", "None", "None"], "answer": 0},
+      {"question": "Prior probability kya hai?", "options": ["Initial belief", "Final", "Sum", "None"], "answer": 0},
+      {"question": "Likelihood kya batata hai?", "options": ["Data fit", "Error", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Probability Distributions Explained",
+    "questions": [
+      {"question": "Normal distribution ka shape?", "options": ["Bell curve", "Flat", "None", "None"], "answer": 0},
+      {"question": "Mean, Median, Mode barabar hote hain?", "options": ["Normal Dist", "Uniform", "None", "None"], "answer": 0},
+      {"question": "Binomial distribution mein outcomes?", "options": ["2", "3", "Many", "None"], "answer": 0},
+      {"question": "Poisson distribution?", "options": ["Event count", "Sum", "None", "None"], "answer": 0},
+      {"question": "Standard deviation kya batata hai?", "options": ["Spread", "Average", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Central Limit Theorem for Data Science",
+    "questions": [
+      {"question": "CLT sample size badhne par kya hota hai?", "options": ["Normal dist banta hai", "Flat", "None", "None"], "answer": 0},
+      {"question": "CLT ka main use?", "options": ["Hypothesis testing", "Addition", "None", "None"], "answer": 0},
+      {"question": "Kya ye kisi bhi distribution par lagta hai?", "options": ["Haan", "Nahi", "Error", "None"], "answer": 0},
+      {"question": "Sample mean kiske barabar hota hai?", "options": ["Population mean", "Zero", "None", "None"], "answer": 0},
+      {"question": "Large sample size ka fayda?", "options": ["Better accuracy", "Slower", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Introduction to Statistical Hypothesis Testing",
+    "questions": [
+      {"question": "Null hypothesis ka matlab?", "options": ["No effect", "Effect", "None", "None"], "answer": 0},
+      {"question": "p-value kam hone ka kya matlab?", "options": ["Significant", "Not sig", "None", "None"], "answer": 0},
+      {"question": "Type 1 error kya hai?", "options": ["False Positive", "False Negative", "None", "None"], "answer": 0},
+      {"question": "Confidence interval ka matlab?", "options": ["Range", "Point", "None", "None"], "answer": 0},
+      {"question": "Z-test kab use hota hai?", "options": ["Large sample", "Small", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "NumPy: Efficient Array Processing",
     "questions": [
-      { "question": "NumPy mein primary data structure kaunsa hota hai?", "options": ["List", "Dictionary", "ndarray"], "answer": 2 }
+      {"question": "NumPy main object?", "options": ["ndarray", "List", "None", "None"], "answer": 0},
+      {"question": "NumPy fast kyun hai?", "options": ["C-based", "Python based", "None", "None"], "answer": 0},
+      {"question": "Array creation function?", "options": ["np.array()", "list()", "None", "None"], "answer": 0},
+      {"question": "Shape property?", "options": ["Dimensions", "Sum", "None", "None"], "answer": 0},
+      {"question": "Data type check?", "options": ["dtype", "type", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "NumPy Broadcasting for Optimized Math",
     "questions": [
-      { "question": "Broadcasting ka main fayda kya hai?", "options": ["Memory saving", "Different shapes ke arrays par operation", "Faster internet"], "answer": 1 }
+      {"question": "Broadcasting kya hai?", "options": ["Array arithmetic", "Copying", "None", "None"], "answer": 0},
+      {"question": "Kya size match hona zaroori hai?", "options": ["Nahi", "Haan", "Error", "None"], "answer": 0},
+      {"question": "Broadcasting ka fayda?", "options": ["Memory efficient", "Slow", "None", "None"], "answer": 0},
+      {"question": "Scalar + Array kya hota hai?", "options": ["Added to all", "Error", "None", "None"], "answer": 0},
+      {"question": "Incompatible shapes?", "options": ["ValueError", "Success", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Pandas Dataframes for Data Analysis",
     "questions": [
-      { "question": "Pandas mein 'DataFrame' kya hota hai?", "options": ["1D Series", "2D Tabular data", "Single value"], "answer": 1 }
+      {"question": "Pandas main structure?", "options": ["DataFrame", "List", "None", "None"], "answer": 0},
+      {"question": "CSV read function?", "options": ["read_csv()", "load()", "None", "None"], "answer": 0},
+      {"question": "First 5 rows?", "options": ["head()", "top()", "None", "None"], "answer": 0},
+      {"question": "Column selection?", "options": ["df['col']", "df.row", "None", "None"], "answer": 0},
+      {"question": "Missing value check?", "options": ["isnull()", "empty()", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Data Cleaning with Pandas",
     "questions": [
-      { "question": "Missing values ko remove karne ke liye kaunsa method use hota hai?", "options": ["drop()", "dropna()", "clear()"], "answer": 1 }
+      {"question": "Dropna ka kaam?", "options": ["Remove missing", "Fill missing", "None", "None"], "answer": 0},
+      {"question": "Fillna?", "options": ["Fill missing", "Remove", "None", "None"], "answer": 0},
+      {"question": "Duplicate removal?", "options": ["drop_duplicates()", "clean()", "None", "None"], "answer": 0},
+      {"question": "Data type conversion?", "options": ["astype()", "change()", "None", "None"], "answer": 0},
+      {"question": "String cleaning?", "options": [".str accessor", "strip()", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Merging and Joining Datasets in Pandas",
     "questions": [
-      { "question": "Do DataFrames ko combine karne ke liye kaunsa function best hai?", "options": ["add()", "merge()", "join()"], "answer": 1 }
+      {"question": "Merge function?", "options": ["merge()", "join()", "None", "None"], "answer": 0},
+      {"question": "Inner join matlab?", "options": ["Common keys", "All keys", "None", "None"], "answer": 0},
+      {"question": "Left join?", "options": ["All left", "All right", "None", "None"], "answer": 0},
+      {"question": "Concat function?", "options": ["Stack", "Merge", "None", "None"], "answer": 0},
+      {"question": "Keys match na ho?", "options": ["NaN", "Error", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Data Visualization with Matplotlib",
     "questions": [
-      { "question": "Matplotlib mein plot show karne ke liye kaunsa command use hota hai?", "options": ["plt.display()", "plt.show()", "plt.render()"], "answer": 1 }
+      {"question": "Matplotlib ka main module?", "options": ["pyplot", "plot", "math", "None"], "answer": 0},
+      {"question": "Line plot ke liye command?", "options": ["plot()", "line()", "None", "None"], "answer": 0},
+      {"question": "Label add karne ke liye?", "options": ["xlabel()", "name()", "None", "None"], "answer": 0},
+      {"question": "Plot show karne ke liye?", "options": ["show()", "display()", "None", "None"], "answer": 0},
+      {"question": "Kya ye 3D plot support karta hai?", "options": ["Haan", "Nahi", "Error", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Advanced Data Visualization with Seaborn",
     "questions": [
-      { "question": "Seaborn library kis library ke upar build ki gayi hai?", "options": ["NumPy", "Matplotlib", "Pandas"], "answer": 1 }
+      {"question": "Seaborn kiske upar built hai?", "options": ["Matplotlib", "Pandas", "None", "None"], "answer": 0},
+      {"question": "Heatmap ke liye function?", "options": ["heatmap()", "plot()", "None", "None"], "answer": 0},
+      {"question": "Distribution plot?", "options": ["histplot()", "plot()", "None", "None"], "answer": 0},
+      {"question": "Kya ye beautiful default styles deta hai?", "options": ["Haan", "Nahi", "None", "None"], "answer": 0},
+      {"question": "Scatter plot ke liye?", "options": ["scatterplot()", "dot()", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Supervised Learning: Regression Models",
     "questions": [
-      { "question": "Regression models ka use kis tarah ka data predict karne ke liye hota hai?", "options": ["Categorical", "Continuous numerical", "Binary"], "answer": 1 }
+      {"question": "Regression kya predict karta hai?", "options": ["Continuous", "Category", "None", "None"], "answer": 0},
+      {"question": "Linear regression ka formula?", "options": ["y=mx+c", "y=x^2", "None", "None"], "answer": 0},
+      {"question": "Loss function?", "options": ["MSE", "Accuracy", "None", "None"], "answer": 0},
+      {"question": "Kya ye classification hai?", "options": ["Nahi", "Haan", "Maybe", "None"], "answer": 0},
+      {"question": "Goal?", "options": ["Fit line", "Cluster", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Supervised Learning: Classification Algorithms",
     "questions": [
-      { "question": "Classification model ka output kya hota hai?", "options": ["Class labels/Categories", "Real numbers", "Nothing"], "answer": 0 }
+      {"question": "Classification ka output?", "options": ["Discrete", "Continuous", "None", "None"], "answer": 0},
+      {"question": "Logistic regression kya hai?", "options": ["Classification", "Regression", "None", "None"], "answer": 0},
+      {"question": "Output function?", "options": ["Sigmoid", "Linear", "None", "None"], "answer": 0},
+      {"question": "Example?", "options": ["Spam filter", "Price", "None", "None"], "answer": 0},
+      {"question": "Decision boundary?", "options": ["Separation", "Merge", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Model Evaluation: Accuracy Metrics",
     "questions": [
-      { "question": "Accuracy score ka formula kya hai?", "options": ["(True Positives) / Total", "(Correct Predictions) / Total", "1 - Error"], "answer": 1 }
+      {"question": "Accuracy ka formula?", "options": ["Correct/Total", "Total/Correct", "None", "None"], "answer": 0},
+      {"question": "Kya ye imbalance data ke liye sahi hai?", "options": ["Nahi", "Haan", "Maybe", "None"], "answer": 0},
+      {"question": "Error rate?", "options": ["1-Accuracy", "Accuracy", "None", "None"], "answer": 0},
+      {"question": "Metrics ka fayda?", "options": ["Performance", "Speed", "None", "None"], "answer": 0},
+      {"question": "Confusion matrix?", "options": ["Yes", "No", "Maybe", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Model Evaluation: Precision and Recall",
+    "questions": [
+      {"question": "Precision ka formula?", "options": ["TP / (TP+FP)", "TP / (TP+FN)", "None", "None"], "answer": 0},
+      {"question": "Recall ka formula?", "options": ["TP / (TP+FN)", "TP / (TP+FP)", "None", "None"], "answer": 0},
+      {"question": "F1 score?", "options": ["Harmonic mean", "Mean", "None", "None"], "answer": 0},
+      {"question": "High recall ka matlab?", "options": ["Few FN", "Few FP", "None", "None"], "answer": 0},
+      {"question": "Precision kab jaruri hai?", "options": ["FP low", "FN low", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Feature Engineering: Scaling and Normalization",
     "questions": [
-      { "question": "Feature scaling ka main purpose kya hai?", "options": ["Model training fast karna", "Features ko same range mein lana", "Data delete karna"], "answer": 1 }
+      {"question": "Scaling ka fayda?", "options": ["Faster convergence", "Slower", "None", "None"], "answer": 0},
+      {"question": "Min-Max scaling range?", "options": ["0-1", "0-100", "None", "None"], "answer": 0},
+      {"question": "Standardization mean?", "options": ["0", "1", "None", "None"], "answer": 0},
+      {"question": "Standardization SD?", "options": ["1", "0", "None", "None"], "answer": 0},
+      {"question": "Kyun karte hain?", "options": ["Units handle", "Data size", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Categorical Data Encoding Techniques",
     "questions": [
-      { "question": "Categorical data ko numbers mein badalne ke liye 'One-Hot Encoding' kya karta hai?", "options": ["Binary columns create karta hai", "Data ko compress karta hai", "Mean calculate karta hai"], "answer": 0 }
+      {"question": "One-Hot encoding?", "options": ["Binary columns", "Integers", "None", "None"], "answer": 0},
+      {"question": "Label encoding?", "options": ["Integers", "Binary", "None", "None"], "answer": 0},
+      {"question": "Ordinal data?", "options": ["Order matters", "No order", "None", "None"], "answer": 0},
+      {"question": "High cardinality problem?", "options": ["Many columns", "Few", "None", "None"], "answer": 0},
+      {"question": "Dummy variable trap?", "options": ["Collinearity", "Speed", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Handling Missing Data with Imputation",
     "questions": [
-      { "question": "Missing values ko mean ya median se replace karna kya kehlata hai?", "options": ["Deletion", "Imputation", "Encoding"], "answer": 1 }
+      {"question": "Mean imputation?", "options": ["Fill with mean", "Drop", "None", "None"], "answer": 0},
+      {"question": "Median imputation?", "options": ["Fill with median", "Drop", "None", "None"], "answer": 0},
+      {"question": "Dropna?", "options": ["Remove rows", "Keep", "None", "None"], "answer": 0},
+      {"question": "Forward fill?", "options": ["Previous value", "Zero", "None", "None"], "answer": 0},
+      {"question": "Kyun zaroori hai?", "options": ["Model error", "Speed", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Automated Feature Selection Strategies",
+    "questions": [
+      {"question": "Feature selection?", "options": ["Relevant features", "All features", "None", "None"], "answer": 0},
+      {"question": "Filter method?", "options": ["Stats based", "Model based", "None", "None"], "answer": 0},
+      {"question": "Wrapper method?", "options": ["Model loop", "Stats", "None", "None"], "answer": 0},
+      {"question": "Embedded method?", "options": ["During train", "After", "None", "None"], "answer": 0},
+      {"question": "Fayda?", "options": ["Less overfit", "More noise", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Decision Tree Algorithms Explained",
+    "questions": [
+      {"question": "Structure?", "options": ["Tree", "Line", "None", "None"], "answer": 0},
+      {"question": "Node split?", "options": ["Gini/Entropy", "Mean", "None", "None"], "answer": 0},
+      {"question": "Overfitting?", "options": ["Common", "Rare", "None", "None"], "answer": 0},
+      {"question": "Leaf node?", "options": ["Final prediction", "Decision", "None", "None"], "answer": 0},
+      {"question": "Interpretability?", "options": ["High", "Low", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Random Forest Ensemble Learning",
+    "questions": [
+      {"question": "Random Forest kya hai?", "options": ["Forest of trees", "One tree", "None", "None"], "answer": 0},
+      {"question": "Ensemble?", "options": ["Combine models", "Single", "None", "None"], "answer": 0},
+      {"question": "Bagging?", "options": ["Bootstrap aggregation", "Boost", "None", "None"], "answer": 0},
+      {"question": "Variance?", "options": ["Reduces", "Increases", "None", "None"], "answer": 0},
+      {"question": "Feature selection?", "options": ["Random", "Manual", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Gradient Boosting for Predictive Modeling",
+    "questions": [
+      {"question": "Boosting approach?", "options": ["Sequential", "Parallel", "None", "None"], "answer": 0},
+      {"question": "Key focus?", "options": ["Errors", "Correct", "None", "None"], "answer": 0},
+      {"question": "Learning rate?", "options": ["Shrinkage", "Boost", "None", "None"], "answer": 0},
+      {"question": "Accuracy?", "options": ["High", "Low", "None", "None"], "answer": 0},
+      {"question": "Overfitting?", "options": ["Possible", "Impossible", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Support Vector Machines: Linear Classifiers",
+    "questions": [
+      {"question": "Goal?", "options": ["Max margin", "Min margin", "None", "None"], "answer": 0},
+      {"question": "Support vectors?", "options": ["Boundary points", "All points", "None", "None"], "answer": 0},
+      {"question": "Hyperplane?", "options": ["Separator", "Circle", "None", "None"], "answer": 0},
+      {"question": "Linear?", "options": ["Straight line", "Curve", "None", "None"], "answer": 0},
+      {"question": "Margin?", "options": ["Distance", "Error", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Support Vector Machines: The Kernel Trick",
+    "questions": [
+      {"question": "Kernel trick?", "options": ["Non-linear data", "Linear", "None", "None"], "answer": 0},
+      {"question": "Mapping?", "options": ["Higher dim", "Lower", "None", "None"], "answer": 0},
+      {"question": "Common kernel?", "options": ["RBF", "Linear", "None", "None"], "answer": 0},
+      {"question": "Computational load?", "options": ["High", "Low", "None", "None"], "answer": 0},
+      {"question": "Advantage?", "options": ["Complex patterns", "Simple", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Unsupervised Learning: K-Means Clustering",
     "questions": [
-      { "question": "K-Means mein 'K' kya represent karta hai?", "options": ["Iterations", "Clusters ki sankhya", "Learning rate"], "answer": 1 }
+      {"question": "Goal?", "options": ["Groups", "Regression", "None", "None"], "answer": 0},
+      {"question": "K?", "options": ["Clusters", "Points", "None", "None"], "answer": 0},
+      {"question": "Centroid?", "options": ["Center", "Edge", "None", "None"], "answer": 0},
+      {"question": "Distance measure?", "options": ["Euclidean", "Manhattan", "None", "None"], "answer": 0},
+      {"question": "Convergence?", "options": ["Stable state", "Run", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Unsupervised Learning: DBSCAN Density Clustering",
+    "questions": [
+      {"question": "Basis?", "options": ["Density", "Centroid", "None", "None"], "answer": 0},
+      {"question": "Epsilon?", "options": ["Radius", "Count", "None", "None"], "answer": 0},
+      {"question": "MinPts?", "options": ["Min density", "Radius", "None", "None"], "answer": 0},
+      {"question": "Outliers?", "options": ["Noise", "Clusters", "None", "None"], "answer": 0},
+      {"question": "Shape?", "options": ["Arbitrary", "Spherical", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Dimensionality Reduction: Principal Component Analysis",
     "questions": [
-      { "question": "PCA ka primary goal kya hai?", "options": ["Data ki complexity badhana", "Information loss kam karke features kam karna", "Model accuracy check karna"], "answer": 1 }
+      {"question": "Goal?", "options": ["Reduce features", "Add", "None", "None"], "answer": 0},
+      {"question": "PCs?", "options": ["Orthogonal", "Parallel", "None", "None"], "answer": 0},
+      {"question": "Variance?", "options": ["Maximizes", "Minimizes", "None", "None"], "answer": 0},
+      {"question": "Information loss?", "options": ["Minimized", "Maximized", "None", "None"], "answer": 0},
+      {"question": "Eigenvectors?", "options": ["Basis", "Noise", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Dimensionality Reduction: t-SNE for Visualization",
+    "questions": [
+      {"question": "Use case?", "options": ["Visualization", "Regression", "None", "None"], "answer": 0},
+      {"question": "Preserve?", "options": ["Local structure", "Global", "None", "None"], "answer": 0},
+      {"question": "Complexity?", "options": ["High", "Low", "None", "None"], "answer": 0},
+      {"question": "Input?", "options": ["High-dim", "Low", "None", "None"], "answer": 0},
+      {"question": "Output?", "options": ["2D/3D", "High-dim", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Efficient Model Selection with GridSearch",
+    "questions": [
+      {"question": "GridSearch?", "options": ["Hyperparameter tuning", "Training", "None", "None"], "answer": 0},
+      {"question": "Exhaustive?", "options": ["Yes", "No", "None", "None"], "answer": 0},
+      {"question": "CV?", "options": ["Cross-validation", "Train", "None", "None"], "answer": 0},
+      {"question": "Best params?", "options": ["Selected", "Discarded", "None", "None"], "answer": 0},
+      {"question": "Computational cost?", "options": ["Very high", "Low", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Neural Networks: The Perceptron Explained",
     "questions": [
-      { "question": "Perceptron kya hota hai?", "options": ["Ek simple linear classifier", "Ek complex neural network", "Ek optimization algorithm"], "answer": 0 }
+      {"question": "Perceptron kya hai?", "options": ["Single-layer NN", "Complex NN", "None", "None"], "answer": 0},
+      {"question": "Input?", "options": ["Weights", "Output", "None", "None"], "answer": 0},
+      {"question": "Activation?", "options": ["Step function", "Linear", "None", "None"], "answer": 0},
+      {"question": "Learning?", "options": ["Weight update", "Memory", "None", "None"], "answer": 0},
+      {"question": "Limitation?", "options": ["Linearity", "Non-linear", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Neural Networks: Activation Functions Overview",
     "questions": [
-      { "question": "Activation function ka kya kaam hai?", "options": ["Model ko non-linearity dena", "Weights ko delete karna", "Data ko normalize karna"], "answer": 0 }
+      {"question": "ReLU?", "options": ["max(0,x)", "Linear", "None", "None"], "answer": 0},
+      {"question": "Sigmoid range?", "options": ["0 to 1", "-1 to 1", "None", "None"], "answer": 0},
+      {"question": "Tanh?", "options": ["-1 to 1", "0 to 1", "None", "None"], "answer": 0},
+      {"question": "Vanishing gradient?", "options": ["Sigmoid problem", "Fast", "None", "None"], "answer": 0},
+      {"question": "Softmax?", "options": ["Multi-class", "Binary", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Neural Networks: Feedforward Architectures",
     "questions": [
-      { "question": "Feedforward neural network mein data ka direction kya hota hai?", "options": ["Sirf backward", "Sirf forward", "Dono directions mein"], "answer": 1 }
+      {"question": "Direction?", "options": ["One-way", "Back", "None", "None"], "answer": 0},
+      {"question": "Layers?", "options": ["Input, Hidden, Output", "Only one", "None", "None"], "answer": 0},
+      {"question": "Weights?", "options": ["Connection strength", "Bias", "None", "None"], "answer": 0},
+      {"question": "Bias?", "options": ["Offset", "Weight", "None", "None"], "answer": 0},
+      {"question": "Training?", "options": ["Error reduction", "Fast", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Training Neural Networks with Backpropagation",
     "questions": [
-      { "question": "Backpropagation ka main maqsad kya hai?", "options": ["Weights update karna", "Architecture design karna", "Data load karna"], "answer": 0 }
+      {"question": "Backprop?", "options": ["Error propagation", "Forward", "None", "None"], "answer": 0},
+      {"question": "Calculus?", "options": ["Chain rule", "Add", "None", "None"], "answer": 0},
+      {"question": "Optimization?", "options": ["Gradient descent", "Shuffle", "None", "None"], "answer": 0},
+      {"question": "Goal?", "options": ["Minimize loss", "Max", "None", "None"], "answer": 0},
+      {"question": "What updates?", "options": ["Weights", "Data", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Stochastic Gradient Descent Optimization",
     "questions": [
-      { "question": "SGD mein 'Stochastic' ka matlab kya hai?", "options": ["Puri dataset use karna", "Ek baar mein ek ya kuch samples use karna", "Sirf validation data use karna"], "answer": 1 }
+      {"question": "SGD vs Batch?", "options": ["One sample", "Full", "None", "None"], "answer": 0},
+      {"question": "Speed?", "options": ["Faster", "Slower", "None", "None"], "answer": 0},
+      {"question": "Noise?", "options": ["Higher", "Lower", "None", "None"], "answer": 0},
+      {"question": "Convergence?", "options": ["Fluctuates", "Stable", "None", "None"], "answer": 0},
+      {"question": "Optimization?", "options": ["Robust", "Simple", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "PyTorch: Getting Started with Tensors",
     "questions": [
-      { "question": "PyTorch mein 'Tensor' ka kya arth hai?", "options": ["Sirf 1D array", "Multi-dimensional matrix", "Ek SQL database"], "answer": 1 }
+      {"question": "Tensor?", "options": ["Multi-dim array", "List", "None", "None"], "answer": 0},
+      {"question": "Create?", "options": ["torch.tensor()", "list()", "None", "None"], "answer": 0},
+      {"question": "GPU?", "options": [".to('cuda')", "None", "None", "None"], "answer": 0},
+      {"question": "Shape?", "options": [".shape", "size()", "None", "None"], "answer": 0},
+      {"question": "Type?", "options": [".dtype", "None", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "PyTorch: Automatic Differentiation with Autograd",
     "questions": [
-      { "question": "Autograd ka main feature kya hai?", "options": ["Model training manually karna", "Gradients calculate karna", "Data download karna"], "answer": 1 }
+      {"question": "Autograd?", "options": ["Auto gradient", "Manual", "None", "None"], "answer": 0},
+      {"question": "Enable?", "options": ["requires_grad=True", "None", "None", "None"], "answer": 0},
+      {"question": "Compute?", "options": [".backward()", "None", "None", "None"], "answer": 0},
+      {"question": "Store?", "options": [".grad", "None", "None", "None"], "answer": 0},
+      {"question": "Dynamic?", "options": ["Yes", "No", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "PyTorch: Optimizer and Loss Functions",
+    "questions": [
+      {"question": "Loss?", "options": ["Measure error", "Score", "None", "None"], "answer": 0},
+      {"question": "Optimizer?", "options": ["SGD/Adam", "Print", "None", "None"], "answer": 0},
+      {"question": "Step?", "options": ["Update weights", "None", "None", "None"], "answer": 0},
+      {"question": "Zero grad?", "options": ["Clear grads", "None", "None", "None"], "answer": 0},
+      {"question": "CrossEntropy?", "options": ["Classification", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Regularization Techniques: Dropout Layers",
+    "questions": [
+      {"question": "Dropout?", "options": ["Randomly disable neurons", "Add", "None", "None"], "answer": 0},
+      {"question": "Benefit?", "options": ["Reduce overfit", "None", "None", "None"], "answer": 0},
+      {"question": "When?", "options": ["Training", "Test", "None", "None"], "answer": 0},
+      {"question": "Prob?", "options": ["0 to 1", "None", "None", "None"], "answer": 0},
+      {"question": "Inference?", "options": ["All nodes", "Some", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Regularization Techniques: Batch Normalization",
+    "questions": [
+      {"question": "Batch Norm?", "options": ["Normalize activations", "None", "None", "None"], "answer": 0},
+      {"question": "Speed?", "options": ["Faster train", "Slow", "None", "None"], "answer": 0},
+      {"question": "Stable?", "options": ["Yes", "No", "None", "None"], "answer": 0},
+      {"question": "Impact?", "options": ["Gradient flow", "None", "None", "None"], "answer": 0},
+      {"question": "Parameter?", "options": ["Mean/Variance", "None", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Computer Vision: Convolutional Layers Basics",
     "questions": [
-      { "question": "Convolutional layer ka use kis liye hota hai?", "options": ["Text processing", "Image features extract karna", "Audio compression"], "answer": 1 }
+      {"question": "Conv Layer?", "options": ["Feature extraction", "None", "None", "None"], "answer": 0},
+      {"question": "Filter?", "options": ["Kernel", "Layer", "None", "None"], "answer": 0},
+      {"question": "Stride?", "options": ["Step size", "None", "None", "None"], "answer": 0},
+      {"question": "Padding?", "options": ["Boundary control", "None", "None", "None"], "answer": 0},
+      {"question": "Output?", "options": ["Feature map", "None", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Computer Vision: Pooling and Downsampling",
     "questions": [
-      { "question": "Pooling layer ka primary goal kya hai?", "options": ["Image size badhana", "Spatial dimensions ko reduce karna", "Color change karna"], "answer": 1 }
+      {"question": "Max Pooling?", "options": ["Pick max", "Avg", "None", "None"], "answer": 0},
+      {"question": "Purpose?", "options": ["Dim reduction", "Add", "None", "None"], "answer": 0},
+      {"question": "Invariant?", "options": ["Spatial", "None", "None", "None"], "answer": 0},
+      {"question": "Avg Pooling?", "options": ["Pick mean", "Max", "None", "None"], "answer": 0},
+      {"question": "Downsample?", "options": ["Reduce size", "Expand", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Modern CNN Architectures for Computer Vision",
+    "questions": [
+      {"question": "ResNet?", "options": ["Residual connections", "None", "None", "None"], "answer": 0},
+      {"question": "Inception?", "options": ["Multi-scale", "Single", "None", "None"], "answer": 0},
+      {"question": "VGG?", "options": ["Deep/Simple", "Shallow", "None", "None"], "answer": 0},
+      {"question": "Depth?", "options": ["Better", "Worse", "None", "None"], "answer": 0},
+      {"question": "Architectures?", "options": ["Standardized", "None", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Transfer Learning for Computer Vision Tasks",
     "questions": [
-      { "question": "Transfer Learning mein kya hota hai?", "options": ["Pehle se trained model ko naye task par use karna", "Model delete karna", "Naya model zero se banana"], "answer": 0 }
+      {"question": "Transfer?", "options": ["Pre-trained models", "None", "None", "None"], "answer": 0},
+      {"question": "Fine-tuning?", "options": ["Adapt weight", "New", "None", "None"], "answer": 0},
+      {"question": "Data?", "options": ["Less needed", "Huge", "None", "None"], "answer": 0},
+      {"question": "Source?", "options": ["ImageNet", "None", "None", "None"], "answer": 0},
+      {"question": "Freezing?", "options": ["Hold layers", "Run", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "RNNs: Foundations of Sequence Models",
+    "questions": [
+      {"question": "RNN?", "options": ["Sequential data", "None", "None", "None"], "answer": 0},
+      {"question": "State?", "options": ["Hidden state", "None", "None", "None"], "answer": 0},
+      {"question": "Memory?", "options": ["Internal", "None", "None", "None"], "answer": 0},
+      {"question": "Issue?", "options": ["Vanishing grad", "None", "None", "None"], "answer": 0},
+      {"question": "Use?", "options": ["Text/Audio", "Image", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "RNNs: Understanding LSTMs for Time-Series",
+    "questions": [
+      {"question": "LSTM?", "options": ["Long Short Term", "None", "None", "None"], "answer": 0},
+      {"question": "Gate?", "options": ["Forget gate", "None", "None", "None"], "answer": 0},
+      {"question": "Solve?", "options": ["Vanishing grad", "None", "None", "None"], "answer": 0},
+      {"question": "Cell state?", "options": ["Long term", "None", "None", "None"], "answer": 0},
+      {"question": "Time-series?", "options": ["Ideal", "None", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Natural Language Processing: Text Tokenization",
     "questions": [
-      { "question": "Tokenization ka kya matlab hai?", "options": ["Text ko sentences ya words mein todna", "Text ko encrypt karna", "Text ko delete karna"], "answer": 0 }
+      {"question": "Tokenization?", "options": ["Split to words", "None", "None", "None"], "answer": 0},
+      {"question": "Sub-word?", "options": ["BPE", "Word", "None", "None"], "answer": 0},
+      {"question": "Vocabulary?", "options": ["Unique tokens", "None", "None", "None"], "answer": 0},
+      {"question": "Cleaning?", "options": ["Normalization", "None", "None", "None"], "answer": 0},
+      {"question": "Encoding?", "options": ["Index mapping", "None", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "NLP: Introduction to Word Embeddings",
     "questions": [
-      { "question": "Word embeddings ka main kaam kya hai?", "options": ["Words ko numeric vectors mein convert karna", "Words ki spelling check karna", "Translate karna"], "answer": 0 }
+      {"question": "Embedding?", "options": ["Dense vector", "None", "None", "None"], "answer": 0},
+      {"question": "Meaning?", "options": ["Semantic similarity", "None", "None", "None"], "answer": 0},
+      {"question": "Word2Vec?", "options": ["Embedding model", "None", "None", "None"], "answer": 0},
+      {"question": "Dimension?", "options": ["Lower than vocab", "Same", "None", "None"], "answer": 0},
+      {"question": "Pre-trained?", "options": ["Glove", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "NLP: The Attention Mechanism Explained",
+    "questions": [
+      {"question": "Attention?", "options": ["Focus on parts", "None", "None", "None"], "answer": 0},
+      {"question": "Key, Query, Value?", "options": ["Attention parts", "None", "None", "None"], "answer": 0},
+      {"question": "Benefit?", "options": ["Context awareness", "None", "None", "None"], "answer": 0},
+      {"question": "Softmax?", "options": ["Weights", "None", "None", "None"], "answer": 0},
+      {"question": "Performance?", "options": ["High", "Low", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Transformers: The Encoder Architecture",
     "questions": [
-      { "question": "Transformer model mein 'Encoder' ka kya kaam hai?", "options": ["Output generate karna", "Input sequence ko context-aware representation mein badlna", "Sirf file save karna"], "answer": 1 }
+      {"question": "Transformer?", "options": ["Attention-based", "RNN", "None", "None"], "answer": 0},
+      {"question": "Encoder?", "options": ["Input processing", "None", "None", "None"], "answer": 0},
+      {"question": "Stacking?", "options": ["Many layers", "None", "None", "None"], "answer": 0},
+      {"question": "Parallel?", "options": ["Yes", "No", "None", "None"], "answer": 0},
+      {"question": "Use?", "options": ["BERT", "GPT", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Transformers: The Decoder Architecture",
+    "questions": [
+      {"question": "Decoder?", "options": ["Output generation", "Input", "None", "None"], "answer": 0},
+      {"question": "Masked?", "options": ["Prevent looking ahead", "None", "None", "None"], "answer": 0},
+      {"question": "Generative?", "options": ["Yes", "No", "None", "None"], "answer": 0},
+      {"question": "Cross-Attention?", "options": ["Connects En-De", "None", "None", "None"], "answer": 0},
+      {"question": "Architecture?", "options": ["GPT style", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "NLP: BERT Model Internals",
+    "questions": [
+      {"question": "BERT?", "options": ["Bidirectional Encoder", "None", "None", "None"], "answer": 0},
+      {"question": "Pre-training?", "options": ["Masked LM", "Next", "None", "None"], "answer": 0},
+      {"question": "Context?", "options": ["Global", "None", "None", "None"], "answer": 0},
+      {"question": "Use?", "options": ["Classification", "Gen", "None", "None"], "answer": 0},
+      {"question": "Fine-tuning?", "options": ["Specific task", "None", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Generative AI: Foundations of GPT",
     "questions": [
-      { "question": "GPT ka full form kya hai?", "options": ["Generative Pre-trained Transformer", "General Purpose Tool", "Global Processing Tech"], "answer": 0 }
+      {"question": "GPT?", "options": ["Generative Pre-trained", "None", "None", "None"], "answer": 0},
+      {"question": "Decoder only?", "options": ["Yes", "No", "None", "None"], "answer": 0},
+      {"question": "Scaling?", "options": ["More data/params", "None", "None", "None"], "answer": 0},
+      {"question": "Training?", "options": ["Next token pred", "None", "None", "None"], "answer": 0},
+      {"question": "Output?", "options": ["Text", "Image", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Generative AI: Techniques for Prompt Engineering",
     "questions": [
-      { "question": "Prompt Engineering ka best practice kya hai?", "options": ["Bahut short prompt likhna", "Context aur instructions clear dena", "Sirf ek word likhna"], "answer": 1 }
+      {"question": "Prompt?", "options": ["Instruction", "Data", "None", "None"], "answer": 0},
+      {"question": "Few-shot?", "options": ["Examples", "None", "None", "None"], "answer": 0},
+      {"question": "Zero-shot?", "options": ["No example", "None", "None", "None"], "answer": 0},
+      {"question": "Chain-of-thought?", "options": ["Step by step", "None", "None", "None"], "answer": 0},
+      {"question": "Efficiency?", "options": ["Better prompts", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Generative AI: LLM Fine-tuning Methodologies",
+    "questions": [
+      {"question": "Fine-tuning?", "options": ["Adapt model", "Train", "None", "None"], "answer": 0},
+      {"question": "PEFT?", "options": ["Parameter efficient", "None", "None", "None"], "answer": 0},
+      {"question": "LoRA?", "options": ["Low-rank adapt", "None", "None", "None"], "answer": 0},
+      {"question": "Resource?", "options": ["Less GPU", "Full", "None", "None"], "answer": 0},
+      {"question": "Output quality?", "options": ["Improved", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Retrieval Augmented Generation: Vector Databases",
+    "questions": [
+      {"question": "RAG?", "options": ["Retrieval + Gen", "None", "None", "None"], "answer": 0},
+      {"question": "Database?", "options": ["Vector store", "SQL", "None", "None"], "answer": 0},
+      {"question": "Embedding?", "options": ["Semantic index", "None", "None", "None"], "answer": 0},
+      {"question": "Benefit?", "options": ["Real-time data", "Static", "None", "None"], "answer": 0},
+      {"question": "Accuracy?", "options": ["Less hallucination", "More", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Building Advanced Retrieval Pipelines",
+    "questions": [
+      {"question": "Retrieval?", "options": ["Relevant context", "None", "None", "None"], "answer": 0},
+      {"question": "Chunking?", "options": ["Split documents", "None", "None", "None"], "answer": 0},
+      {"question": "Ranking?", "options": ["Sort context", "None", "None", "None"], "answer": 0},
+      {"question": "Pipeline?", "options": ["Sequence", "Loop", "None", "None"], "answer": 0},
+      {"question": "Integration?", "options": ["LLM interface", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Generative AI: Understanding Diffusion Models",
+    "questions": [
+      {"question": "Diffusion?", "options": ["Noise to image", "Add", "None", "None"], "answer": 0},
+      {"question": "Reverse?", "options": ["Denoising", "None", "None", "None"], "answer": 0},
+      {"question": "Use?", "options": ["Image gen", "Text", "None", "None"], "answer": 0},
+      {"question": "Training?", "options": ["Noise predict", "None", "None", "None"], "answer": 0},
+      {"question": "Stability?", "options": ["High", "Low", "None", "None"], "answer": 0}
     ]
   },
   {
     "articleTitle": "Reinforcement Learning: Agent and Environment",
     "questions": [
-      { "question": "RL mein 'Agent' kya karta hai?", "options": ["Environment mein actions leta hai", "Sirf data store karta hai", "Sirf code compile karta hai"], "answer": 0 }
+      {"question": "Agent?", "options": ["Learner", "Goal", "None", "None"], "answer": 0},
+      {"question": "Environment?", "options": ["World", "Robot", "None", "None"], "answer": 0},
+      {"question": "Action?", "options": ["Movement", "None", "None", "None"], "answer": 0},
+      {"question": "Reward?", "options": ["Feedback", "None", "None", "None"], "answer": 0},
+      {"question": "Policy?", "options": ["Strategy", "None", "None", "None"], "answer": 0}
     ]
   },
   {
-    "articleTitle": "MLOps: Designing CI/CD Pipelines",
+    "articleTitle": "Reinforcement Learning: Q-Learning Concepts",
     "questions": [
-      { "question": "MLOps mein CI/CD pipeline ka kya benefit hai?", "options": ["Model deployment ko automate aur reliable banana", "Sirf coding speed badhana", "Data storage space kam karna"], "answer": 0 }
+      {"question": "Q-table?", "options": ["Value mapping", "None", "None", "None"], "answer": 0},
+      {"question": "Bellman?", "options": ["Eq update", "None", "None", "None"], "answer": 0},
+      {"question": "Exploration?", "options": ["Try new", "None", "None", "None"], "answer": 0},
+      {"question": "Exploitation?", "options": ["Use best", "None", "None", "None"], "answer": 0},
+      {"question": "Value?", "options": ["Future reward", "None", "None", "None"], "answer": 0}
+    ]
+  },
+{"articleTitle": "Reinforcement Learning: Policy Gradients", "questions": [{"question": "Policy gradient kiska method hai?", "options": ["RL", "Supervised", "None", "None"], "answer": 0}, {"question": "Kya ye directly policy learn karta hai?", "options": ["Haan", "Nahi", "None", "None"], "answer": 0}, {"question": "Gradient ka use?", "options": ["Maximize reward", "Min", "None", "None"], "answer": 0}, {"question": "Stochastic?", "options": ["Haan", "Nahi", "None", "None"], "answer": 0}, {"question": "Performance?", "options": ["Smooth", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Reinforcement Learning: PPO Algorithm", "questions": [{"question": "PPO kya hai?", "options": ["Proximal Policy Opt", "None", "None", "None"], "answer": 0}, {"question": "Fayda?", "options": ["Stable", "Fast", "None", "None"], "answer": 0}, {"question": "Clip function?", "options": ["Limit update", "None", "None", "None"], "answer": 0}, {"question": "Use?", "options": ["Games", "None", "None", "None"], "answer": 0}, {"question": "Complexity?", "options": ["Balanced", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "MLOps: Docker Container Basics", "questions": [{"question": "Docker?", "options": ["Containerization", "VM", "None", "None"], "answer": 0}, {"question": "Image?", "options": ["Blueprint", "OS", "None", "None"], "answer": 0}, {"question": "Container?", "options": ["Running instance", "None", "None", "None"], "answer": 0}, {"question": "Dockerfile?", "options": ["Build instructions", "None", "None", "None"], "answer": 0}, {"question": "Isolation?", "options": ["Yes", "No", "None", "None"], "answer": 0}]},
+  {"articleTitle": "MLOps: Designing CI/CD Pipelines", "questions": [{"question": "CI/CD?", "options": ["Automation", "Manual", "None", "None"], "answer": 0}, {"question": "CI?", "options": ["Continuous Integration", "None", "None", "None"], "answer": 0}, {"question": "CD?", "options": ["Continuous Delivery", "None", "None", "None"], "answer": 0}, {"question": "Goal?", "options": ["Faster deployment", "None", "None", "None"], "answer": 0}, {"question": "Testing?", "options": ["Automated", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Deployment Strategy: FastAPI for Model Serving", "questions": [{"question": "FastAPI?", "options": ["Async framework", "Sync", "None", "None"], "answer": 0}, {"question": "Performance?", "options": ["Very fast", "Slow", "None", "None"], "answer": 0}, {"question": "Doc?", "options": ["Auto Swagger", "None", "None", "None"], "answer": 0}, {"question": "Input?", "options": ["JSON", "Text", "None", "None"], "answer": 0}, {"question": "Usage?", "options": ["APIs", "DB", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Edge AI: Model Quantization Strategies", "questions": [{"question": "Quantization?", "options": ["Reduce precision", "Add", "None", "None"], "answer": 0}, {"question": "Benefit?", "options": ["Smaller size", "Speed", "None", "None"], "answer": 0}, {"question": "Loss?", "options": ["Minor", "Major", "None", "None"], "answer": 0}, {"question": "Edge device?", "options": ["Yes", "No", "None", "None"], "answer": 0}, {"question": "Format?", "options": ["Int8", "Float32", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Edge AI: Neural Network Pruning", "questions": [{"question": "Pruning?", "options": ["Remove neurons", "Add", "None", "None"], "answer": 0}, {"question": "Goal?", "options": ["Efficiency", "Speed", "None", "None"], "answer": 0}, {"question": "Accuracy?", "options": ["Maintained", "Low", "None", "None"], "answer": 0}, {"question": "Structured?", "options": ["Remove channel", "Weight", "None", "None"], "answer": 0}, {"question": "Use?", "options": ["Mobile", "Cloud", "None", "None"], "answer": 0}]},
+  {"articleTitle": "AI Ethics: Addressing Algorithmic Fairness", "questions": [{"question": "Fairness?", "options": ["Unbiased", "Bias", "None", "None"], "answer": 0}, {"question": "Bias?", "options": ["Data skew", "None", "None", "None"], "answer": 0}, {"question": "Impact?", "options": ["Social", "Technical", "None", "None"], "answer": 0}, {"question": "Mitigation?", "options": ["Fair datasets", "None", "None", "None"], "answer": 0}, {"question": "Goal?", "options": ["Equity", "Profit", "None", "None"], "answer": 0}]},
+  {"articleTitle": "AI Ethics: Data Privacy Challenges", "questions": [{"question": "Privacy?", "options": ["Data protection", "Share", "None", "None"], "answer": 0}, {"question": "GDPR?", "options": ["Privacy law", "None", "None", "None"], "answer": 0}, {"question": "Anonymization?", "options": ["Masking", "None", "None", "None"], "answer": 0}, {"question": "Challenge?", "options": ["Re-id", "Speed", "None", "None"], "answer": 0}, {"question": "Security?", "options": ["Encryption", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "AI Infrastructure: Scalable GPU Training", "questions": [{"question": "GPU?", "options": ["Parallel compute", "Serial", "None", "None"], "answer": 0}, {"question": "Cluster?", "options": ["Multi-node", "Single", "None", "None"], "answer": 0}, {"question": "Scaling?", "options": ["Distributed", "None", "None", "None"], "answer": 0}, {"question": "Communication?", "options": ["NCCL", "None", "None", "None"], "answer": 0}, {"question": "Memory?", "options": ["VRAM limit", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Graph Neural Networks: Introduction", "questions": [{"question": "GNN?", "options": ["Graph data", "Image", "None", "None"], "answer": 0}, {"question": "Structure?", "options": ["Nodes/Edges", "Grid", "None", "None"], "answer": 0}, {"question": "Use?", "options": ["Social networks", "None", "None", "None"], "answer": 0}, {"question": "Feature?", "options": ["Node embedding", "None", "None", "None"], "answer": 0}, {"question": "Learning?", "options": ["Message passing", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Graph Neural Networks: Message Passing Logic", "questions": [{"question": "Message?", "options": ["Neighbor info", "None", "None", "None"], "answer": 0}, {"question": "Update?", "options": ["Node state", "None", "None", "None"], "answer": 0}, {"question": "Aggregate?", "options": ["Sum/Mean", "None", "None", "None"], "answer": 0}, {"question": "Layer?", "options": ["Iterative", "None", "None", "None"], "answer": 0}, {"question": "Local?", "options": ["Neighborhood", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Automated Machine Learning (AutoML) Logic", "questions": [{"question": "AutoML?", "options": ["Auto pipeline", "Manual", "None", "None"], "answer": 0}, {"question": "HPO?", "options": ["Hyperparam search", "None", "None", "None"], "answer": 0}, {"question": "Feature engineering?", "options": ["Automated", "Manual", "None", "None"], "answer": 0}, {"question": "Benefit?", "options": ["Speed", "None", "None", "None"], "answer": 0}, {"question": "Target?", "options": ["Non-experts", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Model Distillation for Lightweight Models", "questions": [{"question": "Distillation?", "options": ["Teacher-Student", "None", "None", "None"], "answer": 0}, {"question": "Teacher?", "options": ["Large model", "Small", "None", "None"], "answer": 0}, {"question": "Student?", "options": ["Small", "Large", "None", "None"], "answer": 0}, {"question": "Goal?", "options": ["Efficiency", "None", "None", "None"], "answer": 0}, {"question": "Accuracy?", "options": ["Preserved", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "AI Applications: Climate Modeling", "questions": [{"question": "Climate?", "options": ["Weather predict", "None", "None", "None"], "answer": 0}, {"question": "Data?", "options": ["Satellites", "None", "None", "None"], "answer": 0}, {"question": "Model?", "options": ["Complex simulation", "None", "None", "None"], "answer": 0}, {"question": "Goal?", "options": ["Risk assessment", "None", "None", "None"], "answer": 0}, {"question": "Impact?", "options": ["Policy", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Robotics: Robotic Grasping Mechanisms", "questions": [{"question": "Grasping?", "options": ["Picking items", "None", "None", "None"], "answer": 0}, {"question": "Sensing?", "options": ["Vision", "None", "None", "None"], "answer": 0}, {"question": "Challenge?", "options": ["Object shape", "None", "None", "None"], "answer": 0}, {"question": "Method?", "options": ["RL/CV", "None", "None", "None"], "answer": 0}, {"question": "Precision?", "options": ["Required", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Privacy Preserving Federated Learning", "questions": [{"question": "Federated?", "options": ["Decentralized train", "None", "None", "None"], "answer": 0}, {"question": "Privacy?", "options": ["Local data", "Share", "None", "None"], "answer": 0}, {"question": "Server?", "options": ["Aggregator", "None", "None", "None"], "answer": 0}, {"question": "Security?", "options": ["Encryption", "None", "None", "None"], "answer": 0}, {"question": "Scalability?", "options": ["High", "Low", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Advanced Audio Synthesis Technology", "questions": [{"question": "Audio?", "options": ["Waveform gen", "None", "None", "None"], "answer": 0}, {"question": "Vocoder?", "options": ["Sound conversion", "None", "None", "None"], "answer": 0}, {"question": "Text-to-Speech?", "options": ["TTS", "None", "None", "None"], "answer": 0}, {"question": "Realism?", "options": ["High", "None", "None", "None"], "answer": 0}, {"question": "Model?", "options": ["GAN/Diffusion", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Precision AI for Modern Agriculture", "questions": [{"question": "Agri?", "options": ["Crop monitor", "None", "None", "None"], "answer": 0}, {"question": "Tool?", "options": ["Drones", "None", "None", "None"], "answer": 0}, {"question": "Goal?", "options": ["Yield optimization", "None", "None", "None"], "answer": 0}, {"question": "Detection?", "options": ["Diseases", "None", "None", "None"], "answer": 0}, {"question": "Efficiency?", "options": ["Water/Fert", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Deep Reinforcement Learning Current Trends", "questions": [{"question": "Trends?", "options": ["Scale", "New algorithms", "None", "None"], "answer": 0}, {"question": "Multi-agent?", "options": ["Yes", "No", "None", "None"], "answer": 0}, {"question": "Foundation?", "options": ["Transformer", "None", "None", "None"], "answer": 0}, {"question": "Generalization?", "options": ["Improving", "None", "None", "None"], "answer": 0}, {"question": "Application?", "options": ["Robotics", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Explainable AI: Implementing SHAP Values", "questions": [{"question": "XAI?", "options": ["Interpretability", "None", "None", "None"], "answer": 0}, {"question": "SHAP?", "options": ["Feature impact", "None", "None", "None"], "answer": 0}, {"question": "Theory?", "options": ["Game theory", "None", "None", "None"], "answer": 0}, {"question": "Transparency?", "options": ["High", "None", "None", "None"], "answer": 0}, {"question": "Use?", "options": ["Banking/Med", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "DevOps: Advanced Model Containerization", "questions": [{"question": "Containers?", "options": ["Portable", "Fixed", "None", "None"], "answer": 0}, {"question": "Optimization?", "options": ["Slim images", "None", "None", "None"], "answer": 0}, {"question": "Orchestration?", "options": ["Kubernetes", "None", "None", "None"], "answer": 0}, {"question": "Auto-scaling?", "options": ["Yes", "No", "None", "None"], "answer": 0}, {"question": "Security?", "options": ["Scanning", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "AI Applications in Retail and E-commerce", "questions": [{"question": "Retail?", "options": ["Rec system", "None", "None", "None"], "answer": 0}, {"question": "Inventory?", "options": ["Demand forecast", "None", "None", "None"], "answer": 0}, {"question": "UX?", "options": ["Personalization", "None", "None", "None"], "answer": 0}, {"question": "Search?", "options": ["Smart", "None", "None", "None"], "answer": 0}, {"question": "Fraud?", "options": ["Detection", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "NLP: Natural Language Generation Systems", "questions": [{"question": "NLG?", "options": ["Text creation", "None", "None", "None"], "answer": 0}, {"question": "Flow?", "options": ["Coherent", "None", "None", "None"], "answer": 0}, {"question": "Use?", "options": ["Chatbots", "None", "None", "None"], "answer": 0}, {"question": "Control?", "options": ["Style/Tone", "None", "None", "None"], "answer": 0}, {"question": "Evaluation?", "options": ["BLEU", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "MLOps: Effective Deployment Patterns", "questions": [{"question": "Pattern?", "options": ["Canary/Blue-Green", "None", "None", "None"], "answer": 0}, {"question": "Strategy?", "options": ["Rollback", "None", "None", "None"], "answer": 0}, {"question": "Monitoring?", "options": ["Drift", "None", "None", "None"], "answer": 0}, {"question": "Availability?", "options": ["High", "None", "None", "None"], "answer": 0}, {"question": "Load?", "options": ["Balancing", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Computer Vision: Neural Style Transfer", "questions": [{"question": "Transfer?", "options": ["Content+Style", "None", "None", "None"], "answer": 0}, {"question": "Layers?", "options": ["Feature maps", "None", "None", "None"], "answer": 0}, {"question": "Loss?", "options": ["Style/Content", "None", "None", "None"], "answer": 0}, {"question": "VGG?", "options": ["Base model", "None", "None", "None"], "answer": 0}, {"question": "Output?", "options": ["Artistic", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "NLP: Analyzing Social Media Sentiment", "questions": [{"question": "Sentiment?", "options": ["Positive/Negative", "None", "None", "None"], "answer": 0}, {"question": "Source?", "options": ["Twitter/Threads", "None", "None", "None"], "answer": 0}, {"question": "Technique?", "options": ["Classification", "None", "None", "None"], "answer": 0}, {"question": "Slang?", "options": ["Challenge", "None", "None", "None"], "answer": 0}, {"question": "Business?", "options": ["Brand monitoring", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Algorithms: Game Theory in Artificial Intelligence", "questions": [{"question": "Game Theory?", "options": ["Strategic interaction", "None", "None", "None"], "answer": 0}, {"question": "Nash?", "options": ["Equilibrium", "None", "None", "None"], "answer": 0}, {"question": "Zero-sum?", "options": ["Winner takes all", "None", "None", "None"], "answer": 0}, {"question": "Agent?", "options": ["Decision maker", "None", "None", "None"], "answer": 0}, {"question": "Use?", "options": ["Multi-agent RL", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Cybersecurity: AI-Enhanced Defense Solutions", "questions": [{"question": "Security?", "options": ["Threat detect", "None", "None", "None"], "answer": 0}, {"question": "Anomaly?", "options": ["Identify attack", "None", "None", "None"], "answer": 0}, {"question": "Speed?", "options": ["Real-time", "None", "None", "None"], "answer": 0}, {"question": "Automation?", "options": ["Response", "None", "None", "None"], "answer": 0}, {"question": "Advantage?", "options": ["Proactive", "None", "None", "None"], "answer": 0}]},
+  {"articleTitle": "Robotics: Designing Humanoid Systems", "questions": [{"question": "Humanoid?", "options": ["Human shape", "None", "None", "None"], "answer": 0}, {"question": "Balance?", "options": ["Dynamic control", "None", "None", "None"], "answer": 0}, {"question": "Sensors?", "options": ["IMU/Vision", "None", "None", "None"], "answer": 0}, {"question": "Actuators?", "options": ["Joint control", "None", "None", "None"], "answer": 0}, {"question": "Use?", "options": ["Interaction", "None", "None", "None"], "answer": 0}]},
+  {
+    "articleTitle": "Quantum Computing: Foundations for AI",
+    "questions": [
+      {"question": "Qubit kya hai?", "options": ["Quantum bit", "Normal bit", "None", "None"], "answer": 0},
+      {"question": "Superposition ka matlab?", "options": ["Both states", "One state", "None", "None"], "answer": 0},
+      {"question": "Entanglement?", "options": ["Linked states", "Separate", "None", "None"], "answer": 0},
+      {"question": "Speedup?", "options": ["Exponential", "Linear", "None", "None"], "answer": 0},
+      {"question": "AI use?", "options": ["Optimization", "Storage", "None", "None"], "answer": 0}
     ]
   },
   {
-    "articleTitle": "AI Ethics: Addressing Algorithmic Fairness",
+    "articleTitle": "AI for Drug Discovery and Healthcare",
     "questions": [
-      { "question": "Algorithmic bias ko kam karne ka kya matlab hai?", "options": ["Model ko bina data ke chalana", "Sabhi groups ke liye fair aur unbiased results dena", "Sirf speed badhana"], "answer": 1 }
+      {"question": "Drug discovery mein AI?", "options": ["Molecule predict", "None", "None", "None"], "answer": 0},
+      {"question": "Protein folding?", "options": ["AlphaFold", "None", "None", "None"], "answer": 0},
+      {"question": "Efficiency?", "options": ["Fast research", "Slow", "None", "None"], "answer": 0},
+      {"question": "Imaging?", "options": ["X-ray analysis", "None", "None", "None"], "answer": 0},
+      {"question": "Personalization?", "options": ["Patient data", "None", "None", "None"], "answer": 0}
     ]
   },
   {
-    "articleTitle": "Deployment Strategy: FastAPI for Model Serving",
+    "articleTitle": "Blockchain for Decentralized AI",
     "questions": [
-      { "question": "FastAPI ka use kyu kiya jata hai?", "options": ["High-performance API banakar model serve karne le liye", "Data training ke liye", "Hardware design ke liye"], "answer": 0 }
+      {"question": "Blockchain?", "options": ["Distributed ledger", "Central", "None", "None"], "answer": 0},
+      {"question": "AI benefit?", "options": ["Data integrity", "Privacy", "None", "None"], "answer": 0},
+      {"question": "Transparency?", "options": ["High", "Low", "None", "None"], "answer": 0},
+      {"question": "Smart contract?", "options": ["Automated", "None", "None", "None"], "answer": 0},
+      {"question": "Decentralization?", "options": ["Yes", "No", "None", "None"], "answer": 0}
     ]
   },
   {
-    "articleTitle": "AI Infrastructure: Scalable GPU Training",
+    "articleTitle": "Self-Supervised Learning Techniques",
     "questions": [
-      { "question": "Deep Learning models ke liye GPU kyu zaruri hai?", "options": ["Parallel processing power ke liye", "Storage badhane ke liye", "Internet speed ke liye"], "answer": 0 }
+      {"question": "SSL?", "options": ["Labels from data", "Human", "None", "None"], "answer": 0},
+      {"question": "Pretext task?", "options": ["Learning pattern", "None", "None", "None"], "answer": 0},
+      {"question": "Contrastive?", "options": ["Similarity", "None", "None", "None"], "answer": 0},
+      {"question": "Advantage?", "options": ["No labeling cost", "High cost", "None", "None"], "answer": 0},
+      {"question": "Example?", "options": ["Masked modeling", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI in Financial Markets Analysis",
+    "questions": [
+      {"question": "Trading?", "options": ["Algo-trading", "Manual", "None", "None"], "answer": 0},
+      {"question": "Risk?", "options": ["Forecasting", "None", "None", "None"], "answer": 0},
+      {"question": "Sentiment?", "options": ["News analysis", "None", "None", "None"], "answer": 0},
+      {"question": "Fraud?", "options": ["Real-time detect", "None", "None", "None"], "answer": 0},
+      {"question": "Pattern?", "options": ["Market trend", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Neural Architecture Search (NAS)",
+    "questions": [
+      {"question": "NAS?", "options": ["Auto design model", "Manual", "None", "None"], "answer": 0},
+      {"question": "Search?", "options": ["Architecture space", "None", "None", "None"], "answer": 0},
+      {"question": "Goal?", "options": ["Best accuracy", "Worst", "None", "None"], "answer": 0},
+      {"question": "Benefit?", "options": ["Time save", "Complex", "None", "None"], "answer": 0},
+      {"question": "Computation?", "options": ["High", "Low", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI for Smart Cities and IoT",
+    "questions": [
+      {"question": "IoT + AI?", "options": ["Smart sensors", "None", "None", "None"], "answer": 0},
+      {"question": "Traffic?", "options": ["Management", "None", "None", "None"], "answer": 0},
+      {"question": "Energy?", "options": ["Optimization", "None", "None", "None"], "answer": 0},
+      {"question": "Safety?", "options": ["Surveillance", "None", "None", "None"], "answer": 0},
+      {"question": "Goal?", "options": ["Efficiency", "Pollution", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Knowledge Graphs in AI Systems",
+    "questions": [
+      {"question": "Knowledge Graph?", "options": ["Structured entities", "None", "None", "None"], "answer": 0},
+      {"question": "Nodes?", "options": ["Concepts", "None", "None", "None"], "answer": 0},
+      {"question": "Edges?", "options": ["Relations", "None", "None", "None"], "answer": 0},
+      {"question": "Use?", "options": ["Recommendation", "None", "None", "None"], "answer": 0},
+      {"question": "Retrieval?", "options": ["Contextual", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Generative AI: Multimodal Models",
+    "questions": [
+      {"question": "Multimodal?", "options": ["Text+Image+Audio", "Text", "None", "None"], "answer": 0},
+      {"question": "CLIP?", "options": ["Text-image align", "None", "None", "None"], "answer": 0},
+      {"question": "Input?", "options": ["Different sources", "One", "None", "None"], "answer": 0},
+      {"question": "Output?", "options": ["Flexible", "None", "None", "None"], "answer": 0},
+      {"question": "Use?", "options": ["Content creation", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI Governance and Policy Frameworks",
+    "questions": [
+      {"question": "Governance?", "options": ["Rules for AI", "None", "None", "None"], "answer": 0},
+      {"question": "Compliance?", "options": ["Standard", "None", "None", "None"], "answer": 0},
+      {"question": "Accountability?", "options": ["Liability", "None", "None", "None"], "answer": 0},
+      {"question": "Standard?", "options": ["IEEE/ISO", "None", "None", "None"], "answer": 0},
+      {"question": "Goal?", "options": ["Safe AI", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI Infrastructure: Distributed Training",
+    "questions": [
+      {"question": "Distributed training ka main fayda?", "options": ["Speed/Scale", "Single GPU", "None", "None"], "answer": 0},
+      {"question": "Data Parallelism?", "options": ["Data split", "Model split", "None", "None"], "answer": 0},
+      {"question": "Model Parallelism?", "options": ["Model split", "Data split", "None", "None"], "answer": 0},
+      {"question": "Communication bottleneck?", "options": ["Sync overhead", "Speed", "None", "None"], "answer": 0},
+      {"question": "Framework?", "options": ["PyTorch DDP", "Single", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Model Monitoring: Detecting Data Drift",
+    "questions": [
+      {"question": "Data Drift?", "options": ["Input distribution change", "None", "None", "None"], "answer": 0},
+      {"question": "Impact?", "options": ["Accuracy drop", "Speed up", "None", "None"], "answer": 0},
+      {"question": "Monitoring?", "options": ["Real-time", "Batch", "None", "None"], "answer": 0},
+      {"question": "Technique?", "options": ["Statistical test", "Manual", "None", "None"], "answer": 0},
+      {"question": "Resolution?", "options": ["Retraining", "Ignore", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Machine Learning: Concept Drift",
+    "questions": [
+      {"question": "Concept Drift?", "options": ["P(y|x) change", "Input change", "None", "None"], "answer": 0},
+      {"question": "Example?", "options": ["Consumer behavior shift", "Hardware", "None", "None"], "answer": 0},
+      {"question": "Detection?", "options": ["Performance dip", "Visual", "None", "None"], "answer": 0},
+      {"question": "Adjustment?", "options": ["Model update", "Delete", "None", "None"], "answer": 0},
+      {"question": "Difference?", "options": ["Target mapping", "Input", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI Hardware: TPUs vs GPUs",
+    "questions": [
+      {"question": "TPU?", "options": ["Tensor Processing Unit", "None", "None", "None"], "answer": 0},
+      {"question": "Focus?", "options": ["Matrix math", "Graphics", "None", "None"], "answer": 0},
+      {"question": "GPU?", "options": ["Graphics/Parallel", "None", "None", "None"], "answer": 0},
+      {"question": "Efficiency?", "options": ["TPU for DL", "None", "None", "None"], "answer": 0},
+      {"question": "Use case?", "options": ["Large models", "Small", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI Agents: Autonomous Planning",
+    "questions": [
+      {"question": "Agent planning?", "options": ["Step-by-step goal", "None", "None", "None"], "answer": 0},
+      {"question": "Tool?", "options": ["Search algorithms", "None", "None", "None"], "answer": 0},
+      {"question": "ReAct?", "options": ["Reasoning + Acting", "None", "None", "None"], "answer": 0},
+      {"question": "Use case?", "options": ["Complex tasks", "None", "None", "None"], "answer": 0},
+      {"question": "Feedback?", "options": ["Self-correction", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Lightweight AI: On-Device ML",
+    "questions": [
+      {"question": "On-device?", "options": ["Edge hardware", "Cloud", "None", "None"], "answer": 0},
+      {"question": "Benefit?", "options": ["Latency/Privacy", "None", "None", "None"], "answer": 0},
+      {"question": "Constraint?", "options": ["Power/Memory", "None", "None", "None"], "answer": 0},
+      {"question": "Tool?", "options": ["TensorFlow Lite", "None", "None", "None"], "answer": 0},
+      {"question": "Popular?", "options": ["Mobile AI", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI Safety: Adversarial Attacks",
+    "questions": [
+      {"question": "Adversarial?", "options": ["Model fool", "Help", "None", "None"], "answer": 0},
+      {"question": "Method?", "options": ["Noise perturbation", "None", "None", "None"], "answer": 0},
+      {"question": "Goal?", "options": ["Wrong classification", "None", "None", "None"], "answer": 0},
+      {"question": "Defense?", "options": ["Adversarial training", "None", "None", "None"], "answer": 0},
+      {"question": "Severity?", "options": ["High risk", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Meta-Learning: Learning to Learn",
+    "questions": [
+      {"question": "Meta-learning?", "options": ["Model adaptability", "None", "None", "None"], "answer": 0},
+      {"question": "Few-shot?", "options": ["Fast adaptation", "None", "None", "None"], "answer": 0},
+      {"question": "MAML?", "options": ["Model-Agnostic", "None", "None", "None"], "answer": 0},
+      {"question": "Benefit?", "options": ["New task speed", "None", "None", "None"], "answer": 0},
+      {"question": "Process?", "options": ["Inner/Outer loop", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI in Video Generation",
+    "questions": [
+      {"question": "Video Gen?", "options": ["Spatio-temporal", "None", "None", "None"], "answer": 0},
+      {"question": "Consistency?", "options": ["Temporal", "None", "None", "None"], "answer": 0},
+      {"question": "Model?", "options": ["Diffusion models", "None", "None", "None"], "answer": 0},
+      {"question": "Conditioning?", "options": ["Text-to-video", "None", "None", "None"], "answer": 0},
+      {"question": "Complexity?", "options": ["Very High", "Low", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Neural Symbolic AI",
+    "questions": [
+      {"question": "Neural-Symbolic?", "options": ["Logic + Deep", "None", "None", "None"], "answer": 0},
+      {"question": "Benefit?", "options": ["Reasoning + Learn", "None", "None", "None"], "answer": 0},
+      {"question": "Neural part?", "options": ["Perception", "None", "None", "None"], "answer": 0},
+      {"question": "Symbolic part?", "options": ["Reasoning", "None", "None", "None"], "answer": 0},
+      {"question": "Future?", "options": ["Robust AI", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI Agents: Multi-Agent Systems",
+    "questions": [
+      {"question": "Multi-agent system kya hai?", "options": ["Interacting agents", "Single agent", "None", "None"], "answer": 0},
+      {"question": "Communication ka kya role hai?", "options": ["Coordination", "None", "None", "None"], "answer": 0},
+      {"question": "Emergent behavior?", "options": ["Collective intelligence", "Individual", "None", "None"], "answer": 0},
+      {"question": "Task allocation?", "options": ["Division of labor", "None", "None", "None"], "answer": 0},
+      {"question": "Conflict?", "options": ["Negotiation", "Error", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Data Quality: Dealing with Imbalanced Data",
+    "questions": [
+      {"question": "Imbalanced data problem?", "options": ["Bias", "Speed", "None", "None"], "answer": 0},
+      {"question": "SMOTE?", "options": ["Oversampling", "Undersampling", "None", "None"], "answer": 0},
+      {"question": "Undersampling?", "options": ["Reduce majority", "Add", "None", "None"], "answer": 0},
+      {"question": "Metric for imbalance?", "options": ["F1-score", "Accuracy", "None", "None"], "answer": 0},
+      {"question": "Cost-sensitive learning?", "options": ["Penalty for errors", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Advanced Optimization: Adam Optimizer",
+    "questions": [
+      {"question": "Adam ka full form?", "options": ["Adaptive Moment Estimation", "None", "None", "None"], "answer": 0},
+      {"question": "Fayda?", "options": ["Adaptive learning rates", "None", "None", "None"], "answer": 0},
+      {"question": "Momentum?", "options": ["Speed up", "Slow", "None", "None"], "answer": 0},
+      {"question": "Hyperparameters?", "options": ["Beta1, Beta2", "None", "None", "None"], "answer": 0},
+      {"question": "Training speed?", "options": ["Fast convergence", "Slow", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI Infrastructure: Vector Databases",
+    "questions": [
+      {"question": "Vector DB ka kaam?", "options": ["Similarity search", "Table search", "None", "None"], "answer": 0},
+      {"question": "Embeddings storage?", "options": ["Vectors", "Text", "None", "None"], "answer": 0},
+      {"question": "Indexing?", "options": ["ANN", "Linear", "None", "None"], "answer": 0},
+      {"question": "Scalability?", "options": ["High", "Low", "None", "None"], "answer": 0},
+      {"question": "Use case?", "options": ["RAG/LLM memory", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Natural Language Processing: Sentiment Analysis",
+    "questions": [
+      {"question": "Sentiment analysis?", "options": ["Emotion detection", "None", "None", "None"], "answer": 0},
+      {"question": "Technique?", "options": ["VADER/BERT", "Sum", "None", "None"], "answer": 0},
+      {"question": "Output classes?", "options": ["Pos, Neg, Neu", "None", "None", "None"], "answer": 0},
+      {"question": "Challenge?", "options": ["Sarcasm", "Grammar", "None", "None"], "answer": 0},
+      {"question": "Applications?", "options": ["Marketing", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "MLOps: Model Versioning",
+    "questions": [
+      {"question": "Model versioning?", "options": ["Track changes", "Delete", "None", "None"], "answer": 0},
+      {"question": "Tool?", "options": ["MLflow/DVC", "Excel", "None", "None"], "answer": 0},
+      {"question": "Reproducibility?", "options": ["Yes", "No", "None", "None"], "answer": 0},
+      {"question": "Tracking?", "options": ["Params/Metrics", "None", "None", "None"], "answer": 0},
+      {"question": "Governance?", "options": ["Compliance", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI Applications: Smart Healthcare",
+    "questions": [
+      {"question": "Telemedicine?", "options": ["Remote diagnostic", "None", "None", "None"], "answer": 0},
+      {"question": "Wearables?", "options": ["Real-time monitor", "None", "None", "None"], "answer": 0},
+      {"question": "Diagnostics?", "options": ["Early detection", "None", "None", "None"], "answer": 0},
+      {"question": "Predictive?", "options": ["Patient risk", "None", "None", "None"], "answer": 0},
+      {"question": "Data privacy?", "options": ["Crucial", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Generative AI: Audio Synthesis",
+    "questions": [
+      {"question": "WaveNet?", "options": ["Audio gen", "Text", "None", "None"], "answer": 0},
+      {"question": "Prosody?", "options": ["Tone/Rhythm", "None", "None", "None"], "answer": 0},
+      {"question": "Applications?", "options": ["Voice assistants", "None", "None", "None"], "answer": 0},
+      {"question": "Model?", "options": ["Diff/GAN", "None", "None", "None"], "answer": 0},
+      {"question": "Input?", "options": ["Text", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "AI Ethics: Addressing Hallucinations",
+    "questions": [
+      {"question": "Hallucination?", "options": ["False facts", "Correct", "None", "None"], "answer": 0},
+      {"question": "Cause?", "options": ["Training data gaps", "None", "None", "None"], "answer": 0},
+      {"question": "Mitigation?", "options": ["RAG/Grounding", "None", "None", "None"], "answer": 0},
+      {"question": "Impact?", "options": ["Misinformation", "None", "None", "None"], "answer": 0},
+      {"question": "Fact-checking?", "options": ["Verification", "None", "None", "None"], "answer": 0}
+    ]
+  },
+  {
+    "articleTitle": "Deep Learning: Attention Is All You Need",
+    "questions": [
+      {"question": "Paper theme?", "options": ["Transformers", "RNN", "None", "None"], "answer": 0},
+      {"question": "Self-attention?", "options": ["Dependency mapping", "None", "None", "None"], "answer": 0},
+      {"question": "Positional encoding?", "options": ["Sequence order", "None", "None", "None"], "answer": 0},
+      {"question": "Training?", "options": ["Parallel", "Sequential", "None", "None"], "answer": 0},
+      {"question": "Impact?", "options": ["Revolutionary", "None", "None", "None"], "answer": 0}
     ]
   }
 ]
