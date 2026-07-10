@@ -1,80 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mastering Control Flow and Loops | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; display: flex; }
-
-        /* Sidebar Navigation */
-        .sidebar { width: 250px; height: 100vh; background: #f8f9fa; border-right: 1px solid #ddd; padding: 20px; position: fixed; }
-        .logo { font-weight: 800; font-size: 24px; color: #1a5276; text-decoration: none; display: block; margin-bottom: 40px; }
-        .nav-links a { display: block; padding: 10px 0; text-decoration: none; color: #2c3e50; font-weight: 500; }
-        .nav-links a:hover { color: #1a5276; }
-
-        /* Main Content Area */
-        .main-content { margin-left: 250px; padding: 40px; width: 100%; max-width: 900px; }
-        
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
+        .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; background: #fff; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; color: #111; margin-bottom: 10px; }
-        h3 { color: #1a5276; margin-top: 30px; margin-bottom: 15px; }
-        p { margin-bottom: 20px; font-size: 18px; }
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; margin-bottom: 20px; font-family: 'Courier New', Courier, monospace; }
-        .tip-box { background: #f0f7ff; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { color: #1a5276; margin-top: 25px; margin-bottom: 10px; }
+        p { margin-bottom: 15px; font-size: 18px; }
+        pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; margin: 15px 0; }
+        .tip-box { background: #f0f7ff; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; }
+        ul { margin-left: 25px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
-    <nav class="sidebar">
-        <a href="#" class="logo">AITecnology</a>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Tutorials</a>
-            <a href="#">Research</a>
-            <a href="#">About</a>
-        </div>
-    </nav>
-
-    <main class="main-content">
+    <main class="container">
         <article>
-            <h2>Mastering Control Flow and Loops</h2>
-            <div style="font-size: 14px; color: #7f8c8d; margin-bottom: 30px;">Published: July 10, 2026</div>
-
-            <img src="A3.png" alt="Control Flow and Loops" class="main-image">
+            <h2>Python में Loops: संपूर्ण मार्गदर्शिका</h2>
             
-            <h3>What is a Loop?</h3>
-            <p>Imagine you need to say "Hello" to 100 people. Instead of writing 100 lines of code, you use a <strong>"Loop."</strong> A loop tells your program to perform the same task repeatedly until a specific goal is reached.</p>
+            <h3>1. लूप (Loop) क्या है? (Definition)</h3>
+            <p>प्रोग्रामिंग में, <strong>लूप</strong> एक ऐसी प्रक्रिया है जिसका उपयोग कोड के एक ब्लॉक को बार-बार दोहराने (execute) के लिए किया जाता है। जब हमें एक ही काम को कई बार करना हो, तो हम लूप का उपयोग करते हैं, जिससे हमारा समय बचता है और कोड संक्षिप्त रहता है।</p>
 
-            <h3>Types of Loops</h3>
-            <h4>1. For Loop (The "Counted" Loop)</h4>
-            <p>Use this when you know exactly how many times the action should repeat.</p>
-            <pre><code>for i in range(1, 6):
-    print("Number:", i)</code></pre>
-
-            <h4>2. While Loop (The "Conditional" Loop)</h4>
-            <p>This keeps running as long as a specific condition is <strong>True</strong>.</p>
-            <pre><code>battery = 0
-while battery < 100:
-    print(f"Charging... {battery}%")
-    battery += 20</code></pre>
-
-            <h3>Why are Loops important in AI?</h3>
+            <h3>2. लूप के प्रकार (Types of Loops)</h3>
+            <p>Python में मुख्य रूप से दो प्रकार के लूप होते हैं:</p>
             <ul>
-                <li><strong>Saves Time:</strong> Processes massive datasets in seconds.</li>
-                <li><strong>Model Training:</strong> Used to run "epochs" in machine learning.</li>
-                <li><strong>Automation:</strong> Handles repetitive tasks like image resizing.</li>
+                <li><strong>For Loop:</strong> इसका उपयोग तब किया जाता है जब हमें पता हो कि लूप को कितनी बार चलाना है (जैसे किसी List या Range पर)।</li>
+                <li><strong>While Loop:</strong> इसका उपयोग तब किया जाता है जब लूप तब तक चलना चाहिए जब तक दी गई शर्त (condition) सत्य (True) है।</li>
+            </ul>
+
+            <h3>3. कोड के उदाहरण (Practical Code Examples)</h3>
+            <p><strong>For Loop का उदाहरण:</strong></p>
+            <pre><code># डेटासेट के ऊपर लूप चलाना
+models = ["Linear Regression", "Decision Tree", "Random Forest"]
+for model in models:
+    print(f"Training: {model}")</code></pre>
+
+            <p><strong>While Loop का उदाहरण:</strong></p>
+            <pre><code># जब तक सटीकता (accuracy) 95% न हो जाए
+accuracy = 80
+while accuracy < 95:
+    print(f"Current Accuracy: {accuracy}% - Improving...")
+    accuracy += 5
+print("Target reached!")</code></pre>
+
+            <h3>4. लूप का महत्व और उपयोग (Why Loops are Important?)</h3>
+            <p>AI और Data Science में लूप्स के बिना काम करना असंभव है। इनके प्रमुख उपयोग नीचे दिए गए हैं:</p>
+            <ul>
+                <li><strong>डेटा प्रोसेसिंग:</strong> लाखों पंक्तियों (rows) वाले CSV डेटा को एक-एक करके पढ़ना।</li>
+                <li><strong>मॉडल ट्रेनिंग:</strong> न्यूरल नेटवर्क में हज़ारों बार 'Epochs' चलाना ताकि मॉडल सीख सके।</li>
+                <li><strong>ऑटोमेशन:</strong> एक साथ हज़ारों इमेजेस को रिसाइज (resize) या प्रोसेस करना।</li>
+                <li><strong>सर्च एल्गोरिदम:</strong> डेटा में से किसी खास वैल्यू को ढूंढना।</li>
             </ul>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> Always include an exit condition to avoid an "Infinite Loop."
+                <strong>Aitecnology Tip:</strong> लूप्स बहुत शक्तिशाली हैं, लेकिन बड़े डेटासेट के लिए हमेशा <code>NumPy</code> या <code>Pandas</code> की 'vectorized' विधियों का उपयोग करें। यह लूप से 100 गुना तेज़ चलते हैं!
             </div>
         </article>
-
-        <footer>&copy; 2026 AITecnology. All rights reserved.</footer>
     </main>
-
 </body>
 </html>
