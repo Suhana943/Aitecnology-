@@ -7,68 +7,47 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
-        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        p { margin-bottom: 20px; font-size: 18px; }
-        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
-        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
         h3 { margin: 30px 0 15px 0; color: #1a5276; }
+        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
+        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
+        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
-
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
-
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
     <main class="container">
         <article>
             <h2>Dot Products and Inner Products Explained</h2>
             <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
-            
             <img src="A13.png" alt="Dot Product Visualization" class="main-image">
-
             <div class="content">
-                <p>लीनियर अलजेब्रा में, <strong>Dot Product</strong> और <strong>Inner Product</strong> दो वेक्टर्स के बीच के संबंध को मापने के मूलभूत तरीके हैं। यह AI में सिमिलरिटी स्कोर निकालने के लिए सबसे महत्वपूर्ण गणितीय ऑपरेशन है।</p>
-
+                <p>In Linear Algebra, the <strong>Dot Product</strong> and <strong>Inner Product</strong> are fundamental ways to measure the relationship between two vectors. In AI, these are the primary math operations used to determine "similarity" between data points.</p>
                 
-
-                <h3>1. डॉट प्रोडक्ट क्या है?</h3>
-                <p>यदि हमारे पास दो वेक्टर्स $\mathbf{a}$ और $\mathbf{b}$ हैं, तो उनका डॉट प्रोडक्ट यह बताता है कि वे एक-दूसरे की दिशा में कितने 'अलाइन' (align) हैं।</p>
-                
-                $$ \mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i = \|\mathbf{a}\| \|\mathbf{b}\| \cos(\theta) $$
-
-                <h3>2. इनर प्रोडक्ट का विस्तार</h3>
-                <p>इनर प्रोडक्ट, डॉट प्रोडक्ट का एक अधिक सामान्य (generalised) रूप है। जहाँ डॉट प्रोडक्ट यूक्लिडियन स्पेस के लिए होता है, इनर प्रोडक्ट किसी भी वेक्टर स्पेस में परिभाषित किया जा सकता है, बशर्ते वह linearity, symmetry, और positive-definiteness के नियमों का पालन करे।</p>
-
-                <h3>3. AI में उपयोग</h3>
+                <h3>1. What is a Dot Product?</h3>
+                <p>The dot product takes two vectors and returns a single number (a scalar). This number tells you how much the two vectors "align" with each other.</p>
+                <h3>2. Why use them in AI?</h3>
                 <ul>
-                    <li><strong>Cosine Similarity:</strong> दो वेक्टर्स के बीच के कोण को मापकर उनकी समानता (similarity) तय करना।</li>
-                    <li><strong>Neural Networks:</strong> लेयर्स के बीच वेट्स (weights) और इनपुट के गुणन (multiplication) में।</li>
+                    <li><strong>Measuring Similarity:</strong> Used in cosine similarity to compare how close two data items are.</li>
+                    <li><strong>Neural Networks:</strong> The core mechanism of weight and input multiplication in deep learning layers.</li>
                 </ul>
+                <h3>3. Coding Example</h3>
+                <pre><code>import numpy as np
+vector_a = np.array([1, 2, 3])
+vector_b = np.array([4, 5, 6])
+result = np.dot(vector_a, vector_b) # Returns 32
+print(result)</code></pre>
             </div>
-
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> याद रखें कि यदि दो वेक्टर्स का डॉट प्रोडक्ट 0 है, तो वे एक-दूसरे के 'Orthogonal' (लंबवत) हैं। NLP में, यह संकेत देता है कि दो शब्द या डॉक्यूमेंट्स एक-दूसरे से पूरी तरह अलग हैं।
+                <strong>Aitecnology Tip:</strong> If your dot product result is 0, the vectors are <strong>Orthogonal</strong> (at a 90-degree angle), meaning they are totally unrelated in your dataset.
             </div>
         </article>
-
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
