@@ -1,57 +1,60 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Unsupervised Learning: DBSCAN Density Clustering | ML</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
-        .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
-        .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
-        .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; padding: 40px 20px; max-width: 740px; margin: 0 auto; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
-        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        p { margin-bottom: 20px; font-size: 18px; }
-        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
-        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin: 20px 0; border-left: 3px solid #7f8c8d; }
+        .meta-info { font-size: 0.9em; color: #7f8c8d; margin-bottom: 20px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
+    <h2>Unsupervised Learning: DBSCAN Density Clustering</h2>
+    <div class="meta-info">Published: July 9, 2026 | Category: ML</div>
+    
+    <p>DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a powerful clustering algorithm that, unlike K-Means, does not require you to specify the number of clusters in advance. Instead, it groups together points that are closely packed, effectively identifying clusters of arbitrary shapes and separating them from noise.</p>
+    
+    <img src="A15.png" alt="DBSCAN clustering diagram" class="main-image">
 
-    <main class="container">
-        <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
-            
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+    <h3>How DBSCAN Works</h3>
+    <p>DBSCAN relies on two parameters: <strong>eps</strong> (maximum distance for neighborhood) and <strong>min_samples</strong> (density threshold).</p>
+    <ul>
+        <li><strong>Core Points:</strong> Points with at least <em>min_samples</em> neighbors within <em>eps</em> distance.</li>
+        <li><strong>Border Points:</strong> Points within <em>eps</em> of a core point but with fewer neighbors.</li>
+        <li><strong>Noise:</strong> Points that don't belong to any cluster.</li>
+    </ul>
 
-            <div class="content">
-                {{CONTENT}}
-            </div>
+    <h3>Why Use DBSCAN?</h3>
+    <ul>
+        <li><strong>Arbitrary Shapes:</strong> Discovers clusters of any shape, unlike K-Means.</li>
+        <li><strong>No K Needed:</strong> The number of clusters is discovered automatically.</li>
+        <li><strong>Robustness:</strong> Naturally identifies and ignores noise.</li>
+    </ul>
 
-            <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
-            </div>
-        </article>
+    <h3>Quick Example</h3>
+    <pre><code>from sklearn.cluster import DBSCAN
+from sklearn.datasets import make_moons
 
-        <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
-    </main>
+# Generate non-spherical data
+X, _ = make_moons(n_samples=200, noise=0.05)
 
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
+# Initialize and fit DBSCAN
+# eps: neighborhood radius, min_samples: density threshold
+dbscan = DBSCAN(eps=0.2, min_samples=5)
+labels = dbscan.fit_predict(X)
+
+print("Unique clusters found:", set(labels))</code></pre>
+
+    <hr>
+    <p>For more details, visit: <a href="A47.html">DBSCAN Documentation</a></p>
+
 </body>
 </html>
