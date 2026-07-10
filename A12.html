@@ -7,64 +7,45 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
-        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        p { margin-bottom: 20px; font-size: 18px; }
-        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
-        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
         h3 { margin: 30px 0 15px 0; color: #1a5276; }
+        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        p { margin-bottom: 20px; font-size: 18px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
+        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
-
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
-
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
     <main class="container">
         <article>
             <h2>Machine Learning Model Observability</h2>
             <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
-            
-            <img src="A8.png" alt="Model Observability Dashboard" class="main-image">
-
+            <img src="A8.png" alt="Model Observability" class="main-image">
             <div class="content">
-                <p>MLOps में <strong>Model Observability</strong> का अर्थ है प्रोडक्शन में मौजूद मॉडल के व्यवहार को गहराई से समझना। यह केवल यह नहीं बताता कि मॉडल "चल रहा है या नहीं", बल्कि यह विश्लेषण करता है कि वह क्या और क्यों निर्णय ले रहा है।</p>
-
+                <p>In MLOps, <strong>Model Observability</strong> is the ability to deeply understand the behavior of models in production—analyzing not just what predictions they are making, but <em>why</em> they are making them.</p>
                 
-
-                <h3>1. मुख्य स्तंभ (Core Pillars)</h3>
+                <h3>1. Core Pillars</h3>
                 <ul>
-                    <li><strong>Performance Monitoring:</strong> क्या मॉडल का प्रेडिक्शन समय के साथ सटीक है?</li>
-                    <li><strong>Data Drift Detection:</strong> क्या इनपुट डेटा का वितरण बदल गया है?</li>
-                    <li><strong>Explainability:</strong> क्या हम मॉडल के निर्णयों के पीछे की विशेषताओं (features) को समझ पा रहे हैं?</li>
+                    <li><strong>Performance Monitoring:</strong> Tracking accuracy and reliability over time.</li>
+                    <li><strong>Data Drift Detection:</strong> Noticing when production data deviates from training data.</li>
+                    <li><strong>Explainability:</strong> Understanding which features drive specific decisions.</li>
                 </ul>
-
-                <h3>2. मॉनिटरिंग बनाम ऑब्सर्वेबिलिटी</h3>
-                <p>मॉनिटरिंग आपको समस्याओं के बारे में अलर्ट देती है (जैसे- एरर रेट बढ़ गया है)। इसके विपरीत, ऑब्सर्वेबिलिटी आपको सिस्टम के अंदर झाँकने और यह समझने की अनुमति देती है कि समस्या का मूल कारण क्या है, जिससे उसे जल्दी ठीक किया जा सके।</p>
+                <h3>2. Monitoring vs. Observability</h3>
+                <p>Monitoring identifies <em>that</em> there is a problem. Observability provides the context to understand <em>why</em> the problem is occurring, allowing for faster resolution.</p>
+                <h3>3. Why Use It?</h3>
+                <p>Models degrade as real-world data changes. Observability acts as an early warning system to maintain trust and accuracy in AI-driven decisions.</p>
             </div>
-
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> 'Model Logging' के लिए Prometheus और Grafana के साथ-साथ 'Arize' या 'WhyLabs' जैसे टूल्स का उपयोग करें जो विशेष रूप से ML के लिए बने हैं।
+                <strong>Aitecnology Tip:</strong> Combine standard tools (Prometheus/Grafana) with specialized ML observability platforms like Arize or WhyLabs to track drift and bias effectively.
             </div>
         </article>
-
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
