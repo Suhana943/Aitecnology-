@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,60 +7,75 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .content { margin-top: 20px; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         p { margin-bottom: 20px; font-size: 18px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
-        h3 { margin: 20px 0 10px; color: #1a5276; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
 
     <main class="container">
         <article>
             <h2>Partial Derivatives in Multivariate Calculus</h2>
             <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            
+            <img src="A2.png" alt="Partial Derivatives Visualization" class="main-image">
 
             <div class="content">
-                <p>मशीन लर्निंग में, हम अक्सर ऐसे फंक्शन्स के साथ काम करते हैं जिनमें कई इनपुट वेरिएबल्स होते हैं। <strong>Partial Derivatives (आंशिक अवकलन)</strong> हमें यह समझने में मदद करते हैं कि यदि हम केवल एक वेरिएबल को बदलें, तो आउटपुट में कितना बदलाव आएगा, जबकि बाकी वेरिएबल्स को स्थिर (constant) रखा जाता है।</p>
+                <p>In real-world data science, functions rarely depend on a single variable. To understand how a function changes when we adjust just <em>one</em> input parameter, we use <strong>Partial Derivatives</strong>.</p>
                 
-                <h3>मुख्य अवधारणा</h3>
-                <p>यदि फंक्शन $f(x, y)$ है, तो $x$ के सापेक्ष आंशिक डेरिवेटिव $\frac{\partial f}{\partial x}$ होगा। इसका अर्थ है $y$ को एक स्थिरांक मानकर $x$ का अवकलन करना।</p>
                 
-                <h3>AI में महत्व</h3>
+
+                <h3>1. What is a Partial Derivative?</h3>
+                <p>A partial derivative measures the rate of change of a multi-variable function with respect to one variable, while holding all other variables constant. For a function <em>f(x, y)</em>, the derivative <em>∂f/∂x</em> gives us the slope in the <em>x</em>-direction only.</p>
+
+                <h3>2. Why are they Important?</h3>
                 <ul>
-                    <li><strong>Gradient Vector:</strong> सभी आंशिक डेरिवेटिव्स को मिलाकर 'ग्रेडिएंट' बनता है, जो हमें उस दिशा में ले जाता है जहाँ फंक्शन सबसे तेजी से बढ़ता है।</li>
-                    <li><strong>Multi-parameter Optimization:</strong> न्यूरल नेटवर्क में लाखों पैरामीटर्स (वेट्स) होते हैं। पार्शियल डेरिवेटिव्स ही हमें बताते हैं कि कौन सा विशिष्ट वेट लॉस को कम करने में कितना योगदान दे रहा है।</li>
+                    <li><strong>Optimization:</strong> Helps find the "downhill" direction in loss functions with many parameters.</li>
+                    <li><strong>The Gradient Vector:</strong> The collection of all partial derivatives forms the <strong>Gradient (∇f)</strong>, which points in the direction of steepest ascent.</li>
+                    <li><strong>Sensitivity Analysis:</strong> Identifies which input features most strongly impact model predictions.</li>
                 </ul>
+
+                <h3>3. How to Calculate</h3>
+                <p>Treat all variables except the one you are differentiating as constants, then apply standard derivative rules.</p>
+                
+                
+
+                <h3>4. Python Implementation</h3>
+                <pre><code>import sympy as sp
+
+# Define variables
+x, y = sp.symbols('x y')
+
+# Define function: f(x, y) = x^2 + 3xy + y^3
+f = x**2 + 3*x*y + y**3
+
+# Calculate partial derivatives
+df_dx = sp.diff(f, x) # Result: 2x + 3y
+df_dy = sp.diff(f, y) # Result: 3x + 3y^2
+
+print(f"Partial derivative w.r.t x: {df_dx}")
+print(f"Partial derivative w.r.t y: {df_dy}")</code></pre>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> पार्शियल डेरिवेटिव्स के साथ काम करते समय 'Jacobian Matrix' को समझें। यह उन सभी डेरिवेटिव्स का एक संग्रह है जो मल्टी-वेरिएबल सिस्टम में बदलाव को ट्रैक करने के लिए अनिवार्य है।
+                <strong>Aitecnology Tip:</strong> When implementing custom training loops, use <code>torch.autograd</code>. It builds a computational graph to track these partial derivatives automatically, powering backpropagation across thousands of variables!
             </div>
         </article>
 
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
