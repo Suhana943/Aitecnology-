@@ -2,444 +2,262 @@
   {
     "articleTitle": "Introduction to Python Programming Basics",
     "questions": [
-      {
-        "question": "Python kis prakar ki language hai?",
-        "options": ["Compiled", "Interpreted", "Both"],
-        "answer": 1
-      },
-      {
-        "question": "Python mein variable define karne ke liye kaunsa keyword use hota hai?",
-        "options": ["var", "let", "None (Direct assignment)"],
-        "answer": 2
-      }
+      { "question": "Python kis prakar ki language hai?", "options": ["Compiled", "Interpreted", "Both"], "answer": 1 },
+      { "question": "Python mein variable define karne ke liye kaunsa keyword use hota hai?", "options": ["var", "let", "None (Direct assignment)"], "answer": 2 }
     ]
   },
   {
     "articleTitle": "Understanding Python Functions and Scope",
     "questions": [
-      {
-        "question": "Python mein function define karne ke liye kaunsa keyword use hota hai?",
-        "options": ["func", "def", "function"],
-        "answer": 1
-      },
-      {
-        "question": "Function se value return karne ke liye kaunsa keyword use hota hai?",
-        "options": ["output", "send", "return"],
-        "answer": 2
-      }
+      { "question": "Python mein function define karne ke liye kaunsa keyword use hota hai?", "options": ["func", "def", "function"], "answer": 1 },
+      { "question": "Function se value return karne ke liye kaunsa keyword use hota hai?", "options": ["output", "send", "return"], "answer": 2 }
     ]
   },
   {
     "articleTitle": "Mastering Control Flow and Loops",
     "questions": [
-      {
-        "question": "Python mein loop se bahar nikalne ke liye kaunsa keyword use hota hai?",
-        "options": ["stop", "exit", "break"],
-        "answer": 2
-      },
-      {
-        "question": "Range(5) function kitni values generate karega?",
-        "options": ["1 se 5", "0 se 4", "0 se 5"],
-        "answer": 1
-      }
+      { "question": "Python mein loop se bahar nikalne ke liye kaunsa keyword use hota hai?", "options": ["stop", "exit", "break"], "answer": 2 },
+      { "question": "Range(5) function kitni values generate karega?", "options": ["1 se 5", "0 se 4", "0 se 5"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Linear Algebra: Vector Spaces and Operations",
     "questions": [
-      {
-        "question": "Vector space mein zero vector ka kya mahatva hai?",
-        "options": ["Additive identity", "Multiplicative identity", "Null space"],
-        "answer": 0
-      }
+      { "question": "Vector space mein zero vector ka kya mahatva hai?", "options": ["Additive identity", "Multiplicative identity", "Null space"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "Linear Algebra: Matrix Transformations",
     "questions": [
-      {
-        "question": "Identity matrix se kisi matrix ko multiply karne par kya milta hai?",
-        "options": ["Zero matrix", "Original matrix", "Inverse matrix"],
-        "answer": 1
-      }
+      { "question": "Identity matrix se kisi matrix ko multiply karne par kya milta hai?", "options": ["Zero matrix", "Original matrix", "Inverse matrix"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Calculus: Understanding Derivatives",
     "questions": [
-      {
-        "question": "Derivative kya represent karta hai?",
-        "options": ["Area under curve", "Rate of change", "Constant value"],
-        "answer": 1
-      }
+      { "question": "Derivative kya represent karta hai?", "options": ["Area under curve", "Rate of change", "Constant value"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Probability Theory and Basic Rules",
     "questions": [
-      {
-        "question": "Kisi event ke hone ki probability hamesha kiske beech hoti hai?",
-        "options": ["-1 aur 1", "0 aur 1", "1 aur 100"],
-        "answer": 1
-      }
+      { "question": "Kisi event ke hone ki probability hamesha kiske beech hoti hai?", "options": ["-1 aur 1", "0 aur 1", "1 aur 100"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Bayes Theorem in Artificial Intelligence",
     "questions": [
-      {
-        "question": "Bayes Theorem kis cheez ke liye use hota hai?",
-        "options": ["Conditional probability", "Matrix multiplication", "Integration"],
-        "answer": 0
-      },
+      { "question": "Bayes Theorem kis cheez ke liye use hota hai?", "options": ["Conditional probability", "Matrix multiplication", "Integration"], "answer": 0 }
+    ]
+  },
   {
     "articleTitle": "NumPy: Efficient Array Processing",
     "questions": [
-      {
-        "question": "NumPy mein primary data structure kaunsa hota hai?",
-        "options": ["List", "Dictionary", "ndarray"],
-        "answer": 2
-      }
+      { "question": "NumPy mein primary data structure kaunsa hota hai?", "options": ["List", "Dictionary", "ndarray"], "answer": 2 }
     ]
   },
   {
     "articleTitle": "NumPy Broadcasting for Optimized Math",
     "questions": [
-      {
-        "question": "Broadcasting ka main fayda kya hai?",
-        "options": ["Memory saving", "Different shapes ke arrays par operation", "Faster internet"],
-        "answer": 1
-      }
+      { "question": "Broadcasting ka main fayda kya hai?", "options": ["Memory saving", "Different shapes ke arrays par operation", "Faster internet"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Pandas Dataframes for Data Analysis",
     "questions": [
-      {
-        "question": "Pandas mein 'DataFrame' kya hota hai?",
-        "options": ["1D Series", "2D Tabular data", "Single value"],
-        "answer": 1
-      }
+      { "question": "Pandas mein 'DataFrame' kya hota hai?", "options": ["1D Series", "2D Tabular data", "Single value"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Data Cleaning with Pandas",
     "questions": [
-      {
-        "question": "Missing values ko remove karne ke liye kaunsa method use hota hai?",
-        "options": ["drop()", "dropna()", "clear()"],
-        "answer": 1
-      }
+      { "question": "Missing values ko remove karne ke liye kaunsa method use hota hai?", "options": ["drop()", "dropna()", "clear()"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Merging and Joining Datasets in Pandas",
     "questions": [
-      {
-        "question": "Do DataFrames ko combine karne ke liye kaunsa function best hai?",
-        "options": ["add()", "merge()", "join()"],
-        "answer": 1
-      }
+      { "question": "Do DataFrames ko combine karne ke liye kaunsa function best hai?", "options": ["add()", "merge()", "join()"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Data Visualization with Matplotlib",
     "questions": [
-      {
-        "question": "Matplotlib mein plot show karne ke liye kaunsa command use hota hai?",
-        "options": ["plt.display()", "plt.show()", "plt.render()"],
-        "answer": 1
-      }
+      { "question": "Matplotlib mein plot show karne ke liye kaunsa command use hota hai?", "options": ["plt.display()", "plt.show()", "plt.render()"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Advanced Data Visualization with Seaborn",
     "questions": [
-      {
-        "question": "Seaborn library kis library ke upar build ki gayi hai?",
-        "options": ["NumPy", "Matplotlib", "Pandas"],
-        "answer": 1
-      }
+      { "question": "Seaborn library kis library ke upar build ki gayi hai?", "options": ["NumPy", "Matplotlib", "Pandas"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Supervised Learning: Regression Models",
     "questions": [
-      {
-        "question": "Regression models ka use kis tarah ka data predict karne ke liye hota hai?",
-        "options": ["Categorical", "Continuous numerical", "Binary"],
-        "answer": 1
-      }
+      { "question": "Regression models ka use kis tarah ka data predict karne ke liye hota hai?", "options": ["Categorical", "Continuous numerical", "Binary"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Supervised Learning: Classification Algorithms",
     "questions": [
-      {
-        "question": "Classification model ka output kya hota hai?",
-        "options": ["Class labels/Categories", "Real numbers", "Nothing"],
-        "answer": 0
-      }
+      { "question": "Classification model ka output kya hota hai?", "options": ["Class labels/Categories", "Real numbers", "Nothing"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "Model Evaluation: Accuracy Metrics",
     "questions": [
-      {
-        "question": "Accuracy score ka formula kya hai?",
-        "options": ["(True Positives) / Total", "(Correct Predictions) / Total", "1 - Error"],
-        "answer": 1
-      }
+      { "question": "Accuracy score ka formula kya hai?", "options": ["(True Positives) / Total", "(Correct Predictions) / Total", "1 - Error"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Feature Engineering: Scaling and Normalization",
     "questions": [
-      {
-        "question": "Feature scaling ka main purpose kya hai?",
-        "options": ["Model training fast karna", "Features ko same range mein lana", "Data delete karna"],
-        "answer": 1
-      }
+      { "question": "Feature scaling ka main purpose kya hai?", "options": ["Model training fast karna", "Features ko same range mein lana", "Data delete karna"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Categorical Data Encoding Techniques",
     "questions": [
-      {
-        "question": "Categorical data ko numbers mein badalne ke liye 'One-Hot Encoding' kya karta hai?",
-        "options": ["Binary columns create karta hai", "Data ko compress karta hai", "Mean calculate karta hai"],
-        "answer": 0
-      }
+      { "question": "Categorical data ko numbers mein badalne ke liye 'One-Hot Encoding' kya karta hai?", "options": ["Binary columns create karta hai", "Data ko compress karta hai", "Mean calculate karta hai"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "Handling Missing Data with Imputation",
     "questions": [
-      {
-        "question": "Missing values ko mean ya median se replace karna kya kehlata hai?",
-        "options": ["Deletion", "Imputation", "Encoding"],
-        "answer": 1
-      }
+      { "question": "Missing values ko mean ya median se replace karna kya kehlata hai?", "options": ["Deletion", "Imputation", "Encoding"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Unsupervised Learning: K-Means Clustering",
     "questions": [
-      {
-        "question": "K-Means mein 'K' kya represent karta hai?",
-        "options": ["Iterations", "Clusters ki sankhya", "Learning rate"],
-        "answer": 1
-      }
+      { "question": "K-Means mein 'K' kya represent karta hai?", "options": ["Iterations", "Clusters ki sankhya", "Learning rate"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Dimensionality Reduction: Principal Component Analysis",
     "questions": [
-      {
-        "question": "PCA ka primary goal kya hai?",
-        "options": ["Data ki complexity badhana", "Information loss kam karke features kam karna", "Model accuracy check karna"],
-        "answer": 1
-      }
+      { "question": "PCA ka primary goal kya hai?", "options": ["Data ki complexity badhana", "Information loss kam karke features kam karna", "Model accuracy check karna"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Neural Networks: The Perceptron Explained",
     "questions": [
-      {
-        "question": "Perceptron kya hota hai?",
-        "options": ["Ek simple linear classifier", "Ek complex neural network", "Ek optimization algorithm"],
-        "answer": 0
-      }
+      { "question": "Perceptron kya hota hai?", "options": ["Ek simple linear classifier", "Ek complex neural network", "Ek optimization algorithm"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "Neural Networks: Activation Functions Overview",
     "questions": [
-      {
-        "question": "Activation function ka kya kaam hai?",
-        "options": ["Model ko non-linearity dena", "Weights ko delete karna", "Data ko normalize karna"],
-        "answer": 0
-      }
+      { "question": "Activation function ka kya kaam hai?", "options": ["Model ko non-linearity dena", "Weights ko delete karna", "Data ko normalize karna"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "Neural Networks: Feedforward Architectures",
     "questions": [
-      {
-        "question": "Feedforward neural network mein data ka direction kya hota hai?",
-        "options": ["Sirf backward", "Sirf forward", "Dono directions mein"],
-        "answer": 1
-      }
+      { "question": "Feedforward neural network mein data ka direction kya hota hai?", "options": ["Sirf backward", "Sirf forward", "Dono directions mein"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Training Neural Networks with Backpropagation",
     "questions": [
-      {
-        "question": "Backpropagation ka main maqsad kya hai?",
-        "options": ["Weights update karna", "Architecture design karna", "Data load karna"],
-        "answer": 0
-      }
+      { "question": "Backpropagation ka main maqsad kya hai?", "options": ["Weights update karna", "Architecture design karna", "Data load karna"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "Stochastic Gradient Descent Optimization",
     "questions": [
-      {
-        "question": "SGD mein 'Stochastic' ka matlab kya hai?",
-        "options": ["Puri dataset use karna", "Ek baar mein ek ya kuch samples use karna", "Sirf validation data use karna"],
-        "answer": 1
-      }
+      { "question": "SGD mein 'Stochastic' ka matlab kya hai?", "options": ["Puri dataset use karna", "Ek baar mein ek ya kuch samples use karna", "Sirf validation data use karna"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "PyTorch: Getting Started with Tensors",
     "questions": [
-      {
-        "question": "PyTorch mein 'Tensor' ka kya arth hai?",
-        "options": ["Sirf 1D array", "Multi-dimensional matrix", "Ek SQL database"],
-        "answer": 1
-      }
+      { "question": "PyTorch mein 'Tensor' ka kya arth hai?", "options": ["Sirf 1D array", "Multi-dimensional matrix", "Ek SQL database"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "PyTorch: Automatic Differentiation with Autograd",
     "questions": [
-      {
-        "question": "Autograd ka main feature kya hai?",
-        "options": ["Model training manually karna", "Gradients calculate karna", "Data download karna"],
-        "answer": 1
-      }
+      { "question": "Autograd ka main feature kya hai?", "options": ["Model training manually karna", "Gradients calculate karna", "Data download karna"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Computer Vision: Convolutional Layers Basics",
     "questions": [
-      {
-        "question": "Convolutional layer ka use kis liye hota hai?",
-        "options": ["Text processing", "Image features extract karna", "Audio compression"],
-        "answer": 1
-      }
+      { "question": "Convolutional layer ka use kis liye hota hai?", "options": ["Text processing", "Image features extract karna", "Audio compression"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Computer Vision: Pooling and Downsampling",
     "questions": [
-      {
-        "question": "Pooling layer ka primary goal kya hai?",
-        "options": ["Image size badhana", "Spatial dimensions ko reduce karna", "Color change karna"],
-        "answer": 1
-      }
+      { "question": "Pooling layer ka primary goal kya hai?", "options": ["Image size badhana", "Spatial dimensions ko reduce karna", "Color change karna"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Transfer Learning for Computer Vision Tasks",
     "questions": [
-      {
-        "question": "Transfer Learning mein kya hota hai?",
-        "options": ["Pehle se trained model ko naye task par use karna", "Model delete karna", "Naya model zero se banana"],
-        "answer": 0
-      }
+      { "question": "Transfer Learning mein kya hota hai?", "options": ["Pehle se trained model ko naye task par use karna", "Model delete karna", "Naya model zero se banana"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "Natural Language Processing: Text Tokenization",
     "questions": [
-      {
-        "question": "Tokenization ka kya matlab hai?",
-        "options": ["Text ko sentences ya words mein todna", "Text ko encrypt karna", "Text ko delete karna"],
-        "answer": 0
-      }
+      { "question": "Tokenization ka kya matlab hai?", "options": ["Text ko sentences ya words mein todna", "Text ko encrypt karna", "Text ko delete karna"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "NLP: Introduction to Word Embeddings",
     "questions": [
-      {
-        "question": "Word embeddings ka main kaam kya hai?",
-        "options": ["Words ko numeric vectors mein convert karna", "Words ki spelling check karna", "Translate karna"],
-        "answer": 0
-      }
+      { "question": "Word embeddings ka main kaam kya hai?", "options": ["Words ko numeric vectors mein convert karna", "Words ki spelling check karna", "Translate karna"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "Transformers: The Encoder Architecture",
     "questions": [
-      {
-        "question": "Transformer model mein 'Encoder' ka kya kaam hai?",
-        "options": ["Output generate karna", "Input sequence ko context-aware representation mein badlna", "Sirf file save karna"],
-        "answer": 1
-      }
+      { "question": "Transformer model mein 'Encoder' ka kya kaam hai?", "options": ["Output generate karna", "Input sequence ko context-aware representation mein badlna", "Sirf file save karna"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Generative AI: Foundations of GPT",
     "questions": [
-      {
-        "question": "GPT ka full form kya hai?",
-        "options": ["Generative Pre-trained Transformer", "General Purpose Tool", "Global Processing Tech"],
-        "answer": 0
-      }
+      { "question": "GPT ka full form kya hai?", "options": ["Generative Pre-trained Transformer", "General Purpose Tool", "Global Processing Tech"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "Generative AI: Techniques for Prompt Engineering",
     "questions": [
-      {
-        "question": "Prompt Engineering ka best practice kya hai?",
-        "options": ["Bahut short prompt likhna", "Context aur instructions clear dena", "Sirf ek word likhna"],
-        "answer": 1
-      }
+      { "question": "Prompt Engineering ka best practice kya hai?", "options": ["Bahut short prompt likhna", "Context aur instructions clear dena", "Sirf ek word likhna"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Reinforcement Learning: Agent and Environment",
     "questions": [
-      {
-        "question": "RL mein 'Agent' kya karta hai?",
-        "options": ["Environment mein actions leta hai", "Sirf data store karta hai", "Sirf code compile karta hai"],
-        "answer": 0
-      }
+      { "question": "RL mein 'Agent' kya karta hai?", "options": ["Environment mein actions leta hai", "Sirf data store karta hai", "Sirf code compile karta hai"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "MLOps: Designing CI/CD Pipelines",
     "questions": [
-      {
-        "question": "MLOps mein CI/CD pipeline ka kya benefit hai?",
-        "options": ["Model deployment ko automate aur reliable banana", "Sirf coding speed badhana", "Data storage space kam karna"],
-        "answer": 0
-      }
+      { "question": "MLOps mein CI/CD pipeline ka kya benefit hai?", "options": ["Model deployment ko automate aur reliable banana", "Sirf coding speed badhana", "Data storage space kam karna"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "AI Ethics: Addressing Algorithmic Fairness",
     "questions": [
-      {
-        "question": "Algorithmic bias ko kam karne ka kya matlab hai?",
-        "options": ["Model ko bina data ke chalana", "Sabhi groups ke liye fair aur unbiased results dena", "Sirf speed badhana"],
-        "answer": 1
-      }
+      { "question": "Algorithmic bias ko kam karne ka kya matlab hai?", "options": ["Model ko bina data ke chalana", "Sabhi groups ke liye fair aur unbiased results dena", "Sirf speed badhana"], "answer": 1 }
     ]
   },
   {
     "articleTitle": "Deployment Strategy: FastAPI for Model Serving",
     "questions": [
-      {
-        "question": "FastAPI ka use kyu kiya jata hai?",
-        "options": ["High-performance API banakar model serve karne ke liye", "Data training ke liye", "Hardware design ke liye"],
-        "answer": 0
-      }
+      { "question": "FastAPI ka use kyu kiya jata hai?", "options": ["High-performance API banakar model serve karne le liye", "Data training ke liye", "Hardware design ke liye"], "answer": 0 }
     ]
   },
   {
     "articleTitle": "AI Infrastructure: Scalable GPU Training",
     "questions": [
-      {
-        "question": "Deep Learning models ke liye GPU kyu zaruri hai?",
-        "options": ["Parallel processing power ke liye", "Storage badhane ke liye", "Internet speed ke liye"],
-        "answer": 0
-      }
+      { "question": "Deep Learning models ke liye GPU kyu zaruri hai?", "options": ["Parallel processing power ke liye", "Storage badhane ke liye", "Internet speed ke liye"], "answer": 0 }
     ]
   }
 ]
