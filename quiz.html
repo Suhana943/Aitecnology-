@@ -10,11 +10,7 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; padding: 20px; }
         #quiz-container { max-width: 600px; margin: auto; background: #fff; padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0; }
         .question { margin-bottom: 15px; font-weight: 700; color: #1e293b; font-size: 1.1rem; }
-        .option-btn { 
-            display: block; width: 100%; padding: 12px; margin: 8px 0; 
-            background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 8px;
-            text-align: left; cursor: pointer; transition: 0.3s; font-weight: 600;
-        }
+        .option-btn { display: block; width: 100%; padding: 12px; margin: 8px 0; background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 8px; text-align: left; cursor: pointer; transition: 0.3s; font-weight: 600; }
         .option-btn:hover { background: #e2e8f0; }
         .correct { background: #dcfce7 !important; border-color: #22c55e !important; }
         .wrong { background: #fee2e2 !important; border-color: #ef4444 !important; }
@@ -25,48 +21,52 @@
 
 <div id="quiz-container">
     <h2 id="topic-title" style="margin-bottom: 20px; color: #0f172a;"></h2>
-    <div id="question-box"></div>
+    <div id="question-box">Loading questions...</div>
     <div id="score-board"></div>
 </div>
 
 <script>
-    let score = 0;
-    let answeredQuestions = 0;
-
+    // URL decoding logic
     const params = new URLSearchParams(window.location.search);
-    const topic = params.get('topic');
-    document.getElementById('topic-title').innerText = topic;
+    const topic = decodeURIComponent(params.get('topic'));
+    document.getElementById('topic-title').innerText = topic || "Quiz";
 
+    // Data fetching
     fetch('questions.json')
         .then(res => res.json())
         .then(data => {
-            const quizData = data.find(item => item.articleTitle === topic);
-            if (quizData) displayQuiz(quizData.questions);
-            else document.getElementById('question-box').innerHTML = "<p>Questions not found.</p>";
+            // Trim whitespace for safety match
+            const quizData = data.find(item => item.articleTitle.trim() === topic.trim());
+            if (quizData) {
+                renderQuiz(quizData.questions);
+            } else {
+                document.getElementById('question-box').innerHTML = "<p>Data error: Topic '" + topic + "' not found in JSON.</p>";
+            }
+        })
+        .catch(err => {
+            document.getElementById('question-box').innerHTML = "<p>Error loading quiz data. Please check JSON file.</p>";
+            console.error(err);
         });
 
-    function displayQuiz(questions) {
+    let score = 0;
+    let answered = 0;
+
+    function renderQuiz(questions) {
         const container = document.getElementById('question-box');
         container.innerHTML = "";
-        questions.forEach((q, index) => {
-            let optionsHTML = q.options.map((opt, i) => `
-                <button class="option-btn" onclick="checkAnswer(this, ${i}, ${q.answer}, ${questions.length})">
+        questions.forEach((q, qIndex) => {
+            const options = q.options.map((opt, i) => `
+                <button class="option-btn" onclick="handleSelect(this, ${i}, ${q.answer}, ${questions.length})">
                     ${opt}
                 </button>
             `).join('');
             
-            container.innerHTML += `
-                <div class="question">${index + 1}. ${q.question}</div>
-                <div style="margin-bottom: 30px;">${optionsHTML}</div>
-            `;
+            container.innerHTML += `<div class="question">${qIndex + 1}. ${q.question}</div>${options}`;
         });
     }
 
-    function checkAnswer(btn, selected, correct, total) {
-        const parent = btn.parentElement;
-        const buttons = parent.querySelectorAll('.option-btn');
-        
-        // Disable all buttons in this question
+    function handleSelect(btn, selected, correct, total) {
+        const buttons = btn.parentElement.querySelectorAll('.option-btn');
         buttons.forEach(b => b.style.pointerEvents = 'none');
 
         if(selected === correct) {
@@ -77,15 +77,11 @@
             buttons[correct].classList.add('correct');
         }
 
-        answeredQuestions++;
-        
-        // Final Score Display
-        if(answeredQuestions === total) {
-            document.getElementById('score-board').innerText = 
-                `Quiz Complete! Aapka Score: ${score} / ${total}`;
+        answered++;
+        if(answered === total) {
+            document.getElementById('score-board').innerText = `Quiz Complete! Score: ${score} / ${total}`;
         }
     }
 </script>
-
 </body>
 </html>
