@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,58 +7,77 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .content { margin-top: 20px; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         p { margin-bottom: 20px; font-size: 18px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
-        h3 { margin: 20px 0 10px; color: #1a5276; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
 
     <main class="container">
         <article>
             <h2>Applying the Chain Rule in Calculus</h2>
             <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
+            <img src="A1.png" alt="Chain Rule in Calculus" class="main-image">
+
             <div class="content">
-                <p><strong>Chain Rule</strong> (श्रृंखला नियम) कंपोजिट फंक्शन्स (composite functions) के डेरिवेटिव निकालने का एक गणितीय तरीका है। मशीन लर्निंग में, यह बैकप्रोपैगेशन (Backpropagation) की नींव है।</p>
+                <p>The Chain Rule is a fundamental formula used to find the derivative of a "composite function." If a function is nested inside another, the Chain Rule allows you to calculate the rate of change for the entire structure by working from the outside in.</p>
                 
                 
 
-                <h3>यह कैसे काम करता है?</h3>
-                <p>यदि हमारे पास एक फंक्शन है $y = f(g(x))$, तो Chain Rule के अनुसार इसका डेरिवेटिव है:</p>
-                <p>$$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$ जहाँ $u = g(x)$ है।</p>
-                
-                <h3>AI में महत्व</h3>
-                <p>न्यूरल नेटवर्क में, एरर (loss) आउटपुट लेयर पर होता है। वेट्स को सही करने के लिए, हमें इनपुट लेयर की ओर पीछे जाते हुए हर लेयर के लिए पार्शियल डेरिवेटिव्स निकालने होते हैं। Chain Rule ही वह जरिया है जिससे हम लॉस फंक्शन के बदलाव को हर लेयर के वेट्स से जोड़ पाते हैं।</p>
+                <h3>1. What is the Chain Rule?</h3>
+                <p>If you have a function <em>y = f(g(x))</em>, the Chain Rule states:</p>
+                <p><strong>dy/dx = df/dg * dg/dx</strong></p>
+                <p>In simple terms: The derivative of the whole is the derivative of the outer function multiplied by the derivative of the inner function.</p>
+
+                <h3>2. Why is it Essential?</h3>
+                <ul>
+                    <li><strong>Complex Modeling:</strong> Helps solve real-world systems where processes are chained together.</li>
+                    <li><strong>Deep Learning:</strong> The foundation of <strong>Backpropagation</strong>. It allows us to calculate how a change in the output propagates back through layers to update weights.</li>
+                </ul>
+
+                <h3>3. How to Apply It</h3>
+                <ol>
+                    <li>Identify the outer function (f) and inner function (g).</li>
+                    <li>Differentiate the outer function, keeping the inner part unchanged.</li>
+                    <li>Multiply by the derivative of the inner function.</li>
+                </ol>
+
+                <h3>4. Code Example</h3>
+                <pre><code>import sympy as sp
+
+# Define variable
+x = sp.symbols('x')
+
+# Define composite function: (3x^2 + 1)^5
+y = (3*x**2 + 1)**5
+
+# Calculate derivative
+dy_dx = sp.diff(y, x)
+
+print(f"The derivative is: {dy_dx}")
+# Result: 5*(3*x^2 + 1)**4 * (6*x)</code></pre>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> बैकप्रोपैगेशन को समझते समय 'Computational Graph' का उपयोग करें। यह आपको विजुअलाइज करने में मदद करेगा कि कैसे चेन रूल के माध्यम से ग्रेडिएंट्स एक लेयर से दूसरी लेयर तक फ्लो होते हैं।
+                <strong>Aitecnology Tip:</strong> When solving manually, always write down <em>u = g(x)</em> explicitly. It prevents "nested function fatigue" and helps you track which part of the function you have already differentiated!
             </div>
         </article>
 
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
