@@ -3,56 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neural Network Activation Functions | AITecnology</title>
+    <title>Understanding Eigenvalues and Eigenvectors | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
-        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        p { margin-bottom: 20px; font-size: 18px; }
-        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
-        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
         h3 { margin: 30px 0 15px 0; color: #1a5276; }
+        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        p { margin-bottom: 20px; font-size: 18px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
+        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
+        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="index.html" class="logo">AITecnology</a>
-    </nav>
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
 
     <main class="container">
         <article>
-            <h2>Introduction to Neural Network Activation Functions</h2>
+            <h2>Understanding Eigenvalues and Eigenvectors</h2>
             <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            
+            <img src="A14.png" alt="Eigenvalues and Eigenvectors" class="main-image">
 
             <div class="content">
-                <p>न्यूरल नेटवर्क में, <strong>Activation Function</strong> यह तय करता है कि एक न्यूरॉन को 'फायर' करना है या नहीं। यह नेटवर्क में नॉन-लीनियरिटी (non-linearity) लाता है, जिससे मॉडल जटिल डेटा पैटर्न को सीख पाता है।</p>
+                <p>Eigenvalues and eigenvectors are fundamental concepts in linear algebra that describe the behavior of linear transformations, revealing the "hidden structure" of a matrix.</p>
 
-                <h3>1. मुख्य एक्टिवेशन फंक्शन्स</h3>
+                <h3>1. Definitions</h3>
                 <ul>
-                    <li><strong>Sigmoid:</strong> यह इनपुट को 0 और 1 के बीच मैप करता है। इसका उपयोग अक्सर बाइनरी क्लासिफिकेशन में आउटपुट लेयर पर होता है।</li>
-                    <li><strong>ReLU (Rectified Linear Unit):</strong> यह सबसे लोकप्रिय है। यदि इनपुट सकारात्मक है, तो यह उसे वैसा ही रखता है, अन्यथा इसे 0 कर देता है। यह ट्रेनिंग को तेज बनाता है।</li>
-                    <li><strong>Tanh:</strong> यह इनपुट को -1 और 1 के बीच मैप करता है, जो डेटा को सेंटर करने में मदद करता है।</li>
+                    <li><strong>Eigenvector:</strong> A non-zero vector that does not change its direction when a linear transformation is applied to it.</li>
+                    <li><strong>Eigenvalue:</strong> The scalar factor by which an eigenvector is scaled (stretched or compressed) during that transformation.</li>
                 </ul>
 
-                <h3>2. क्यों आवश्यक हैं?</h3>
-                <p>बिना एक्टिवेशन फंक्शन के, एक न्यूरल नेटवर्क चाहे कितना भी गहरा (deep) क्यों न हो, वह केवल एक 'लीनियर रिग्रेशन' मॉडल की तरह व्यवहार करेगा। ये फंक्शन्स ही नेटवर्क को 'स्मार्ट' बनाते हैं।</p>
+                <h3>2. The Core Concept</h3>
+                <p>When you multiply a matrix by a vector, the vector usually changes direction and length. However, for every square matrix, there are specific vectors that stay on their original span—these are eigenvectors. When a matrix acts on its eigenvector, the vector only scales, and the amount it scales is the eigenvalue. Mathematically, this is expressed as <em>Av = λv</em>, where <em>A</em> is the matrix, <em>v</em> is the eigenvector, and <em>λ</em> is the eigenvalue. These values summarize how a linear system behaves, capturing the essence of the matrix's transformation. By finding these, we decompose complex data into its most meaningful, non-redundant components.</p>
+
+                <h3>3. Why They Matter</h3>
+                <p>Eigenvalues and eigenvectors effectively "isolate" the core directions of a system, ignoring noise and focusing on the dominant patterns. They allow us to rotate, shrink, or project data into a lower-dimensional space while preserving the most important features, making them indispensable for simplifying complex multi-dimensional problems.</p>
+
+                <h3>4. Project Examples</h3>
+                <ul>
+                    <li><strong>PCA:</strong> Reducing dimensions of huge datasets for faster training.</li>
+                    <li><strong>Face Recognition:</strong> Using "Eigenfaces" to identify unique facial features.</li>
+                    <li><strong>PageRank:</strong> Google's algorithm for ranking website importance.</li>
+                    <li><strong>Recommendation Systems:</strong> Extracting latent interest factors from user data.</li>
+                </ul>
+
+                <h3>5. How to Use in Python</h3>
+                <pre><code>import numpy as np
+
+# Define a square matrix
+A = np.array([[2, 1], [1, 2]])
+
+# Calculate eigenvalues and eigenvectors
+eigenvalues, eigenvectors = np.linalg.eig(A)
+
+print("Eigenvalues:", eigenvalues)
+print("Eigenvectors:\n", eigenvectors)</code></pre>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> हिडन लेयर्स (Hidden Layers) के लिए हमेशा 'ReLU' या उसके वेरिएंट्स (जैसे Leaky ReLU) का उपयोग करने से शुरुआत करें, क्योंकि यह 'Vanishing Gradient' की समस्या को कम करने में मदद करता है।
+                <strong>Aitecnology Tip:</strong> In machine learning, always prioritize the eigenvectors associated with the <strong>largest eigenvalues</strong>. These are your "Principal Components"—they hold the most information, while smaller eigenvalues are often just noise!
             </div>
         </article>
 
