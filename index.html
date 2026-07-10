@@ -14,33 +14,27 @@
 
         header { 
             padding: 16px 20px; background: #fff; border-bottom: 1px solid var(--border);
-            display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100;
+            display: flex; justify-content: space-between; align-items: center;
         }
-        .brand-name { font-size: 1.25rem; font-weight: 800; color: #111; letter-spacing: -0.5px; }
-        .nav-icons { display: flex; gap: 18px; font-size: 1.2rem; color: #333; }
+        .brand-name { font-size: 1.25rem; font-weight: 800; color: #111; }
+        
+        /* Drawer Styles */
+        .drawer { 
+            position: fixed; top: 0; left: -100%; width: 250px; height: 100%; 
+            background: #fff; z-index: 1000; padding: 24px; transition: 0.3s;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+        .drawer.active { left: 0; }
+        .menu-list { list-style: none; margin-top: 40px; }
+        .menu-list li { margin-bottom: 20px; font-weight: 600; cursor: pointer; }
 
         .content-wrapper { padding: 20px; max-width: 500px; margin: auto; }
-        
-        .product-card {
-            background: #fff; border: 1px solid var(--border); border-radius: 12px;
-            padding: 16px; margin-bottom: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-        }
+        .product-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
         .card-top { display: flex; gap: 16px; margin-bottom: 12px; }
-        .product-img { width: 90px; height: 90px; object-fit: contain; flex-shrink: 0; }
-        
-        /* Quiz Button Style */
-        .quiz-btn { 
-            display: block; width: 100%; padding: 6px; margin-bottom: 12px;
-            background: #f8fafc; border: 1px dashed var(--primary); border-radius: 6px;
-            color: var(--primary); font-size: 0.75rem; font-weight: 600; text-align: center;
-            cursor: pointer; text-decoration: none;
-        }
-        
+        .product-img { width: 90px; height: 90px; object-fit: contain; }
+        .quiz-btn { display: block; width: 100%; padding: 6px; margin-bottom: 12px; background: #f8fafc; border: 1px dashed var(--primary); border-radius: 6px; color: var(--primary); font-size: 0.75rem; font-weight: 600; text-align: center; text-decoration: none; }
         .card-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-        .btn { 
-            padding: 10px; border-radius: 6px; text-align: center; 
-            font-weight: 700; font-size: 0.8rem; text-decoration: none; transition: 0.2s;
-        }
+        .btn { padding: 10px; border-radius: 6px; text-align: center; font-weight: 700; font-size: 0.8rem; text-decoration: none; }
         .btn-ai { background: #f1f5f9; color: #334155; border: 1px solid var(--border); }
         .btn-buy { background: var(--primary); color: #fff; }
     </style>
@@ -48,20 +42,28 @@
 <body>
 
 <header>
-    <div style="font-size: 1.5rem;"><i class="fa-solid fa-bars"></i></div>
+    <div onclick="toggleDrawer()" style="cursor:pointer; font-size: 1.5rem;"><i class="fa-solid fa-bars"></i></div>
     <div class="brand-name">AI Technology</div>
-    <div class="nav-icons">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-user"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-    </div>
+    <div style="font-size: 1.2rem;"><i class="fa-solid fa-magnifying-glass"></i></div>
 </header>
+
+<!-- Drawer -->
+<nav class="drawer" id="sideNav">
+    <div onclick="toggleDrawer()" style="cursor:pointer; margin-bottom: 20px;"><i class="fa-solid fa-xmark fa-lg"></i></div>
+    <ul class="menu-list">
+        <li>Dashboard</li>
+        <li>AI Models</li>
+        <li style="color: var(--primary);">About Us</li>
+    </ul>
+</nav>
 
 <main class="content-wrapper">
     <div id="feed"></div>
 </main>
 
 <script>
+    function toggleDrawer() { document.getElementById('sideNav').classList.toggle('active'); }
+
     fetch('data.json')
         .then(res => res.json())
         .then(data => {
@@ -77,12 +79,9 @@
                                 <span style="font-size: 0.8rem; color: #64748b;">${item.meta}</span>
                             </div>
                         </div>
-                        
-                        <!-- Quiz Option -->
                         <a href="quiz.html?topic=${encodeURIComponent(item.title)}" class="quiz-btn">
                             <i class="fa-solid fa-pen-to-square"></i> Take a Quick Quiz
                         </a>
-
                         <div class="card-actions">
                             <a href="${googleSearchUrl}" target="_blank" class="btn btn-ai">✨ AI Review</a>
                             <a href="${item.link}" class="btn btn-buy">Read Detail</a>
