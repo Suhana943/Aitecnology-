@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,61 +7,81 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
         .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        .content { margin-top: 20px; }
         p { margin-bottom: 20px; font-size: 18px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
-        h3 { margin: 20px 0 10px; color: #1a5276; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
 
     <main class="container">
         <article>
             <h2>Calculus: Understanding Derivatives</h2>
             <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="A16.png" alt="Derivative Slope Graph" class="main-image">
+            <img src="A16.png" alt="Understanding Derivatives" class="main-image">
 
             <div class="content">
-                <p><strong>Derivatives (अवकलन)</strong> कैलकुलस का आधार हैं। सरल शब्दों में, यह हमें बताता है कि किसी फंक्शन में परिवर्तन की दर (rate of change) क्या है। मशीन लर्निंग में, यह मॉडल के लॉस फंक्शन को कम करने (optimize) के लिए सबसे महत्वपूर्ण टूल है।</p>
+                <p>Calculus is the study of continuous change. The <strong>derivative</strong> is a mathematical tool that measures exactly how fast a function changes at any given moment. In machine learning, derivatives are the backbone of optimization, enabling models to "learn" by minimizing errors.</p>
+
                 
-                <h3>डेरिवेटिव क्यों महत्वपूर्ण हैं?</h3>
+
+                <h3>1. What is a Derivative?</h3>
+                <p>A derivative represents the <strong>instantaneous rate of change</strong> of a function with respect to one of its variables. Geometrically, it is the slope of the tangent line to the curve at a specific point. If a function is <em>f(x)</em>, its derivative is denoted as <em>f'(x)</em> or <em>df/dx</em>.</p>
+
+                <h3>2. Why are they Important?</h3>
                 <ul>
-                    <li><strong>Slope Calculation:</strong> डेरिवेटिव किसी बिंदु पर फंक्शन के ढलान (slope) को मापता है।</li>
-                    <li><strong>Optimization:</strong> Gradient Descent का पूरा सिद्धांत डेरिवेटिव्स पर ही आधारित है, जो यह तय करता है कि वेट्स (weights) को किस दिशा में अपडेट करना है।</li>
-                    <li><strong>Sensitivity Analysis:</strong> यह बताता है कि इनपुट में थोड़ा सा बदलाव आउटपुट पर कितना बड़ा प्रभाव डालेगा।</li>
+                    <li><strong>Optimization:</strong> Helps find the minimum or maximum values (e.g., minimizing model error).</li>
+                    <li><strong>Gradient Descent:</strong> The primary algorithm for training neural networks.</li>
+                    <li><strong>Sensitivity Analysis:</strong> Measures how an output shifts with small changes in input.</li>
                 </ul>
-                <p>गणितीय रूप से, फंक्शन $f(x)$ का डेरिवेटिव $f'(x)$ या $\frac{df}{dx}$ के रूप में दर्शाया जाता है, जो $x$ के सापेक्ष $f$ में तात्कालिक बदलाव को मापता है।</p>
+
+                <h3>3. How Derivatives Work</h3>
+                <p>Derivatives tell us the slope: a positive slope indicates the function is increasing, a negative slope indicates it is decreasing, and a slope of zero indicates a peak or valley (extrema).</p>
+                
+                
+
+                <h3>4. Coding Example (Automatic Differentiation)</h3>
+                <p>We use libraries like PyTorch to calculate derivatives automatically:</p>
+                <pre><code>import torch
+
+# Define x with gradient tracking
+x = torch.tensor(3.0, requires_grad=True)
+
+# Define function f(x) = x^2
+y = x**2
+
+# Calculate derivative
+y.backward()
+
+# Result of 2x at x=3 is 6
+print(f"The derivative at x=3 is: {x.grad.item()}")</code></pre>
+
+                <h3>5. Key Concepts</h3>
+                <ul>
+                    <li><strong>Chain Rule:</strong> Used to derive composite functions; critical for backpropagation.</li>
+                    <li><strong>Partial Derivatives:</strong> Measures change in one variable while keeping others constant.</li>
+                </ul>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> डीप लर्निंग में, याद रखें कि डेरिवेटिव ही हमें 'ग्रेडिएंट' प्रदान करते हैं। जितना बेहतर हम ग्रेडिएंट को समझेंगे, उतनी ही सटीकता से हम मॉडल के पैरामीटर्स को ट्यून कर पाएंगे।
+                <strong>Aitecnology Tip:</strong> Remember that gradients point in the direction of steepest ascent. To train your model, you move in the <em>opposite</em> direction—this is why it is called <strong>Gradient Descent</strong>!
             </div>
         </article>
 
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
