@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Core | AI Insights</title>
+    <title>AiTechnology | AI Insights</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -16,10 +16,9 @@
         
         .content-wrapper { padding: 24px; max-width: 600px; margin: 0 auto; }
         
-        /* Updated List Item Styles */
         .list-item { 
             display: flex; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--border); 
-            align-items: center;
+            align-items: flex-start;
         }
         
         .thumb-box { 
@@ -28,13 +27,14 @@
         }
         
         .list-info { display: flex; flex-direction: column; gap: 4px; flex-grow: 1; }
-        .list-meta { font-size: 0.75rem; color: var(--brand); font-weight: 700; text-transform: uppercase; }
-        .list-title { font-size: 1rem; font-weight: 600; line-height: 1.4; color: inherit; text-decoration: none; }
-        .list-title:hover { text-decoration: underline; }
-        .list-date { font-size: 0.75rem; color: var(--muted); }
+        .list-meta { font-size: 0.7rem; color: var(--brand); font-weight: 800; text-transform: uppercase; }
+        .list-title { font-size: 1.05rem; font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
+        .list-date { font-size: 0.75rem; color: var(--muted); margin-bottom: 8px; }
 
-        .search-icon { color: var(--muted); cursor: pointer; font-size: 1.2rem; padding: 10px; }
-        .search-icon:hover { color: var(--brand); }
+        .action-links { display: flex; gap: 12px; }
+        .btn-link { font-size: 0.75rem; font-weight: 700; text-decoration: none; text-transform: uppercase; }
+        .read-btn { color: var(--brand); }
+        .google-btn { color: var(--muted); }
 
         .drawer { position: fixed; top: 0; left: -100%; width: 280px; height: 100%; background: #fff; z-index: 100; padding: 24px; transition: 0.3s; box-shadow: 5px 0 20px rgba(0,0,0,0.05); }
         .drawer.active { left: 0; }
@@ -44,7 +44,7 @@
 
 <header>
     <div onclick="toggleDrawer()" style="cursor:pointer;"><i class="fa-solid fa-bars fa-lg"></i></div>
-    <div style="font-weight: 800; letter-spacing: 1px;">Aitecnology</div>
+    <div style="font-weight: 800; letter-spacing: 1px; font-size: 1.2rem;">AiTechnology</div>
     <div><i class="fa-solid fa-bell"></i></div>
 </header>
 
@@ -80,12 +80,14 @@
                         <div class="thumb-box" style="background-image: url('${item.image}');"></div>
                         <div class="list-info">
                             <span class="list-meta">${item.meta}</span>
-                            <a href="${item.link}" class="list-title">${item.title}</a>
+                            <h3 class="list-title">${item.title}</h3>
                             <span class="list-date">${item.date}</span>
+                            <div class="action-links">
+                                <a href="${item.link}" class="btn-link read-btn">Read Detail</a>
+                                <span>•</span>
+                                <a href="${googleSearchUrl}" target="_blank" class="btn-link google-btn">Search Google</a>
+                            </div>
                         </div>
-                        <a href="${googleSearchUrl}" target="_blank" class="search-icon" title="Search on Google">
-                            <i class="fa-brands fa-google"></i>
-                        </a>
                     </div>`;
             });
         })
