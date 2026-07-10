@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Feature Engineering: Scaling and Normalization | Data</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
-        .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
-        .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
-        .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; padding: 40px 20px; max-width: 740px; margin: 0 auto; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
-        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        p { margin-bottom: 20px; font-size: 18px; }
-        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
-        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin: 20px 0; border-left: 3px solid #7f8c8d; }
+        .meta-info { font-size: 0.9em; color: #7f8c8d; margin-bottom: 20px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
+    <h2>Feature Engineering: Scaling and Normalization</h2>
+    <div class="meta-info">Published: July 9, 2026 | Category: Data</div>
+    
+    <p>In machine learning, features often exist on vastly different scales (e.g., "Age" might range from 0 to 100, while "Annual Income" ranges from 20,000 to 200,000). Many algorithms—especially those reliant on distance metrics like K-Nearest Neighbors or optimization techniques like Gradient Descent—will be heavily biased toward features with larger absolute values. Scaling and normalization are essential preprocessing steps to ensure every feature contributes equally to the model.</p>
+    
+    <img src="A5.png" alt="Scaling and normalization workflow" class="main-image">
 
-    <main class="container">
-        <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
-            
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+    <h3>Why We Scale Data</h3>
+    <ul>
+        <li><strong>Algorithm Convergence:</strong> For models like Linear Regression and Neural Networks, gradient descent converges significantly faster when features are on a similar scale.</li>
+        <li><strong>Distance Sensitivity:</strong> Algorithms like K-Nearest Neighbors and SVM calculate distances between data points. Without scaling, the feature with the largest magnitude dominates the distance calculation.</li>
+        <li><strong>Interpretability:</strong> Scaling allows for easier comparison of feature importance in linear models.</li>
+    </ul>
 
-            <div class="content">
-                {{CONTENT}}
-            </div>
+    <h3>Common Techniques</h3>
+    <ul>
+        <li><strong>StandardScaler (Standardization):</strong> Transforms data to have a mean of 0 and a standard deviation of 1. It assumes your data follows a Gaussian (normal) distribution.</li>
+        <li><strong>MinMaxScaler (Normalization):</strong> Rescales the data to a fixed range, typically [0, 1]. This is useful when you need bounded data and don't assume a normal distribution.</li>
+    </ul>
 
-            <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
-            </div>
-        </article>
+    <h3>Quick Example</h3>
+    <pre><code>from sklearn.preprocessing import StandardScaler
+import numpy as np
 
-        <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
-    </main>
+# Sample data
+data = np.array([[100, 0.001], [200, 0.002], [300, 0.003]])
 
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
+# Apply standardization
+scaler = StandardScaler()
+scaled_data = scaler.fit_transform(data)
+
+print("Scaled Data:\n", scaled_data)</code></pre>
+
+    <hr>
+    <p>For more details, visit: <a href="A37.html">Feature Scaling Documentation</a></p>
+
 </body>
 </html>
