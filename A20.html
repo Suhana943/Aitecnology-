@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +7,42 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .content { margin-top: 20px; }
-        p { margin-bottom: 20px; font-size: 18px; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
-        h3 { margin: 20px 0 10px; color: #1a5276; }
     </style>
 </head>
 <body>
-
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
-
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
     <main class="container">
         <article>
             <h2>Optimization Techniques in Calculus</h2>
             <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
-            
-            
-
+            <img src="A4.png" alt="Optimization Surface" class="main-image">
             <div class="content">
-                <p>मशीन लर्निंग में <strong>Optimization</strong> का अर्थ है किसी फंक्शन के सर्वोत्तम मान (सर्वोच्च या न्यूनतम) को खोजना। कैलकुलस हमें वे उपकरण देता है जिनसे हम यह तय कर सकते हैं कि मॉडल कब अपने सबसे सटीक स्तर पर है।</p>
-                
-                <h3>प्रमुख तकनीकें:</h3>
-                <ul>
-                    <li><strong>First-Order Optimization:</strong> यह केवल फर्स्ट डेरिवेटिव (ग्रेडिएंट) का उपयोग करता है (जैसे Gradient Descent)। यह गणना में सरल और तेज़ होता है।</li>
-                    <li><strong>Second-Order Optimization:</strong> इसमें सेकंड डेरिवेटिव (Hessian Matrix) का उपयोग होता है। यह मिनिमा तक पहुँचने के लिए 'कर्वचर' (curvature) को भी समझता है, जिससे यह अधिक सटीक होता है लेकिन गणना में भारी है (जैसे Newton's Method)।</li>
-                    <li><strong>Constrained Optimization:</strong> अक्सर हमारे मॉडल पर सीमाएं (constraints) होती हैं, जिन्हें 'Lagrange Multipliers' तकनीक से हल किया जाता है।</li>
-                </ul>
-                <p>किसी भी फंक्शन का 'स्थानीय न्यूनतम' (local minimum) वहाँ होता है जहाँ उसका फर्स्ट डेरिवेटिव शून्य ($f'(x) = 0$) होता है और सेकंड डेरिवेटिव धनात्मक ($f''(x) > 0$) होता है।</p>
+                <p>Optimization is the process of finding the best solution for a system, crucial for training AI models by minimizing loss functions.</p>
+                <h3>1. The Math</h3>
+                <p>We use the <strong>First Derivative Test</strong> to find critical points (where slope=0) and the <strong>Second Derivative Test</strong> to confirm if those points are minima or maxima.</p>
+                <h3>2. Python Optimization</h3>
+                <pre><code>from scipy.optimize import minimize
+# Minimize f(x) = (x - 3)^2 + 10
+result = minimize(lambda x: (x - 3)**2 + 10, x0=0)
+print(f"Optimal x: {result.x[0]}")</code></pre>
+                <h3>3. Real-world hurdles</h3>
+                <p>Models often face <strong>Local Minima</strong>, where the algorithm gets trapped in a sub-optimal solution, and <strong>Constraints</strong>, which require specialized math like Lagrange Multipliers.</p>
             </div>
-
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> जब आप गहरे न्यूरल नेटवर्क के साथ काम कर रहे हों, तो Second-Order विधियों के बजाय 'Adam' जैसे 'Adaptive Learning Rate' वाले ऑप्टिमाइज़र का उपयोग करें। ये पहली और दूसरी क्रम की विधियों के लाभों को जोड़ते हैं।
+                <strong>Aitecnology Tip:</strong> When optimizing, always plot your function first! If you see multiple valleys, you know you need a more robust algorithm like <strong>Simulated Annealing</strong> or <strong>Genetic Algorithms</strong> rather than basic Gradient Descent.
             </div>
         </article>
-
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
