@@ -6,16 +6,26 @@
     <title>Mastering Control Flow and Loops | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; display: flex; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; display: flex; min-height: 100vh; }
 
-        /* Sidebar Navigation */
-        .sidebar { width: 250px; height: 100vh; background: #f8f9fa; border-right: 1px solid #ddd; padding: 20px; position: fixed; }
+        /* Sidebar: Fixed to the left */
+        .sidebar { 
+            width: 250px; 
+            background: #f8f9fa; 
+            border-right: 1px solid #ddd; 
+            padding: 30px 20px; 
+            flex-shrink: 0; /* Prevents sidebar from shrinking */
+        }
         .logo { font-weight: 800; font-size: 24px; color: #1a5276; text-decoration: none; display: block; margin-bottom: 40px; }
-        .nav-links a { display: block; padding: 10px 0; text-decoration: none; color: #2c3e50; font-weight: 500; }
+        .nav-links a { display: block; padding: 12px 0; text-decoration: none; color: #2c3e50; font-weight: 500; border-bottom: 1px solid #eee; }
         .nav-links a:hover { color: #1a5276; }
 
-        /* Main Content Area */
-        .main-content { margin-left: 250px; padding: 40px; width: 100%; max-width: 900px; }
+        /* Main Content */
+        .main-content { 
+            padding: 40px; 
+            flex-grow: 1; 
+            max-width: 800px; 
+        }
         
         h2 { font-size: 32px; color: #111; margin-bottom: 10px; }
         h3 { color: #1a5276; margin-top: 30px; margin-bottom: 15px; }
@@ -29,11 +39,11 @@
 <body>
 
     <nav class="sidebar">
-        <a href="#" class="logo">AITecnology</a>
+        <a href="#" class="logo">RESEARCH CORE</a>
         <div class="nav-links">
             <a href="#">Home</a>
             <a href="#">Tutorials</a>
-            <a href="#">Research</a>
+            <a href="#">Publications</a>
             <a href="#">About</a>
         </div>
     </nav>
@@ -45,11 +55,11 @@
 
             
             
+            <img src="A3.png" alt="Control Flow and Loops" class="main-image">
+            
             <h3>What is a Loop?</h3>
             <p>Imagine you need to say "Hello" to 100 people. Instead of writing 100 lines of code, you use a <strong>"Loop."</strong> A loop tells your program to perform the same task repeatedly until a specific goal is reached.</p>
 
-            <img src="A3.png" alt="Control Flow and Loops" class="main-image">
-            
             <h3>Types of Loops</h3>
             <h4>1. For Loop (The "Counted" Loop)</h4>
             <p>Use this when you know exactly how many times the action should repeat.</p>
