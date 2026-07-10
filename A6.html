@@ -6,16 +6,8 @@
     <title>Advanced Python List Comprehensions | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; display: flex; min-height: 100vh; }
-
-        /* Sidebar Navigation */
-        .sidebar { width: 250px; background: #f8f9fa; border-right: 1px solid #ddd; padding: 30px 20px; flex-shrink: 0; }
-        .logo { font-weight: 800; font-size: 24px; color: #1a5276; text-decoration: none; display: block; margin-bottom: 40px; }
-        .nav-links a { display: block; padding: 12px 0; text-decoration: none; color: #2c3e50; font-weight: 500; border-bottom: 1px solid #eee; }
-        .nav-links a:hover { color: #1a5276; }
-
-        /* Main Content */
-        .main-content { padding: 40px; flex-grow: 1; max-width: 800px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; padding: 40px 20px; max-width: 800px; margin: 0 auto; background-color: #fff; }
+        
         h2 { font-size: 32px; color: #111; margin-bottom: 10px; }
         h3 { color: #1a5276; margin-top: 30px; margin-bottom: 15px; }
         p { margin-bottom: 20px; font-size: 18px; }
@@ -26,36 +18,24 @@
 </head>
 <body>
 
-    <nav class="sidebar">
-        <a href="#" class="logo">RESEARCH CORE</a>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Tutorials</a>
-            <a href="#">Publications</a>
-        </div>
-    </nav>
+    <article>
+        <h2>Advanced Python List Comprehensions</h2>
+        <div style="font-size: 14px; color: #7f8c8d; margin-bottom: 30px;">By: Aitecnology Team | Published: July 9, 2026</div>
+        
+        <img src="A6.png" alt="List Comprehension" class="main-image">
 
-    <main class="main-content">
-        <article>
-            <h2>Advanced Python List Comprehensions</h2>
-            <div style="font-size: 14px; color: #7f8c8d; margin-bottom: 30px;">By: Aitecnology Team | Published: July 9, 2026</div>
-            
-            <img src="A6.png" alt="List Comprehension" class="main-image">
+        <h3>Definition</h3>
+        <p>List Comprehension is a concise, elegant way to create lists in Python. It allows you to generate a new list by applying an expression to each item in an existing sequence in just a single line of code.</p>
 
-            <h3>Definition</h3>
-            <p>List Comprehension is a concise, elegant way to create lists in Python. It allows you to generate a new list by applying an expression to each item in an existing sequence in just a single line of code.</p>
+        <h3>How It Works</h3>
+        <p>Instead of writing a standard <code>for</code> loop, you pack the logic into brackets <code>[]</code>. It follows the pattern: <code>[expression for item in iterable if condition]</code>.</p>
 
-            <h3>How It Works</h3>
-            <p>Instead of writing a standard <code>for</code> loop, you pack the logic into brackets <code>[]</code>. It follows the pattern: <code>[expression for item in iterable if condition]</code>.</p>
-            
+        <h3>Why List Comprehension Works</h3>
+        <p>List comprehensions are optimized at the C-level in Python. Because the operation is contained in a single statement, Python allocates memory for the list more efficiently, making it significantly faster than using <code>append()</code> in a traditional loop.</p>
 
-            <h3>Why List Comprehension Works</h3>
-            <p>List comprehensions are optimized at the C-level in Python. Because the operation is contained in a single statement, Python allocates memory for the list more efficiently, making it significantly faster than using <code>append()</code> in a traditional loop.</p>
-            
-
-            <h3>Practical Applications</h3>
-            <p>In AI and data processing, you can use them for data cleaning and transformation:</p>
-            <pre><code># Data Cleaning (Filtering)
+        <h3>Practical Applications</h3>
+        <p>In AI and data processing, you can use them for data cleaning and transformation:</p>
+        <pre><code># Data Cleaning (Filtering)
 readings = [10.2, 10.5, "Error", 10.8, "Error"]
 clean_data = [x for x in readings if isinstance(x, float)]
 
@@ -63,14 +43,13 @@ clean_data = [x for x in readings if isinstance(x, float)]
 pixels = [255, 128, 64]
 normalized = [x / 255 for x in pixels]</code></pre>
 
-            <h3>What to Expect</h3>
-            <p>Expect your code to become more "Pythonic." However, remember that readability is key. If your logic becomes too complex with multiple nested conditions, it is better to revert to a standard loop to help others (or your future self) understand the code more easily.</p>
+        <h3>What to Expect</h3>
+        <p>Expect your code to become more "Pythonic." However, remember that readability is key. If your logic becomes too complex with multiple nested conditions, it is better to revert to a standard loop to help others (or your future self) understand the code more easily.</p>
 
-            <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> Use list comprehensions for simple transformations and filtering. If you need complex data pipelines, consider using <code>map()</code> or <code>filter()</code> functions.
-            </div>
-        </article>
-    </main>
+        <div class="tip-box">
+            <strong>Aitecnology Tip:</strong> Use list comprehensions for simple transformations and filtering. If you need complex data pipelines, consider using <code>map()</code> or <code>filter()</code> functions.
+        </div>
+    </article>
 
 </body>
 </html>
