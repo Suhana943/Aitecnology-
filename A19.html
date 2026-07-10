@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,60 +7,70 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .content { margin-top: 20px; }
-        p { margin-bottom: 20px; font-size: 18px; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
-        h3 { margin: 20px 0 10px; color: #1a5276; }
     </style>
 </head>
 <body>
-
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
-
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
     <main class="container">
         <article>
             <h2>Gradient Descent Fundamentals</h2>
-            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
+            <div class="byline">By: Aitecnology Team | Published: July 10, 2026</div>
             
-            
+            <img src="A3.png" alt="Gradient Descent" class="main-image">
 
             <div class="content">
-                <p><strong>Gradient Descent</strong> मशीन लर्निंग का सबसे मूलभूत ऑप्टिमाइजेशन एल्गोरिदम है। इसका मुख्य उद्देश्य एक फंक्शन (आमतौर पर 'Loss Function') को मिनिमाइज करना है ताकि मॉडल की त्रुटि कम से कम हो सके।</p>
+                <p>Gradient Descent is the "compass" of machine learning. It is an optimization algorithm used to train models by iteratively adjusting their internal weights to minimize error.</p>
                 
-                <h3>यह कैसे काम करता है?</h3>
+                
+
+                <h3>1. Core Concepts</h3>
+                <p>The algorithm calculates the <strong>gradient</strong> (slope) of the loss function and takes small steps downhill using a <strong>learning rate</strong> to update parameters.</p>
+
+                <h3>2. Challenges in Training</h3>
                 <ul>
-                    <li><strong>दिशा चुनना:</strong> एल्गोरिदम ग्रेडिएंट (डेरिवेटिव) की गणना करता है जो उस दिशा को बताता है जहाँ ढलान सबसे तीव्र है।</li>
-                    <li><strong>कदम उठाना:</strong> यह ढलान के विपरीत दिशा में एक छोटा कदम उठाता है (इसे 'Learning Rate' कहते हैं)।</li>
-                    <li><strong>पुनरावृत्ति (Iteration):</strong> यह प्रक्रिया तब तक दोहराई जाती है जब तक हम 'लोकल' या 'ग्लोबल मिनिमा' तक नहीं पहुँच जाते।</li>
+                    <li><strong>Vanishing Gradients:</strong> Gradients become too small in deep networks, stopping learning.</li>
+                    <li><strong>Exploding Gradients:</strong> Gradients become too large, causing unstable model updates.</li>
+                    <li><strong>Local Minima/Saddle Points:</strong> Getting stuck in non-optimal valleys or flat regions.</li>
                 </ul>
+
                 
-                <p>गणितीय रूप से, पैरामीटर अपडेट का नियम है: $w_{new} = w_{old} - \eta \cdot \nabla f(w)$ जहाँ $\eta$ लर्निंग रेट है।</p>
+
+                <h3>3. Modern Variations</h3>
+                <ul>
+                    <li><strong>Momentum:</strong> Adds "velocity" to the update to push through flat regions.</li>
+                    <li><strong>Adam Optimizer:</strong> Adapts learning rates for each parameter, currently the industry standard.</li>
+                </ul>
+
+                <h3>4. Python Implementation</h3>
+                <pre><code>import torch.optim as optim
+
+# Standard SGD (Vanilla Gradient Descent)
+optimizer_sgd = optim.SGD(model.parameters(), lr=0.01)
+
+# Adam Optimizer (Includes Momentum and Adaptive Learning Rates)
+optimizer_adam = optim.Adam(model.parameters(), lr=0.001)
+
+# Basic training step:
+# optimizer.zero_grad()
+# loss.backward()
+# optimizer.step() </code></pre>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> लर्निंग रेट ($\eta$) का चयन अत्यंत सावधानी से करें। यदि यह बहुत छोटा है, तो ट्रेनिंग बहुत धीमी होगी। यदि यह बहुत बड़ा है, तो एल्गोरिदम कभी भी मिनिमा तक नहीं पहुँच पाएगा और डाइवर्ज (diverge) हो जाएगा।
+                <strong>Aitecnology Tip:</strong> If your loss decreases but test performance is low, you may be overfitting. Try increasing regularization (e.g., Dropout or Weight Decay) before changing your learning rate!
             </div>
         </article>
-
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
