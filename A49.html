@@ -1,57 +1,60 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Dimensionality Reduction: t-SNE for Visualization | ML</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
-        .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
-        .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
-        .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; padding: 40px 20px; max-width: 740px; margin: 0 auto; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
-        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        p { margin-bottom: 20px; font-size: 18px; }
-        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
-        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin: 20px 0; border-left: 3px solid #7f8c8d; }
+        .meta-info { font-size: 0.9em; color: #7f8c8d; margin-bottom: 20px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
+    <h2>Dimensionality Reduction: t-SNE for Visualization</h2>
+    <div class="meta-info">Published: July 9, 2026 | Category: ML</div>
+    
+    <p>t-Distributed Stochastic Neighbor Embedding (t-SNE) is a sophisticated dimensionality reduction technique specifically designed for visualizing high-dimensional datasets. Unlike PCA, which focuses on preserving global variance, t-SNE is adept at preserving local structure, making it exceptionally good at revealing clusters and patterns in complex data.</p>
+    
+    <img src="A1.png" alt="t-SNE visualization diagram" class="main-image">
 
-    <main class="container">
-        <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
-            
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+    <h3>How t-SNE Works</h3>
+    <p>t-SNE treats dimensionality reduction as a probability distribution matching problem:</p>
+    <ul>
+        <li><strong>High-Dim Similarity:</strong> Calculates probabilities of points being neighbors in the original space.</li>
+        <li><strong>Low-Dim Similarity:</strong> Calculates corresponding probabilities in the target 2D/3D space.</li>
+        <li><strong>KL Divergence:</strong> Uses gradient descent to minimize the difference between these two probability distributions.</li>
+    </ul>
 
-            <div class="content">
-                {{CONTENT}}
-            </div>
+    <h3>When to Use t-SNE</h3>
+    <ul>
+        <li><strong>Data Exploration:</strong> Perfect for visualizing complex, non-linear data structures.</li>
+        <li><strong>Pattern Discovery:</strong> Helps identify subgroups and outliers that aren't obvious in high dimensions.</li>
+    </ul>
 
-            <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
-            </div>
-        </article>
+    <h3>Quick Example</h3>
+    <pre><code>from sklearn.manifold import TSNE
+from sklearn.datasets import load_digits
 
-        <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
-    </main>
+# Load high-dimensional data
+digits = load_digits()
+X = digits.data
 
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
+# Reduce to 2 dimensions for visualization
+tsne = TSNE(n_components=2, perplexity=30)
+X_embedded = tsne.fit_transform(X)
+
+print("Original shape:", X.shape)
+print("Embedding shape:", X_embedded.shape)</code></pre>
+
+    <hr>
+    <p>For more details, visit: <a href="A49.html">t-SNE Documentation</a></p>
+
 </body>
 </html>
