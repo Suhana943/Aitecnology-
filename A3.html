@@ -7,13 +7,18 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; background: #fff; }
-        .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
+        
+        /* Navbar Styling */
+        .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 30px; border-bottom: 1px solid #eee; background: #fff; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: 800; font-size: 24px; color: #1a5276; text-decoration: none; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: #2c3e50; font-weight: 500; }
+        .nav-links a:hover { color: #1a5276; }
+
         .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; color: #111; margin-bottom: 10px; }
-          .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         h3 { color: #1a5276; margin-top: 30px; margin-bottom: 15px; }
         p { margin-bottom: 20px; font-size: 18px; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
         pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; margin-bottom: 20px; font-family: 'Courier New', Courier, monospace; }
         .tip-box { background: #f0f7ff; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
         ul { margin-left: 25px; margin-bottom: 20px; }
@@ -24,6 +29,11 @@
 
     <nav class="navbar">
         <a href="#" class="logo">AITecnology</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Tutorials</a>
+            <a href="#">About</a>
+        </div>
     </nav>
 
     <main class="container">
@@ -32,37 +42,32 @@
             <div style="font-size: 14px; color: #7f8c8d; margin-bottom: 30px;">Published: July 10, 2026</div>
 
             
-
             <h3>What is a Loop?</h3>
             <p>Imagine you need to say "Hello" to 100 people. Instead of writing 100 lines of code, you use a <strong>"Loop."</strong> A loop tells your program to perform the same task repeatedly until a specific goal is reached.</p>
 <img src="A3.png" alt="Control Flow and Loops" class="main-image">
-            
+
             <h3>Types of Loops</h3>
             <h4>1. For Loop (The "Counted" Loop)</h4>
-            <p>Use this when you know exactly how many times the action should repeat. It is perfect for iterating through a list of data.</p>
-            <pre><code># Example: Printing a sequence of numbers
-for i in range(1, 6):
+            <p>Use this when you know exactly how many times the action should repeat.</p>
+            <pre><code>for i in range(1, 6):
     print("Number:", i)</code></pre>
 
             <h4>2. While Loop (The "Conditional" Loop)</h4>
-            <p>This keeps running as long as a specific condition is <strong>True</strong>. It stops only when the condition becomes False.</p>
-            <pre><code># Example: Charging a phone until 100%
-battery = 0
+            <p>This keeps running as long as a specific condition is <strong>True</strong>.</p>
+            <pre><code>battery = 0
 while battery < 100:
-    print(f"Phone is charging... {battery}%")
-    battery += 20
-print("Charging complete!")</code></pre>
+    print(f"Charging... {battery}%")
+    battery += 20</code></pre>
 
             <h3>Why are Loops important in AI?</h3>
             <ul>
                 <li><strong>Saves Time:</strong> Processes massive datasets in seconds.</li>
-                <li><strong>Data Analysis:</strong> Easily check millions of rows for specific values.</li>
-                <li><strong>Model Training:</strong> Loops are used to run "epochs" (training cycles) in machine learning to help the model learn.</li>
-                <li><strong>Automation:</strong> Performs repetitive tasks like resizing thousands of images automatically.</li>
+                <li><strong>Model Training:</strong> Used to run "epochs" in machine learning.</li>
+                <li><strong>Automation:</strong> Handles repetitive tasks like image resizing.</li>
             </ul>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> Always include an exit condition in your <code>while</code> loops to avoid an "Infinite Loop," which can freeze your computer!
+                <strong>Aitecnology Tip:</strong> Always include an exit condition to avoid an "Infinite Loop."
             </div>
         </article>
 
