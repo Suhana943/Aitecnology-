@@ -52,7 +52,7 @@
       "answer": 0
     }
   ]
-}
+},
 {
   "articleTitle": "Understanding Python Functions and Scope",
   "questions": [
@@ -107,7 +107,7 @@
       "answer": 1
     }
   ]
-}
+},
 {
   "articleTitle": "Mastering Control Flow and Loops",
   "questions": [
@@ -162,7 +162,7 @@
       "answer": 2
     }
   ]
-}
+},
 {
   "articleTitle": "Python Conditional Logic Explained",
   "questions": [
@@ -217,7 +217,7 @@
       "answer": 2
     }
   ]
-}
+},
 {
   "articleTitle": "Essential Python Standard Libraries",
   "questions": [
@@ -272,7 +272,7 @@
       "answer": 1
     }
   ]
-}
+},
 {
   "articleTitle": "Advanced Python List Comprehensions",
   "questions": [
@@ -327,7 +327,7 @@
       "answer": 0
     }
   ]
-}
+},
 {
   "articleTitle": "Working with Python Generators and Iterators",
   "questions": [
@@ -382,7 +382,7 @@
       "answer": 1
     }
   ]
-}
+},
 {
   "articleTitle": "Python Decorators for Code Enhancement",
   "questions": [
@@ -437,7 +437,7 @@
       "answer": 0
     }
   ]
-}
+},
 {
   "articleTitle": "Object Oriented Programming in Python",
   "questions": [
@@ -492,7 +492,7 @@
       "answer": 0
     }
   ]
-}
+},
 {
   "articleTitle": "Robust Python Exception Handling",
   "questions": [
@@ -547,7 +547,7 @@
       "answer": 0
     }
   ]
-}
+},
 {
   "articleTitle": "Linear Algebra: Vector Spaces and Operations",
   "questions": [
@@ -602,7 +602,7 @@
       "answer": 0
     }
   ]
-}
+},
 {
   "articleTitle": "Linear Algebra: Matrix Transformations",
   "questions": [
@@ -657,7 +657,7 @@
       "answer": 0
     }
   ]
-}
+},
 {
   "articleTitle": "Dot Products and Inner Products Explained",
   "questions": [
@@ -712,7 +712,7 @@
       "answer": 0
     }
   ]
-}
+},
 {
   "articleTitle": "Understanding Eigenvalues and Eigenvectors",
   "questions": [
@@ -765,10 +765,7 @@
       "question": "Eigen decomposition ka main purpose kya hai?",
       "options": ["Matrix ko simplify karna", "Matrix ko delete karna", "Scalar badhana", "None"],
       "answer": 0
-    }
-  ]
-}
-[
+    },
   {
     "articleTitle": "Calculus: Understanding Derivatives",
     "questions": [
@@ -993,9 +990,7 @@
       {"question": "Suffixes merge?", "options": ["For same names", "None", "None", "None"], "answer": 0},
       {"question": "Combine vs merge?", "options": ["Combine rows/cols", "None", "None", "None"], "answer": 0}
     ]
-  }
-]
-[
+  },
   {
     "articleTitle": "Matplotlib: Basic Plotting",
     "questions": [
@@ -1145,9 +1140,7 @@
       {"question": "Bias-variance tradeoff?", "options": ["Balance", "None", "None", "None"], "answer": 0},
       {"question": "Shuffle data?", "options": ["Yes", "No", "None", "None"], "answer": 0}
     ]
-  }
-]
-[
+  },
   {
     "articleTitle": "Introduction to Neural Networks",
     "questions": [
@@ -1297,9 +1290,7 @@
       {"question": "Data need?", "options": ["Less", "Huge", "None", "None"], "answer": 0},
       {"question": "Benefit?", "options": ["Faster training", "None", "None", "None"], "answer": 0}
     ]
-  }
-]
-[
+  },
   {
     "articleTitle": "Generative AI Foundations",
     "questions": [
@@ -1449,9 +1440,7 @@
       {"question": "Compliance?", "options": ["Adhering to laws", "None", "None", "None"], "answer": 0},
       {"question": "Auditing?", "options": ["System review", "None", "None", "None"], "answer": 0}
     ]
-  }
-]
-[
+  },
   {
     "articleTitle": "Data Pipeline Fundamentals",
     "questions": [
@@ -1601,9 +1590,7 @@
       {"question": "CDN?", "options": ["Content delivery", "None", "None", "None"], "answer": 0},
       {"question": "Database Sharding?", "options": ["Split DB", "None", "None", "None"], "answer": 0}
     ]
-  }
-]
-[
+  },
   {
     "articleTitle": "Network Fundamentals for Developers",
     "questions": [
@@ -1753,9 +1740,7 @@
       {"question": "Scaling?", "options": ["Automatic", "None", "None", "None"], "answer": 0},
       {"question": "Cost model?", "options": ["Pay-per-use", "None", "None", "None"], "answer": 0}
     ]
-  }
-]
-[
+  },
   {
     "articleTitle": "Advanced Data Structures: Tries and Graphs",
     "questions": [
@@ -1905,9 +1890,7 @@
       {"question": "Naive match?", "options": ["O(n*m)", "None", "None", "None"], "answer": 0},
       {"question": "Use case?", "options": ["Text editors", "None", "None", "None"], "answer": 0}
     ]
-  }
-]
-[
+  },
   {
     "articleTitle": "System Design: Database Sharding Patterns",
     "questions": [
