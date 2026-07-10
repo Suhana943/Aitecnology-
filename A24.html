@@ -1,57 +1,61 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Central Limit Theorem for Data Science | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
         .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
         .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
         h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
+        h3 { margin: 30px 0 15px 0; color: #1a5276; }
         .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
         .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        p { margin-bottom: 20px; font-size: 18px; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin-bottom: 20px; border-left: 3px solid #7f8c8d; }
         .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
         footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
+    <nav class="navbar"><a href="#" class="logo">AITecnology</a></nav>
 
     <main class="container">
         <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
+            <h2>Central Limit Theorem for Data Science</h2>
+            <div class="byline">By: Aitecnology Team | Published: July 9, 2026</div>
             
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+            <img src="A8.png" alt="Central Limit Theorem" class="main-image">
 
             <div class="content">
-                {{CONTENT}}
+                <p>The Central Limit Theorem (CLT) is the statistical phenomenon where the distribution of sample means approaches a normal distribution as sample size increases, regardless of the original population distribution.</p>
+                
+                <h3>1. Key Significance</h3>
+                <ul>
+                    <li><strong>Universality:</strong> Bridges non-normal data with normal distribution statistical methods.</li>
+                    <li><strong>Inference:</strong> Enables confidence intervals and hypothesis testing on diverse datasets.</li>
+                    <li><strong>Efficiency:</strong> Allows us to estimate population parameters from manageable sample sizes.</li>
+                </ul>
+
+                <h3>2. Implementation Example</h3>
+                <pre><code>import numpy as np
+
+# Sample means from a Uniform distribution
+population = np.random.uniform(0, 1, 10000)
+sample_means = [np.mean(np.random.choice(population, size=50)) for _ in range(1000)]
+
+print(f"Mean: {np.mean(sample_means):.4f}")</code></pre>
             </div>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
+                <strong>Aitecnology Tip:</strong> The CLT typically "kicks in" once your sample size <em>n</em> is at least 30. If your data is heavily skewed or contains extreme outliers, you may need a larger sample size to achieve a stable normal distribution.
             </div>
         </article>
 
         <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
