@@ -3,223 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Conditional Logic Explained | AITecnology</title>
+    <title>Mastering Control Flow and Loops | AITecnology</title>
     <style>
-        /* Base Resets and Layout Variables */
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; display: flex; }
+
+        /* Sidebar Navigation */
+        .sidebar { width: 250px; height: 100vh; background: #f8f9fa; border-right: 1px solid #ddd; padding: 20px; position: fixed; }
+        .logo { font-weight: 800; font-size: 24px; color: #1a5276; text-decoration: none; display: block; margin-bottom: 40px; }
+        .nav-links a { display: block; padding: 10px 0; text-decoration: none; color: #2c3e50; font-weight: 500; }
+        .nav-links a:hover { color: #1a5276; }
+
+        /* Main Content Area */
+        .main-content { margin-left: 250px; padding: 40px; width: 100%; max-width: 900px; }
         
-        :root {
-            --primary-color: #1a5276;
-            --text-dark: #2c3e50;
-            --text-muted: #7f8c8d;
-            --bg-light: #f8f9fa;
-            --bg-code: #272822;
-            --border-color: #ddd;
-        }
-
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: var(--text-dark); 
-            display: flex; 
-            min-height: 100vh; 
-        }
-
-        /* Sidebar Navigation Component */
-        .sidebar { 
-            width: 250px; 
-            background: var(--bg-light); 
-            border-right: 1px solid var(--border-color); 
-            padding: 30px 20px; 
-            flex-shrink: 0; 
-            position: sticky;
-            top: 0;
-            height: 100vh;
-        }
-        
-        .logo { 
-            font-weight: 800; 
-            font-size: 24px; 
-            color: var(--primary-color); 
-            text-decoration: none; 
-            display: block; 
-            margin-bottom: 40px; 
-        }
-        
-        .nav-links a { 
-            display: block; 
-            padding: 12px 0; 
-            text-decoration: none; 
-            color: var(--text-dark); 
-            font-weight: 500; 
-            border-bottom: 1px solid #eee; 
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-        
-        /* Main Content Layout */
-        .main-content { 
-            padding: 40px; 
-            flex-grow: 1; 
-            max-width: 800px; 
-        }
-        
-        h2 { 
-            font-size: 32px; 
-            color: #111; 
-            margin-bottom: 10px; 
-        }
-        
-        h3 { 
-            color: var(--primary-color); 
-            margin-top: 30px; 
-            margin-bottom: 15px; 
-        }
-        
-        p { 
-            margin-bottom: 20px; 
-            font-size: 18px; 
-        }
-
-        /* List Alignment Spacing Fixes */
-        ul {
-            margin-bottom: 20px;
-            padding-left: 25px;
-        }
-
-        li {
-            font-size: 18px;
-            margin-bottom: 8px;
-        }
-        
-        .main-image { 
-            width: 100%; 
-            height: auto;
-            border-radius: 8px; 
-            margin-bottom: 25px; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
-        }
-        
-        /* Monokai-lite Styled Code Container */
-        pre { 
-            background: var(--bg-code); 
-            color: #f8f8f2; 
-            padding: 15px; 
-            border-radius: 5px; 
-            overflow-x: auto; 
-            margin-bottom: 20px; 
-            font-family: 'Courier New', Courier, monospace; 
-            font-size: 15px;
-        }
-
-        code {
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        /* Callout Box Component */
-        .tip-box { 
-            background: #f0f7ff; 
-            border-left: 5px solid var(--primary-color); 
-            padding: 20px; 
-            margin: 30px 0; 
-            border-radius: 4px; 
-        }
-
-        /* Mobile View Restyling */
-        @media (max-width: 768px) {
-            body {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-                border-right: none;
-                border-bottom: 1px solid var(--border-color);
-                padding: 20px;
-            }
-
-            .logo {
-                margin-bottom: 20px;
-            }
-
-            .nav-links {
-                display: flex;
-                gap: 15px;
-            }
-
-            .nav-links a {
-                border-bottom: none;
-                padding: 5px 0;
-            }
-
-            .main-content {
-                padding: 20px;
-            }
-
-            h2 {
-                font-size: 26px;
-            }
-        }
+        h2 { font-size: 32px; color: #111; margin-bottom: 10px; }
+        h3 { color: #1a5276; margin-top: 30px; margin-bottom: 15px; }
+        p { margin-bottom: 20px; font-size: 18px; }
+        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; margin-bottom: 20px; font-family: 'Courier New', Courier, monospace; }
+        .tip-box { background: #f0f7ff; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
+        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
 
-    <!-- Left Side Navigation Bar -->
     <nav class="sidebar">
-        <a href="#" class="logo">RESEARCH CORE</a>
+        <a href="#" class="logo">AITecnology</a>
         <div class="nav-links">
             <a href="#">Home</a>
             <a href="#">Tutorials</a>
-            <a href="#">Publications</a>
+            <a href="#">Research</a>
+            <a href="#">About</a>
         </div>
     </nav>
 
-    <!-- Core Dynamic Article Container -->
     <main class="main-content">
         <article>
-            <h2>Python Conditional Logic Explained</h2>
-            <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 30px;">Published: July 9, 2026</div>
+            <h2>Mastering Control Flow and Loops</h2>
+            <div style="font-size: 14px; color: #7f8c8d; margin-bottom: 30px;">Published: July 10, 2026</div>
+
+            <img src="A3.png" alt="Control Flow and Loops" class="main-image">
             
-            <img src="A4.png" alt="Conditional Logic Flow Diagram" class="main-image">
+            <h3>What is a Loop?</h3>
+            <p>Imagine you need to say "Hello" to 100 people. Instead of writing 100 lines of code, you use a <strong>"Loop."</strong> A loop tells your program to perform the same task repeatedly until a specific goal is reached.</p>
 
-            <h3>What is Conditional Logic?</h3>
-            <p>Think of conditional logic as the <strong>"decision-making brain"</strong> of your code. Just like in real life you decide, "If it rains, I will take an umbrella; otherwise, I will wear sunglasses," your code uses conditions to decide what to do next based on the data it receives.</p>
+            <h3>Types of Loops</h3>
+            <h4>1. For Loop (The "Counted" Loop)</h4>
+            <p>Use this when you know exactly how many times the action should repeat.</p>
+            <pre><code>for i in range(1, 6):
+    print("Number:", i)</code></pre>
 
-            <h3>The Main Types (if, elif, else)</h3>
-            <p>Conditional logic uses three main keywords:</p>
+            <h4>2. While Loop (The "Conditional" Loop)</h4>
+            <p>This keeps running as long as a specific condition is <strong>True</strong>.</p>
+            <pre><code>battery = 0
+while battery < 100:
+    print(f"Charging... {battery}%")
+    battery += 20</code></pre>
+
+            <h3>Why are Loops important in AI?</h3>
             <ul>
-                <li><strong>if:</strong> To check a condition (If the condition is True, do this).</li>
-                <li><strong>elif (else if):</strong> To check a new condition if the first one was False.</li>
-                <li><strong>else:</strong> The "fallback" option (Do this if nothing else is True).</li>
-            </ul>
-
-            <pre><code># Simple Example: Checking model accuracy
-accuracy = 0.85
-
-if accuracy >= 0.90:
-    print("Model is excellent!")
-elif accuracy >= 0.70:
-    print("Model is good, but needs tuning.")
-else:
-    print("Model needs more training.")</code></pre>
-
-            <h3>How is it used in AI & ML?</h3>
-            <p>In AI, conditional logic is used everywhere to help the program react to data in real-time:</p>
-            <ul>
-                <li><strong>Data Cleaning:</strong> Automatically removing rows if they have missing values (<code>if data is null: drop</code>).</li>
-                <li><strong>Early Stopping:</strong> Stopping the training of an AI model if it isn't improving anymore.</li>
-                <li><strong>Filtering:</strong> Selecting only the images that are clear and discarding blurry ones.</li>
+                <li><strong>Saves Time:</strong> Processes massive datasets in seconds.</li>
+                <li><strong>Model Training:</strong> Used to run "epochs" in machine learning.</li>
+                <li><strong>Automation:</strong> Handles repetitive tasks like image resizing.</li>
             </ul>
 
             <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> For complex decisions, consider using "match-case" (in Python 3.10+) or dictionaries to keep your code clean instead of writing too many <code>elif</code> lines!
+                <strong>Aitecnology Tip:</strong> Always include an exit condition to avoid an "Infinite Loop."
             </div>
         </article>
+
+        <footer>&copy; 2026 AITecnology. All rights reserved.</footer>
     </main>
 
 </body>
