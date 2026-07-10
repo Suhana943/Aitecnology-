@@ -1,57 +1,43 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | AITecnology</title>
+    <title>Probability Theory and Basic Rules | AITecnology</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; background-color: #fff; }
-        
-        .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; position: sticky; top: 0; background: #fff; z-index: 10; }
-        .logo { font-weight: 800; font-size: 22px; color: #1a5276; text-decoration: none; }
-        
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #2c3e50; }
         .container { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
-        h2 { font-size: 32px; margin-bottom: 10px; color: #111; }
-        .byline { font-size: 14px; color: #7f8c8d; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        
-        .main-image { width: 100%; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        
-        p { margin-bottom: 20px; font-size: 18px; }
-        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; border-radius: 4px; }
-        
-        footer { margin-top: 60px; padding: 20px; text-align: center; font-size: 14px; color: #95a5a6; border-top: 1px solid #eee; }
+        h2 { color: #111; margin-bottom: 10px; }
+        h3 { color: #1a5276; margin: 25px 0 10px 0; }
+        pre { background: #f4f6f7; padding: 15px; border-radius: 6px; overflow-x: auto; margin: 20px 0; border-left: 3px solid #7f8c8d; }
+        .tip-box { background: #f8f9fa; border-left: 5px solid #1a5276; padding: 20px; margin: 30px 0; }
     </style>
 </head>
 <body>
-
-    <nav class="navbar">
-        <button onclick="toggleDrawer()" style="background:none; border:none; font-size:24px; cursor:pointer;">☰</button>
-        <a href="index.html" class="logo">AITecnology</a>
-        <div>🔍 👤</div>
-    </nav>
-
     <main class="container">
-        <article>
-            <h2>{{TITLE}}</h2>
-            <div class="byline">By: Aitecnology Team | Published: {{DATE}}</div>
-            
-            <img src="{{IMAGE}}" alt="Topic Image" class="main-image">
+        <h2>Probability Theory and Basic Rules</h2>
+        <p>Probability theory quantifies uncertainty, serving as the backbone for machine learning algorithms that predict outcomes based on data.</p>
+        
+        
 
-            <div class="content">
-                {{CONTENT}}
-            </div>
+        <h3>1. Fundamental Rules</h3>
+        <ul>
+            <li><strong>Sum Rule:</strong> P(A or B) = P(A) + P(B) for disjoint events.</li>
+            <li><strong>Product Rule:</strong> P(A and B) = P(A) * P(B) for independent events.</li>
+            <li><strong>Complement Rule:</strong> P(not A) = 1 - P(A).</li>
+        </ul>
 
-            <div class="tip-box">
-                <strong>Aitecnology Tip:</strong> {{TIP}}
-            </div>
-        </article>
+        <h3>2. Coding Probability</h3>
+        <pre><code>import random
+# Simulate 10,000 coin flips
+flips = [random.choice(['Heads', 'Tails']) for _ in range(10000)]
+prob_heads = flips.count('Heads') / 10000
+print(f"Prob: {prob_heads:.4f}")</code></pre>
 
-        <footer>&copy; 2026 Aitecnology. All rights reserved.</footer>
+        <div class="tip-box">
+            <strong>Aitecnology Tip:</strong> In AI, we often deal with <strong>Conditional Probability</strong> (P(A|B)). Always remember: P(A|B) is NOT the same as P(B|A)!
+        </div>
     </main>
-
-    <script>
-        function toggleDrawer() { /* Sidebar logic here */ }
-    </script>
 </body>
 </html>
